@@ -1,0 +1,52 @@
+/* 
+    Created on : 17-abr-2017, 11:25:46
+    Author     : JC
+*/
+
+#main-admin {
+	padding-top: 100px; 
+}
+
+.login {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width:320px;
+	height: 400px;
+    margin: auto;
+}
+
+.navbar-default .navbar-brand {
+	padding: 0px 50px;
+	font-weight: bold;
+	color: #FFF;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+    color: #FDA527;
+}
+
+.btn-jc .badge 
+{
+	background-color:#FFF;
+}
+.btn-jc.btn-theme .badge 
+{
+	color:#FDA527;
+}
+
+li.skill-edit {
+	display: none;
+}
+li.skill-edit input {
+	transition: all 0.3s;
+	max-width: 0;
+}
+
+@media only screen and (max-width: 768px) {
+.navbar-default .navbar-brand {
+    padding: 0px 35px;	
+}
+}
