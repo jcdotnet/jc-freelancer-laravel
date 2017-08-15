@@ -155,6 +155,31 @@ a:active, a:focus {
 	height:100%;
 }
 
+.row-header, .row-subheader {
+    text-align: center;
+	color: #151515;
+    padding-bottom: 30px;
+	font-family: ralewaybold;
+}
+
+.row-header:after {
+    content: "";
+    display: block;
+    background-color: #151515;
+    width: 30px;
+    height: 1px;
+    margin: 15px auto 0;
+}
+.row-content {
+    margin: 0px auto;
+    padding-top:  5px;
+    padding-bottom: 20px;    
+}
+
+.row-margin {
+	margin-bottom: 20px;
+}
+
 .size-m {
 	font-size: 14px;
 }
@@ -164,12 +189,6 @@ a:active, a:focus {
 .parrafo, .size-xl
 {
     font-size: 18px;    
-}
-
-.row-content {
-    margin: 0px auto;
-    padding-top:  5px;
-    padding-bottom: 20px;    
 }
 
 /* NAVBAR */

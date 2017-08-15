@@ -47,6 +47,7 @@
 						</ul>
 					</li>
 					<li class="{{Request::is('proyecto*') ? 'active':''}}"><a href="{{ route('projects') }}"> @lang('Proyectos') </a></li> 
+					<li class="{{Request::is('about*') ? 'active':''}}"><a href="{{ route('about') }}"> @lang('Sobre mí') </a></li> 
 					<li class="{{Request::is('contacto') ? 'active':''}}"><a href="{{ route('contact') }}"> @lang('Contacto')</a></li>                    
 				</ul>
 			</div>
