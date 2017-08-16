@@ -97,17 +97,17 @@
 		<div class="col-sm-8 col-md-9">
 			<dl class="dl-horizontal">
 				<dt>GitHub</dt>
-				<dd><a href="https://github.com/jcdotnet" target="_blank">https://github.com/jcdotnet</a></dd>
+				<dd><a href="https://github.com/jcdotnet" target="_blank">@lang("Ver perfil")</a></dd>
 				<dt>Stack Overflow</dt>
-				<dd><a href="https://stackoverflow.com/users/6463338/jcdotnet" target="_blank">https://stackoverflow.com/users/6463338/jcdotnet</a></dd>
+				<dd>@lang("La mayor comunidad online para programadores. ")<a href="https://stackoverflow.com/users/6463338/jcdotnet" target="_blank">@lang("Ver perfil")</a></dd>
 				<dt>Udemy</dt>
-				<dd><a href="https://www.udemy.com/user/josecarlosromanrubio/" target="_blank">https://www.udemy.com/user/josecarlosromanrubio/</a></dd>
+				<dd>@lang("Plataforma para aprender y enseñar online. ")<a href="https://www.udemy.com/user/josecarlosromanrubio/" target="_blank">@lang("Ver perfil")</a></dd>
 				<dt>Upwork</dt>
-				<dd><a href="https://www.upwork.com/freelancers/~016889fa32b17df7fe" target="_blank">https://www.upwork.com/freelancers/~016889fa32b17df7fe/</a></dd>
+				<dd>@lang("Otra plataforma freelance. ")<a href="https://www.upwork.com/freelancers/~016889fa32b17df7fe" target="_blank">@lang("Ver perfil")</a></dd>
 				<dt>WordPress</dt>
-				<dd><a href="https://profiles.wordpress.org/jcrr" target="_blank">https://profiles.wordpress.org/jcrr</a></dd>
+				<dd><a href="https://profiles.wordpress.org/jcrr" target="_blank">@lang("Ver perfil")</a></dd>
 				<dt>YouTube</dt>
-				<dd><a href="https://www.youtube.com/channel/UC9wKRs6Mgf2wR2qfjYM0-uQ" target="_blank">https://www.youtube.com/channel/UC9wKRs6Mgf2wR2qfjYM0-uQ/</a></dd>
+				<dd><a href="https://www.youtube.com/channel/UC9wKRs6Mgf2wR2qfjYM0-uQ" target="_blank">@lang("Ver perfil")</a></dd>
 		   </dl>
 		</div>
 	</div>

@@ -20,9 +20,8 @@
 					@endif
 				</ul>
             </div>
-            <div>
+            <div class="row-header">
                 <h3> @lang('Proyectos') </h3>
-                <hr>
             </div>
         </div>
     </div>
@@ -60,7 +59,7 @@
 			@endforeach
         </div>
 		@if ($projects->lastPage() > 1)
-		<div class="row">
+		<div class="row row-content">
 			<nav aria-label="...">
 				<ul class="pager">
 					@if ($projects->currentPage() !==1)
