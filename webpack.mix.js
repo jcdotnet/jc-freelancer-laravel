@@ -16,8 +16,8 @@ mix.sass('resources/assets/sass/app.scss', 'public/css/bundle.css').options({
       processCssUrls: false
    });
 
-mix.combine(['resources/assets/js/jquery-3.2.1.min.js', 'resources/assets/js/bootstrap.min.js', 'resources/assets/js/app.js'], 'public/js/bundle.js');
+mix.combine(['node_modules/jquery/dist/jquery.min.js', 'node_modules/tether/dist/js/tether.min.js' , 'node_modules/bootstrap/dist/js/bootstrap.min.js', 'resources/assets/js/app.js'], 'public/js/bundle.js');
 
 
 mix.combine(['public/css/bundle.css', 'resources/assets/sass/app-admin.css'], 'public/css/bundle-admin.css');
-mix.combine(['resources/assets/js/jquery-3.2.1.min.js', 'resources/assets/js/bootstrap.min.js', 'resources/assets/js/app-admin.js'], 'public/js/bundle-admin.js');
+mix.combine(['node_modules/jquery/dist/jquery.min.js', 'node_modules/tether/dist/js/tether.min.js' ,'node_modules/bootstrap/dist/js/bootstrap.min.js', 'resources/assets/js/app-admin.js'], 'public/js/bundle-admin.js');

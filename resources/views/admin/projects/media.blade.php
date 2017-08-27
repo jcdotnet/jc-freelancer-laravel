@@ -9,7 +9,7 @@
 		<div class="row row-content">
         @foreach ($images as $image)
 			<div class="col-md-3">
-				<div class="thumbnail image-thumbnail">
+				<div>
 					<a href="{{asset('storage/'.$image->path)}}">
 						<img src="{{asset('storage/'.$image->path)}}" alt="{{$image->description}}" style="width:100%">
 					</a>
@@ -25,22 +25,18 @@
 			</div>					
         @endforeach
 		</div>
-		<div class="row">
-			@if ($images->lastPage() > 1)
-			<div class="row">
-				<nav aria-label="...">
-					<ul class="pager">
-						@if ($images->currentPage() !== 1 )
-							<li class="previous"><a href="{{$images->previousPageUrl()}}"><span aria-hidden="true">&larr;</span> Anteriores</a></li>
-						@endif
-						@if ($images->currentPage() !== $images->lastPage())
-							<li class="next"><a href="{{$images->nextPageUrl()}}">Siguientes <span aria-hidden="true">&rarr;</span></a></li>
-						@endif
-					</ul>
-				</nav>
-			</div>
+		
+		@if ($images->lastPage() > 1)
+		<div class="row row-content justify-content-around">
+			@if ($images->currentPage() !==1)
+				<div class="col col-sm-4 col-lg-2"><a href="{{$images->previousPageUrl()}}" class="btn-jc btn-theme-inverse">&larr; @lang("Anteriores")</a></div>
+			@endif
+			@if ($images->currentPage() !== $images->lastPage())
+				<div class="col col-sm-4 col-lg-2"><a href="{{$images->nextPageUrl()}}" class="btn-jc btn-theme-inverse">@lang("Siguientes") &rarr;</a></div>
 			@endif
 		</div>
+		@endif
+		
 		<div class="row">
 		<input type="hidden" name="project_images" id="images" value="{{ implode(',', $project_images_ids) }}">
 		<button type="submit" class="btn btn-success">Asignar imágenes</button>			

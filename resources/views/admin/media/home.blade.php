@@ -26,36 +26,30 @@
 	<div class="row">
 		@foreach ($media as $image)
 		<div class="col-md-3">
-			<div class="thumbnail image-thumbnail">
+			<div class="figure">
 				<a href="{{asset('storage/'.$image->path)}}">
-					<img src="{{asset('storage/'.$image->path)}}" alt="{{$image->description}}"></a>
-        <div class="caption center">
-          <h3>{{$image->description}}</h3>
-		  <a href="{{ route('admin.media.delete', ['image_id' => $image->id]) }}" class="btn btn-xs btn-danger @if ($image->projects()->first()) disabled @endif"> Eliminar </a>
-        </div>
-      </a>
-    </div>
-  </div>
+					<img src="{{asset('storage/'.$image->path)}}" class="figure-img img-fluid img-thumbnail" alt="{{$image->description}}">
+				</a>
+				<figcaption class="figure-caption text-center">
+					<h4>{{$image->description}}</h4>
+					<a href="{{ route('admin.media.delete', ['image_id' => $image->id]) }}" class="btn btn-xs btn-danger @if ($image->projects()->first()) disabled @endif"> Eliminar </a>
+				</figcaption>
+			</div>
+		</div>
 		@endforeach
 	</div>	
 	
-	
-	<div class="row">
-			@if ($media->lastPage() > 1)
-			<div class="row">
-				<nav aria-label="...">
-					<ul class="pager">
-						@if ($media->currentPage() !== 1 )
-							<li class="previous"><a href="{{$media->previousPageUrl()}}"><span aria-hidden="true">&larr;</span> Anteriores</a></li>
-						@endif
-						@if ($media->currentPage() !== $media->lastPage())
-							<li class="next"><a href="{{$media->nextPageUrl()}}">Siguientes <span aria-hidden="true">&rarr;</span></a></li>
-						@endif
-					</ul>
-				</nav>
-			</div>
+	@if ($media->lastPage() > 1)
+	<div class="row row-content justify-content-around">
+			@if ($media->currentPage() !==1)
+				<div class="col col-sm-4 col-lg-2"><a href="{{$media->previousPageUrl()}}" class="btn-jc btn-theme-inverse">&larr; @lang("Anteriores")</a></div>
 			@endif
-		</div>
+			@if ($media->currentPage() !== $media->lastPage())
+				<div class="col col-sm-4 col-lg-2"><a href="{{$media->nextPageUrl()}}" class="btn-jc btn-theme-inverse">@lang("Siguientes") &rarr;</a></div>
+			@endif
+	</div>
+    @endif
+		
 </div>
 
 @endsection 

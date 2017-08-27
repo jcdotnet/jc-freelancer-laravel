@@ -18,14 +18,20 @@
     margin: auto;
 }
 
-.navbar-default .navbar-brand {
+.navbar-toggleable-sm {
+	margin-top: 0px;
+}
+
+.navbar-toggleable-sm .navbar-brand {
 	padding: 0px 50px;
 	font-weight: bold;
 	color: #FFF;
 }
 
-.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-    color: #FDA527;
+button.navbar-toggler.navbar-toggler-right {
+    border-color: #FDA527;
+    top: -6px;
+    right: 40px;
 }
 
 .btn-jc .badge 
@@ -43,10 +49,4 @@ li.skill-edit {
 li.skill-edit input {
 	transition: all 0.3s;
 	max-width: 0;
-}
-
-@media only screen and (max-width: 768px) {
-.navbar-default .navbar-brand {
-    padding: 0px 35px;	
-}
 }

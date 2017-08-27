@@ -4,31 +4,35 @@
 
 <section id="breadscrumb" class="first-section">
    <div class="container">    
-        <div class="row breadscrumb-container">
-            <div>
-                <ul class="breadcrumb">
-                    <li><a href='{{route('home')}}'>{{ __('Inicio')}}</a></li>
-                    <li class="active">Cookies</li>
-               </ul>
-            </div>
-            <div>
-                <h1> Política de cookies </h1>
-                <hr>
-            </div>
-        </div>
+        <div class="row">
+			<div class="col">
+				<nav class="breadcrumb">
+					<a class="breadcrumb-item" href="{{route('home')}}"> @lang("Inicio") </a>
+					<span class="breadcrumb-item active">Cookies</span>
+				</nav>
+			</div>
+		</div>
     </div>
-</section>
 
+	<div class="container">
+		<div class="row">
+			<div class="col row-header">
+				<h1>Política de cookies</h1>	
+			</div>
+		</div>
+	</div>
+</section>
+	
 
 <section id="escritorio-movil">
     <div class="container">
         <div class="row row-content">
             <p>Desde josecarlosroman.com y en cumplimiento de la Ley 34/2002, de fecha 11 de julio, de servicios de la sociedad de la información y del comercio electrónico, informamos a nuestros usuarios que usamos cookies propias y de terceros para mejorar nuestros servicios. </p>
            
-            <h2 class="center"> ¿Qué es una cookie? </h2>       
+            <h3 class="center"> ¿Qué es una cookie? </h2>       
             <p> Una cookie es un archivo de información enviado por un sitio web y almacenado en el navegador del usuario. Las cookies son inofensivas y no almacenan ningún tipo de información personal, solo almacenan los hábitos de navegación del usuario. Usted puede eliminar las cookies en cualquier momento desde su navegador o si lo desea también puede cambiar la configuración para declinar las cookies, si lo hace es posible que empeore su experiencia de navegación.  </p>
            
-            <h2 class="center">¿Qué tipos de cookies utiliza josecarlosroman.com?</h2>
+            <h3 class="center">¿Qué tipos de cookies utiliza josecarlosroman.com?</h2>
             <p><strong>Cookies técnicas:</strong> Son aquéllas que permiten al usuario la navegación a través de una página web, plataforma o aplicación y la utilización de las diferentes opciones o servicios que en ella existan como, por ejemplo, controlar el tráfico y la comunicación de datos, identificar la sesión, acceder a partes de acceso restringido, recordar los elementos que integran un pedido, realizar el proceso de compra de un pedido, realizar la solicitud de inscripción o participación en un evento, utilizar elementos de seguridad durante la navegación, almacenar contenidos para la difusión de videos o sonido o compartir contenidos a través de redes sociales.</p>    
             <p>Las cookies técnicas que usa josecarlosroman.com son:</p>  
             <ul>
@@ -54,7 +58,7 @@
                 <li>_cfduid: cookie usada por CloudFlare. Su finalidad es mejorar la seguridad del sitio Web. </li>
             </ul>
             
-            <h2 class="center">Configuración o deshabilitación de las cookies</h2>
+            <h3 class="center">Configuración o deshabilitación de las cookies</h2>
             <p>Puede usted permitir, bloquear o eliminar las cookies instaladas en su equipo mediante la configuración de las opciones del navegador instalado en su ordenador.</p>
             <ul>
                 <li><a href="https://support.google.com/chrome/answer/95647?hl=es" target="_blank">Configurar o deshabilitar cookies en Google Chrome</a></li>

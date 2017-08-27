@@ -9,6 +9,7 @@ var addedImagesIDs;
 document.onreadystatechange = function() {
   if (document.readyState === 'complete') { 
     // skills
+
     var editSections = document.getElementsByClassName('edit');
 	if (editSections)
 	{
