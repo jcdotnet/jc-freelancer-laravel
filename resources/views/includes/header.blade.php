@@ -33,7 +33,7 @@
 						<a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> @lang("Servicios")</a>
 						<ul class="dropdown-menu">
 							<li><a href="{{ route('services') }}"> @lang("Todos mis servicios")</a></li> 
-							<li><a href="http://josecarlosroman.com/wordpress" target="_blank">WordPress</a></li>
+							<li><a href="http://josecarlosroman.com/wordpress/" target="_blank">WordPress</a></li>
 						</ul>
 					</li>
 					<li class="nav-item {{Request::is('proyecto*') ? 'active':''}}"><a class="nav-link" href="{{ route('projects') }}"> @lang('Proyectos') </a></li> 

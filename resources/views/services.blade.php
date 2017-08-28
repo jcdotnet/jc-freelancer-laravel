@@ -73,7 +73,7 @@
 		</div>
 		<div class="row row-content">
 			<div class="col text-center">
-				<a href="http://josecarlosroman.com/wordpress" class="btn-jc btn-theme"> @lang("Más información")</a>
+				<a href="http://josecarlosroman.com/wordpress/" class="btn-jc btn-theme"> @lang("Más información")</a>
 			</div>           
         </div>
 		<div class="row row-content">
