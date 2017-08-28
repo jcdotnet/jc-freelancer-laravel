@@ -30,6 +30,6 @@
 			var token = "{{ Session::token() }}";
 		</script>
 		<script src="{{ asset('js/bundle.js') }}"></script>
-		@yield('scripts');
+		@yield('scripts')
 	</body>
 </html>
