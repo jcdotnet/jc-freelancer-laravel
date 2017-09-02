@@ -5,6 +5,11 @@
 
     RewriteEngine On
 
+    #redirect from HTTP to HTTPS
+    RewriteCond %{HTTPS} !on [OR]
+    RewriteCond %{HTTP_HOST} !^josecarlosroman\.com$ [NC]
+    RewriteRule ^(.*)$ https://josecarlosroman.com/$1 [R=301,L]
+
     # Redirect Trailing Slashes If Not A Folder...
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule ^(.*)/$ /$1 [L,R=301]
