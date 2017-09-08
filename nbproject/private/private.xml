@@ -13,6 +13,7 @@
             <file>file:/D:/xampp/htdocs/freelancer-laravel/composer.json</file>
             <file>file:/D:/xampp/htdocs/freelancer-laravel/resources/views/includes/cookie-notice.blade.php</file>
             <file>file:/D:/xampp/htdocs/freelancer-laravel/resources/views/services.blade.php</file>
+            <file>file:/D:/xampp/htdocs/freelancer-laravel/public/css/bundle-admin.css</file>
             <file>file:/D:/xampp/htdocs/freelancer-laravel/.gitattributes</file>
             <file>file:/D:/xampp/htdocs/freelancer-laravel/resources/assets/js/app-admin.js</file>
             <file>file:/D:/xampp/htdocs/freelancer-laravel/resources/assets/js/app.js</file>
@@ -45,6 +46,7 @@
             <file>file:/D:/xampp/htdocs/freelancer-laravel/resources/views/layouts/default.blade.php</file>
             <file>file:/D:/xampp/htdocs/freelancer-laravel/public/mix-manifest.json</file>
             <file>file:/D:/xampp/htdocs/freelancer-laravel/resources/views/admin/projects/update.blade.php</file>
+            <file>file:/D:/xampp/htdocs/freelancer-laravel/public/css/bundle.css</file>
             <file>file:/D:/xampp/htdocs/freelancer-laravel/resources/views/admin/media/home.blade.php</file>
             <file>file:/D:/xampp/htdocs/freelancer-laravel/webpack.mix.js</file>
             <file>file:/D:/xampp/htdocs/freelancer-laravel/resources/views/includes/footer.blade.php</file>

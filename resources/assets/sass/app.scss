@@ -38,6 +38,9 @@ a:active, a:focus {
     color: #FDA527;
     text-decoration: none;
 }
+a::selection {
+	color: #FFF;
+}
 
 .background {
     background-color: #d3d3d3;
@@ -103,6 +106,10 @@ a:active, a:focus {
 .highlighted { 
     font-weight: bold; 
 	color: #FDA527;
+}
+
+.highlighted::selection {
+	color: #FFF;
 }
 
 #main {	

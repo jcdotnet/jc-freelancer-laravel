@@ -8716,6 +8716,14 @@ a:active, a:focus {
   text-decoration: none;
 }
 
+a::-moz-selection {
+  color: #FFF;
+}
+
+a::selection {
+  color: #FFF;
+}
+
 .background {
   background-color: #d3d3d3;
 }
@@ -8779,6 +8787,14 @@ a:active, a:focus {
 .highlighted {
   font-weight: bold;
   color: #FDA527;
+}
+
+.highlighted::-moz-selection {
+  color: #FFF;
+}
+
+.highlighted::selection {
+  color: #FFF;
 }
 
 #main {
