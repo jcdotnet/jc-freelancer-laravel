@@ -1,5 +1,5 @@
 {   "Resumen":  "Overview",   
-	"Ingeniero informático y programador freelance | Jose Carlos Román Rubio": "freelance software developer | Jose Carlos Román Rubio",
+	"Jose Carlos Román Rubio | Ingeniero Informático, programador freelance": "Jose Carlos Román Rubio | Sotware engineer, freelance developer",
 	"¡Hola a tod@s! Mi nombre es Jose Carlos aunque en el mundo profesional soy conocido como JC. Soy un apasionado de la informática desde pequeño y actualmente tengo el título de Ingeniero Técnico en Informática, obtenido en la Universidad de Málaga en el año 2014. Desde enero del 2016 estoy trabajando como profesional autónomo o 'freelancer' prestando servicios a particulares y empresas.":          
 	"Hello everyone! I'm a self-employed software engineer, born and raised in Málaga (Spain) and I'm offering my services all over the world since January 2016. You can contact me either if you need to develop an application (console, desktop, web, mobile...), or have great ideas and need someone to carry them out or just need a programmer for your project. I'm looking forward to hearing from you!" ,
     
@@ -37,12 +37,12 @@
         "Más información" : "Learn more",  
 		"Más información." : "Learn more.", 
               
-			  "Ingeniero informático, programador freelance" : "Computer engineer, freelance SW developer", 
+			  "Ingeniero informático, programador freelance" : "Software engineer, freelance developer", 
               
               "Mensaje" : "Message",   
               "Servicios a medida" :  "Custom services",
-	          "Soy trabajador autónomo (actividad económica IAE: Diplomados en informática) y ofrezco mis servicios freelance a particulares y empresas. Tarifo por proyectos completos o por fases del proyecto, emitiendo siempre factura por mi trabajo.":
-			  "I'm a self-employed software engineer. I work legally and I offer my freelance services to individuals and companies. My pricing is project based and I will always issue you an invoice once the complete job (or a milestone) has been finished.",  
+	          "Soy trabajador autónomo (IAE: Diplomados en informática) y ofrezco mis servicios freelance a particulares y empresas. Tarifo por proyectos completos o por fases del proyecto, emitiendo siempre factura por mi trabajo.":
+			  "I'm a freelance software engineer. I work legally and I offer my freelance services to individuals and companies. My pricing is project based and I will always issue you an invoice once the complete job (or a milestone) has been finished.",  
               "Buenas prácticas" :  "Smart coding",    
               "Soy un apasionado de la programación desde pequeño y tengo la carrera de ingeniería técnica en informática. Además siempre estoy realizando cursos, estoy al día en las últimas tecnologías y sigo las mejores practicas en programación." :
 			  "I'm passionate about programming since childhood and I received my computer engineering degree in 2014. Besides, I have enrolled to several courses, I’m skilled in many technologies and I apply the best coding practices.",  
@@ -108,6 +108,7 @@
               "Desarrollo de servicios Web" :  "Web services development",  
 
               "Servicios" :  "Services",  
+	          "servicios" : "services",
               "Todos mis servicios" :  "All services",  
                "Aplicaciones de escritorio y de móvil" :  "Desktop and mobile development", 
               "Aplicaciones Web" :  "Web development",  
@@ -171,5 +172,12 @@
 	"Plataforma para aprender y enseñar online. ": "Marketplace for learning and teaching online. ",
 	"Otra plataforma freelance. ": "Another freelance marketplace. ",
 	"La mayor comunidad online para programadores. ": "The most trusted online community for developers. ",
-	"Testimonios": "Testimonials"
+	"Testimonios": "Testimonials",
+	"Privacidad" : "Privacy",
+	"Política de privacidad" : "Privacy policy",
+	"JC, freelancer en Málaga | Jose Carlos Román Rubio" : "JC, freelancer, Málaga | Jose Carlos Román Rubio" ,
+	"Jose Carlos Román Rubio (JC). Soy  Ingeniero Técnico Informático (Universidad de Málaga), programador, desarrollador, freelancer... Descubre más sobre mí." :
+	"Jose Carlos Román Rubio (JC). Computer Engineer (Universidad de Málaga), programmer, developer, freelancer... Find out more about me."		,
+	"Página Web de Jose Carlos Román Rubio. Ingeniero Técnico Informático (UMA). Programador y desarrollador freelance para particulares y empresas.":
+	"Jose Carlos Román Rubio. Computer Engineer (UMA). Freelance software developer. I offer my services to particulars, freelancers and companies."
 }

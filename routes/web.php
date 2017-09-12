@@ -11,56 +11,31 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-})->name('home');
+/* redirections */
 
-Route::post('/home', [
-	'uses' => 'AppController@postHome'
+Route::get('/', [
+	'uses' => 'AppController@getRedirect', 
 ]);
-
 Route::get('/servicios', function () {
-    return view('services');
-})->name('services');
-
-Route::get('/proyectos/', [
-	'uses' => 'ProjectController@getIndex',
-	'as' => 'projects'
-]);
-
-Route::get('/proyectos/skill/{skill_name}', [
-	'uses' => 'ProjectController@getIndex',
-	'as' => 'projects.skills'
-]);
-
-Route::get('/proyecto/{project_slug}', [
-	'uses' => 'ProjectController@getSingle',
-	'as' => 'project'
-]);
-
-Route::get('/contacto', [
-    'uses' => 'AppController@getContact'
-])->name('contact');
-
-Route::post('/contacto', [
-    'uses' => 'AppController@postContact'
-]);
-
+	return redirect('es/servicios');
+});
+Route::get('/proyectos', function () {
+	return redirect('es/proyectos');
+});
+Route::get('/proyectos/skill/{skill_name}', function () {
+	return redirect('es/proyectos/skill/{skill_name}');
+});
+Route::get('/proyecto/{project_slug}', function () {
+	return redirect('es/proyecto/{project_slug}');
+});
+Route::get('/contacto', function () {
+	return redirect('es/contacto');
+});
 Route::get('/jc-freelancer-malaga', function () {
-    return view('pages.about');
-})->name('about');
+	return redirect('es/jc-freelancer-malaga');
+});
 
-Route::get('/cookies', function () {
-    return view('pages.cookies');
-})->name('cookies');
-
-Route::get('/politica-privacidad', function () {
-    return view('pages.privacy');
-})->name('privacy');
-
-Route::post('/language', [
-	'uses' => 'AppController@postChangeLanguage'
-]);
+/* front-end one-language */
 
 Route::get('/admin/login', [
 	'uses' => 'AdminController@getLogin',
@@ -72,6 +47,8 @@ Route::post('/admin/login', [
 	'as' => 'admin.login' 
 ]);
 
+ /* admin area */
+ 
 Route::group([
 	'prefix' => '/admin',
 	'middleware' => 'auth'
@@ -172,3 +149,61 @@ Route::group([
 		'as' => 'admin.logout'
 	]);	
 });
+
+/* new multilingual routes */
+
+Route::group(['prefix' => '{lang}'], function () {
+	 
+	Route::get('/', function() {
+		return view('home');		
+	})->name('home');
+
+	Route::post('/home', [
+		'uses' => 'AppController@postHome'
+	]);
+
+	Route::get('{servicios}' , function () {
+		return view('services');
+	})->name('servicios')->where('servicios', '(servicios|services)');
+
+	Route::get('{proyectos}', [
+		'uses' => 'ProjectController@getIndex',
+		'as' => 'proyectos'
+	])->where('proyectos', '(proyectos|projects)');
+
+	Route::get('{proyectos}/skill/{skill_name}', [
+		'uses' => 'ProjectController@getIndex',
+		'as' => 'proyectos.skills'
+	])->where('proyectos', '(proyectos|projects)');
+
+	Route::get('{proyecto}/{project_slug}', [
+		'uses' => 'ProjectController@getSingle',
+		'as' => 'proyecto'
+	])->where('proyecto', '(proyecto|project)');
+
+	Route::get('{contacto}', [
+		'uses' => 'AppController@getContact'
+	])->name('contacto')
+	  ->where('contacto', '(contacto|contact)');
+
+	Route::post('/contactform', [
+		'uses' => 'AppController@postContact'
+	]);
+
+	Route::get('/jc-freelancer-malaga', function () {
+		return view('pages.about');
+	})->name('about');	
+
+	Route::get('changeLocale/{locale}', function ($locale) {	
+        return redirect()->back()->with('locale', $locale);
+    });
+	
+	Route::get('/cookies', function () {
+		return view('pages.cookies');
+	})->name('cookies');
+
+	Route::get('/politica-privacidad', function () {
+		return view('pages.privacy');
+	})->name('privacy');
+ });
+

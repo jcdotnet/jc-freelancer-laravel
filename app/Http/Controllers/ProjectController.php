@@ -15,7 +15,7 @@ use Illuminate\Http\Request;
 
 class ProjectController extends Controller {
 	
-	public function getIndex($skill_name = null) 
+	public function getIndex($lang, $proyectos, $skill_name = null) 
 	{
 		$projects = Project::orderBy('start', 'desc')->paginate(6);	
 		$this->setProjectsLocale($projects);
@@ -33,10 +33,8 @@ class ProjectController extends Controller {
 				return view('projects.home', ['projects' => $projects]);
 			} 			
 		}
-		else {
-			return view('projects.home', ['projects' => $projects]);
-		}
-		return redirect()-> route('projects');  
+
+		return view('projects.home', ['projects' => $projects]);  
 	}
 	
 	public function getAdminIndex() 
@@ -48,11 +46,11 @@ class ProjectController extends Controller {
 	}
 	
 	
-	public function getSingle($project_slug = null) // también getSingle($project_slug, $admin) y Route::get('foo/{project_slug}&{admin?}
+	public function getSingle($lang, $proyecto, $project_slug = null) 
 	{
 		$project = Project::where('slug', $project_slug)->first();	
 		if (!$project) {
-			return redirect()->route('projects'); 
+			return redirect()->route('proyectos', ["lang" =>App::getLocale() , "proyectos" => __('proyectos')]); 
 		}
 		$this->setProjectLocale($project);
         

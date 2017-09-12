@@ -19,15 +19,8 @@ $(function() {
 	$('.language').click(function(){
 		if (window.matchMedia('(max-width: 768px)').matches)
 			$('#navbar-flags').css("display", "none" );
-		$.ajax({
-			url: baseUrl + "/language",
-			type: "post",
-			data: {'_token': token, 'locale': $(this).data('locale') },
-			success: function() {
-				location.reload();
-			}
-		});    
 	});
+	
 	$(window).resize(function() {
 		$('.hero').height($(window).height());
 		if (window.matchMedia('(max-width: 768px)').matches) 
@@ -63,8 +56,7 @@ function getCookie(name)
 }
 
 function getRandomService(){
-
-	if ($(location).attr('href') === baseUrl + '/')
+	if (baseUrl === $(location).attr('href'))
 	{
 		$.ajax({
 		  url: baseUrl + "/home",

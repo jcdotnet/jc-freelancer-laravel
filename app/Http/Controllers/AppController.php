@@ -11,6 +11,13 @@ use App\Mail\Contact;
 
 class AppController extends Controller {
 	
+	public function getRedirect(Request $request)
+	{
+		if (substr( $request->server('HTTP_ACCEPT_LANGUAGE'), 0, 2 ) === 'es')
+			return redirect('es/');
+	    return redirect('en/');
+	}
+	
 	public function getContact()
 	{
 		$asuntos = array(__("Consulta"), __("Presupuesto"), __("Sugerencia"), __("Otros"));
@@ -56,14 +63,5 @@ class AppController extends Controller {
             __("Desarrollo de servicios Web"));
 		
 		return Response::json(['servicio'=> $servicios[rand(0, count($servicios)-1)]], 200);				
-	}
-	
-	public function postChangeLanguage (Request $request)
-	{
-		if ($request->ajax()) {
-			$request->session()->put('locale', $request->locale);
-		}
-	}
-	
-	
+	}      
 }

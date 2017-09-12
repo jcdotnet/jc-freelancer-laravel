@@ -1,6 +1,6 @@
 @extends ('layouts.default')
 
-@section('title')
+@section('head')
 	<title> @lang("Formulario de contacto | Jose Carlos Román Rubio")</title>
 @endsection
 
@@ -11,7 +11,7 @@
         <div class="row">
             <div class="col">
                 <nav class="breadcrumb">
-                    <a class="breadcrumb-item" href='{{ route('home') }}'> @lang("Inicio") </a>
+                    <a class="breadcrumb-item" href='{{ route('home', Config::get('app.locale')) }}'> @lang("Inicio") </a>
                     <span class="breadcrumb-item active"> @lang("Formulario de contacto")</span>
                </nav>
             </div>
@@ -33,7 +33,7 @@
 <div class="container">
 	<div class="row-content">
 		<div class="col col-md-9">    
-			<form action='{{ url('/contacto') }}' method='post'>
+			<form action="{{url('es/contactform')}}" method='post'>
 				<div class="form-group row">
 					<label for="nombre" class="col-md-3 col-form-label"> @lang("Nombre") </label>
 					<div class="col-md-9">
@@ -73,7 +73,7 @@
 				<div class="form-group row">
 					<div class="col offset-md-3">
 						<input type="checkbox" name="politica-privacidad" class="{{ $errors->has('acceptance')? 'alert alert-danger':'' }}">
-						@lang("He leído y acepto ") <a href='{{ route('privacy') }}' target="_blank"> @lang("la política de privacidad") </a>  
+						@lang("He leído y acepto ") <a href='{{ route('privacy', Config::get('app.locale')) }}' target="_blank"> @lang("la política de privacidad") </a>  
 					</div>
 				    
 				</div>

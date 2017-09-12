@@ -1,14 +1,10 @@
     <footer id="footer" class="row-footer">
 
 		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-auto">
-					<ul class="list-inline">
-						<a class="list-inline-item" href="{{ route('home')}}">@lang('Inicio')</a>
-						<a class="list-inline-item" href="{{ route('services')}}">@lang('Servicios')</a>
-						<a class="list-inline-item" href="{{ route('projects')}}">@lang('Proyectos')</a>
-						<a class="list-inline-item" href="{{ route('contact')}}"> @lang('Contacto')</a>
-					</ul>
+			<div class="row row-content justify-content-center">
+				<div class="col-auto size-l">
+					<a class="list-inline-item" href="{{ route ('privacy', Config::get('app.locale'))}}">@lang('Política de privacidad')</a> | 
+					<a class="list-inline-item" href="{{ route ('cookies', Config::get('app.locale'))}}">@lang('Cookies')</a>					
 				</div>
 			</div>
 			<div class="row row-content justify-content-center">

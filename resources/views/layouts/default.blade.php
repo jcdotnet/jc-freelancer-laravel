@@ -1,7 +1,7 @@
 <!doctype html>
-<html>
+<html lang="{{ Config::get('app.locale') }}">
 	<head>
-		@yield('title')
+		@yield('head')
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 				
@@ -25,11 +25,14 @@
 		@include('includes/footer')
 		@include('includes/cookie-notice')
 		
+		@yield('scripts-before')
+		
 		<script>
-			var baseUrl = "{{ URL::to('/') }}"; // BASE URL FOR AJAX CALLS
+			var baseUrl = "{{ url('/', Config::get('app.locale')) }}"; // BASE URL FOR AJAX CALLS
 			var token = "{{ Session::token() }}";
 		</script>
 		<script src="{{ asset('js/bundle.js') }}"></script>
-		@yield('scripts')
+		
+		@yield('scripts-after')
 	</body>
 </html>

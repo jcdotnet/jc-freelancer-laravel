@@ -1,5 +1,9 @@
 @extends ('layouts.default')
 
+@section('head')
+	<meta name="robots" content="noindex, follow">
+@endsection
+
 @section('content')
 
 <section id="breadscrumb" class="first-section">
@@ -7,7 +11,7 @@
         <div class="row">
 			<div class="col">
 				<nav class="breadcrumb">
-					<a class="breadcrumb-item" href="{{route('home')}}"> @lang("Inicio") </a>
+					<a class="breadcrumb-item" href="{{route('home', Config::get('app.locale'))}}"> @lang("Inicio") </a>
 					<span class="breadcrumb-item active">Cookies</span>
 				</nav>
 			</div>
@@ -104,15 +108,13 @@
 
 				<h3 class="text-center">Configuración de cookies</h3>
 				<p>Para conocer la forma en la que configurar la gestión de cookies en su navegador puede consultar los siguientes links de los principales navegadores y dispositivos:</p>
-
-				<ul>
-					<li><a href="https://support.google.com/chrome/answer/95647?hl=es" target="_blank">Configurar o deshabilitar cookies en Google Chrome</a></li>
-					<li><a href="https://support.microsoft.com/es-es/help/17442/windows-internet-explorer-delete-manage-cookies" target="_blank">Configurar o deshabilitar cookies en Internet Explorer</a></li>
-					<li><a href="https://support.mozilla.org/t5/Cookies-y-cach%C3%A9/Habilitar-y-deshabilitar-cookies-que-los-sitios-web-utilizan/ta-p/13811?redirectlocale=es&redirectslug=habilitar-y-deshabilitar-cookies-que-los-sitios-we" target="_blank">Configurar o deshabilitar cookies en Firefox</a></li>
-					<li><a href="https://support.apple.com/kb/ph21411?locale=es_ES" target="_blank">Configurar o deshabilitar cookies en Safari</a></li>
-				</ul>
-
-
+				<p>-Para <a href="http://windows.microsoft.com/es-es/internet-explorer/delete-manage-cookies#ie=ie-11">Internet Explorer</a>™  
+				   -Para <a href="http://www.apple.com/legal/privacy/es/cookies/">Safari</a>™   
+				   -Para <a href="https://support.google.com/chrome/answer/95647?hl=es">Chrome</a>™  
+				   -Para <a href="https://support.mozilla.org/es/kb/cookies-informacion-que-los-sitios-web-guardan-en-?redirectlocale=en-US&amp;redirectslug=Cookies">Firefox</a>™  
+				   -Para <a href="http://help.opera.com/Windows/12.00/es-ES/cookies.html">Opera</a>™  
+				   -Para <a href="https://privacy.microsoft.com/es-es/windows-10-microsoft-edge-and-privacy">Edge</a>™</p>
+				
 				<h3 class="text-center">Aceptación de cookies</h3>
 
 				<p>Al acceder a este sitio web o aplicación por primera vez, verá una ventana dónde se le informa de la utilización de las cookies y donde puede consultar esta "Política de cookies". Si usted consiente la utilización de cookies, 

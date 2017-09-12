@@ -1,8 +1,8 @@
 @extends('layouts.default')
 
-@section('title')
-	<title> @lang("Ingeniero informático y programador freelance | Jose Carlos Román Rubio") </title>
-	<meta description = "Página Web de Jose Carlos Román Rubio, Ingeniero Técnico Informático (Universidad de Málaga), programador y desarrollador freelance para particulares y empresas">
+@section('head')
+	<title> @lang("Jose Carlos Román Rubio | Ingeniero Informático, programador freelance") </title>
+	<meta name="description" content="{{ __("Página Web de Jose Carlos Román Rubio. Ingeniero Técnico Informático (UMA). Programador y desarrollador freelance para particulares y empresas.") }}"/>
 @endsection
 
 @section('content')
@@ -19,7 +19,7 @@
 			</h3>
 
 			<div>
-				<a href="{{ route('services') }}" class="btn-jc btn-hero"> @lang("Más información") </a>
+				<a href="{{ route('servicios', [Config::get('app.locale'), __("routes.servicios")]) }}" class="btn-jc btn-hero"> @lang("Más información") </a>
 			</div>
         </div>
     </div>
@@ -35,7 +35,7 @@
 				<div class="mensaje-header-container">			
 					<h1 class="mensaje-header"> @lang("Servicios a medida") </h1>
                 </div>
-                <p class="size-xl center"> @lang("Soy trabajador autónomo (actividad económica IAE: Diplomados en informática) y ofrezco mis servicios freelance a particulares y empresas. Tarifo por proyectos completos o por fases del proyecto, emitiendo siempre factura por mi trabajo.")</p>
+                <p class="size-xl center"> @lang("Soy trabajador autónomo (IAE: Diplomados en informática) y ofrezco mis servicios freelance a particulares y empresas. Tarifo por proyectos completos o por fases del proyecto, emitiendo siempre factura por mi trabajo.")</p>
             </div>
             <div class="col-12 col-sm-6 col-lg-3 mensaje">
 				<div class="text-center">

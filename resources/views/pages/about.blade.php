@@ -1,8 +1,8 @@
 @extends('layouts.default')
 
-@section('title')
-	<title> @lang("JC - Informático y freelancer en Málaga | Jose Carlos Román Rubio") </title>
-	<meta description = "Jose Carlos Román Rubio (JC). Soy  Ingeniero Técnico Informático (Universidad de Málaga), programador, desarrollador, freelancer... Descubre más sobre mí.">
+@section('head')
+	<title> @lang("JC, freelancer en Málaga | Jose Carlos Román Rubio") </title>
+	<meta name="description" content=" {{ __("Jose Carlos Román Rubio (JC). Soy  Ingeniero Técnico Informático (Universidad de Málaga), programador, desarrollador, freelancer... Descubre más sobre mí.") }}">
 @endsection
 
 @section('content')
@@ -12,7 +12,7 @@
         <div class="row">
 			<div class="col">
 				<nav class="breadcrumb">
-					<a class="breadcrumb-item" href="{{route('home')}}"> @lang("Inicio") </a>
+					<a class="breadcrumb-item" href="{{ route('home', Config::get('app.locale')) }}"> @lang("Inicio") </a>
 					<span class="breadcrumb-item active">@lang("Sobre mí")</span>
 				</nav>
 			</div>

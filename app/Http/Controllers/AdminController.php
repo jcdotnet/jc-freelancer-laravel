@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App;
 use App\Project;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -36,7 +37,7 @@ class AdminController extends Controller {
 	public function getLogout()
 	{
 		Auth::logout();
-		return redirect()->route('home');
+		return redirect()->route('home', ["lang" => App::getLocale()]);
 	}
 }
 
