@@ -34,6 +34,12 @@ Route::get('/contacto', function () {
 Route::get('/jc-freelancer-malaga', function () {
 	return redirect('es/jc-freelancer-malaga');
 });
+Route::get('/cookies', function () {
+	return redirect('es/cookies');
+});
+Route::get('/politica-privacidad', function () {
+	return redirect('es/politica-privacidad');
+});
 
 /* front-end one-language */
 
