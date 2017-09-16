@@ -14,8 +14,8 @@ class AppController extends Controller {
 	public function getRedirect(Request $request)
 	{
 		if (substr( $request->server('HTTP_ACCEPT_LANGUAGE'), 0, 2 ) === 'es')
-			return redirect('es/');
-	    return redirect('en/');
+			return redirect('es/'); // ,301);
+	    return redirect('en/'); // ,301);
 	}
 	
 	public function getContact()
