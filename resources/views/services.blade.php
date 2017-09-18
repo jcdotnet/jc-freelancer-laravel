@@ -28,7 +28,7 @@
 	    </div>
         <div class="row row-content">           
             <div class="col size-xl"> 
-				@lang("<ul><li>Desarrollo de aplicaciones de consola o de escritorio para Windows. </li><li>Desarrollo de aplicaciones Android usando Java y Android Studio.</li><li>Desarrollo de aplicaciones iOS y Android usando angular e ionic.</li></ul><p>Todas estas aplicaciones pueden incluir acceso a datos, al sistema, a servicios Web, a la nube, etc.</p>")				
+				@lang("<ul><li>Desarrollo de aplicaciones de consola o de escritorio para Windows. </li><li>Desarrollo de aplicaciones Android usando Java y Android Studio.</li><li>Desarrollo de aplicaciones iOS y Android usando Ionic.</li></ul><p>Todas estas aplicaciones pueden incluir acceso a datos, al sistema, a servicios Web, a la nube, etc.</p>")				
 	       </div>
         </div>
         <div class="row row-content">
@@ -48,7 +48,14 @@
 			</div>
 	    </div>		
         <div class="row row-content">           
-            <div class="col size-xl"> @lang("<ul><li> Desarrollo de aplicaciones Web (desde páginas simples hasta todo el full-stack) usando JavaScript, PHP o .NET. </li><li> Creación de APIs (servicios web basados en arquitecturas REST o SOAP) para el acceso de aplicaciones a fuentes de datos. </li><li> Eliminación de errores o advertencias. </li><li> Personalización de páginas Web. </li> <li> Adaptación de páginas Web a dispositivos móviles. </li><li> Creación de tiendas online (PrestaShop, WooCommerce). </li></ul>")</div>                    
+            <div class="col size-xl"> 
+				<ul>
+					@lang("<li> Desarrollo de aplicaciones Web (desde páginas simples hasta todo el desarrollo full-stack) usando JavaScript, PHP o .NET. </li><li> Desarrollo Front-End con frameworks MVC JavaScript (Angular) y PHP (Laravel). </li><li> Creación de APIs (servicios web basados en arquitecturas REST o SOAP) para el acceso de aplicaciones a fuentes de datos. </li><li> Eliminación de errores o advertencias. </li><li> Personalización de páginas Web. </li> <li> Adaptación de páginas Web a dispositivos móviles. </li><li> Creación de tiendas online (PrestaShop, WooCommerce). </li>")
+					@if (Config::get('app.locale') === "es")
+					<li>Páginas Web escaparate para nuevos autónomos. Más información <strong><a href="https://josecarlosroman.com/wordpress/pagina-web-escaparate-autonomos/" target="_blank"> aquí.</a></strong></li>
+					@endif
+				</ul>
+			</div>                    
         </div>
         <div class="row row-content">
 			<div class="col text-center">
