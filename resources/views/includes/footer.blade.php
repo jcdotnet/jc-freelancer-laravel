@@ -3,8 +3,8 @@
 		<div class="container">
 			<div class="row row-content justify-content-center">
 				<div class="col-auto size-l">
-					<a class="list-inline-item" href="{{ route ('privacy', Config::get('app.locale'))}}">@lang('Política de privacidad')</a> | 
-					<a class="list-inline-item" href="{{ route ('cookies', Config::get('app.locale'))}}">@lang('Cookies')</a>					
+					<a class="list-inline-item" href="{{ route ('privacy', Config::get('app.locale') == 'es' ? NULL : Config::get('app.locale'))}}">@lang('Política de privacidad')</a> | 
+					<a class="list-inline-item" href="{{ route ('cookies', Config::get('app.locale') == 'es' ? NULL : Config::get('app.locale'))}}">@lang('Cookies')</a>					
 				</div>
 			</div>
 			<div class="row row-content justify-content-center">

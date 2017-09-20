@@ -15,7 +15,7 @@ use Illuminate\Http\Request;
 
 class ProjectController extends Controller {
 	
-	public function getIndex($lang, $proyectos, $skill_name = null) 
+	public function getIndex($lang, $proyectos = null, $skill_name = null) 
 	{
 		$projects = Project::orderBy('start', 'desc')->paginate(6);	
 		$this->setProjectsLocale($projects);
@@ -46,7 +46,7 @@ class ProjectController extends Controller {
 	}
 	
 	
-	public function getSingle($lang, $proyecto, $project_slug = null) 
+	public function getSingle($lang, $proyecto = null, $project_slug = null) 
 	{
 		$project = Project::where('slug', $project_slug)->first();	
 		if (!$project) {
@@ -151,7 +151,7 @@ class ProjectController extends Controller {
 		$project-> description = $request['description'];
 		$project-> freelance = $request["freelance"] ? 1 : 0;
 		$project-> url = $request["url"];
-		$project->client = $request["client"];
+		$project-> client = $request["client"];
 		$project-> start = $request['start'];
 		$project-> end = $request['end'];
 		

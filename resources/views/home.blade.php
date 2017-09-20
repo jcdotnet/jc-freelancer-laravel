@@ -19,7 +19,7 @@
 			</h3>
 
 			<div>
-				<a href="{{ route('servicios', [Config::get('app.locale'), __("routes.servicios")]) }}" class="btn-jc btn-hero"> @lang("Más información") </a>
+				<a href="{{ route('servicios', [Config::get('app.locale') == 'es' ? NULL : Config::get('app.locale'), __("routes.servicios")]) }}" class="btn-jc btn-hero"> @lang("Más información") </a>
 			</div>
         </div>
     </div>
@@ -35,7 +35,7 @@
 				<div class="mensaje-header-container">			
 					<h1 class="mensaje-header"> @lang("Servicios a medida") </h1>
                 </div>
-                <p class="size-xl center"> @lang("Soy trabajador autónomo (IAE: Diplomados en informática) y ofrezco mis servicios freelance a particulares y empresas. Tarifo por proyectos completos o por fases del proyecto, emitiendo siempre factura por mi trabajo.")</p>
+                <p class="size-xl text-center"> @lang("Soy trabajador autónomo (IAE: Diplomados en informática) y ofrezco mis servicios freelance a particulares y empresas. Tarifo por proyectos completos o por fases del proyecto, emitiendo siempre factura por mi trabajo.")</p>
             </div>
             <div class="col-12 col-sm-6 col-lg-3 mensaje">
 				<div class="text-center">
@@ -44,7 +44,7 @@
                 <div class="mensaje-header-container">
 					<h1 class="mensaje-header"> @lang("Buenas prácticas") </h1>
                 </div>
-                <p class="size-xl center"> @lang("Soy un apasionado de la programación desde pequeño y tengo la carrera de ingeniería técnica en informática. Además siempre estoy realizando cursos, estoy al día en las últimas tecnologías y sigo las mejores practicas en programación.")</p>
+                <p class="size-xl text-center"> @lang("Soy un apasionado de la programación desde pequeño y tengo la carrera de ingeniería técnica en informática. Además siempre estoy realizando cursos, estoy al día en las últimas tecnologías y sigo las mejores practicas en programación.")</p>
             </div>
             <div class="col-12 col-sm-6 col-lg-3 mensaje">
 				<div class="text-center">
@@ -53,7 +53,7 @@
 				<div class="mensaje-header-container">
 					<h1 class="mensaje-header"> @lang("Tarifas económicas") </h1>
                 </div>
-                <p class="size-xl center"> @lang("Mis tarifas son económicas, intento dar el mejor servicio al mejor precio posible puesto que me encanta el trabajo que hago y mi meta es poder ayudar a los demás con ello. No dudes en ponerse en contacto conmigo y pedir presupuesto para tu proyecto.")</p>
+                <p class="size-xl text-center"> @lang("Mis tarifas son económicas, intento dar el mejor servicio al mejor precio posible puesto que me encanta el trabajo que hago y mi meta es poder ayudar a los demás con ello. No dudes en ponerse en contacto conmigo y pedir presupuesto para tu proyecto.")</p>
             </div>
             <div class="col-12 col-sm-6 col-lg-3 mensaje">
 				<div class="text-center">
@@ -62,7 +62,7 @@
 				<div class="mensaje-header-container">
 					<h1 class="mensaje-header"> @lang("Dedicación total") </h1>
                 </div>
-                <p class="size-xl center"> @lang("Mi dedicación a tu idea o proyecto será total y estaremos comunicados desde el primer día hasta que finalice. If you don't speak spanish we can communicate in written English (switch please to English version above).") </p>
+                <p class="size-xl text-center"> @lang("Mi dedicación a tu idea o proyecto será total y estaremos comunicados desde el primer día hasta que finalice. If you don't speak spanish we can communicate in written English (switch please to English version above).") </p>
             </div>
         </div>
 		

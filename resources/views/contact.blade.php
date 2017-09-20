@@ -11,7 +11,7 @@
         <div class="row">
             <div class="col">
                 <nav class="breadcrumb">
-                    <a class="breadcrumb-item" href='{{ route('home', Config::get('app.locale')) }}'> @lang("Inicio") </a>
+                    <a class="breadcrumb-item" href='{{ route('home', Config::get('app.locale') == 'es' ? NULL : Config::get('app.locale')) }}'> @lang("Inicio") </a>
                     <span class="breadcrumb-item active"> @lang("Formulario de contacto")</span>
                </nav>
             </div>
@@ -33,7 +33,7 @@
 <div class="container">
 	<div class="row-content">
 		<div class="col col-md-9">    
-			<form action="{{url('es/contactform')}}" method='post'>
+			<form action="{{url(Config::get('app.locale').'/contactform')}}" method='post'>
 				<div class="form-group row">
 					<label for="nombre" class="col-md-3 col-form-label"> @lang("Nombre") </label>
 					<div class="col-md-9">

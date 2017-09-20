@@ -11,9 +11,9 @@
         <div class="row">
             <div class="col">
                 <nav class="breadcrumb">
-                    <a class="breadcrumb-item" href=" {{ route('home', Config::get('app.locale')) }}"> @lang('Inicio') </a>
+                    <a class="breadcrumb-item" href=" {{ route('home', Config::get('app.locale') == 'es' ? NULL : Config::get('app.locale')) }}"> @lang('Inicio') </a>
 					@if (!empty(Request::segment(3))) {{-- hemos filtrado por tecnologías --}}
-						<a class="breadcrumb-item" href=" {{ route('proyectos', [Config::get('app.locale'), __('routes.proyectos')])}}"> @lang('Proyectos') </a>
+						<a class="breadcrumb-item" href=" {{ route('proyectos', [Config::get('app.locale') == 'es' ? NULL : Config::get('app.locale'), __('routes.proyectos')])}}"> @lang('Proyectos') </a>
 						<span class="breadcrumb-item active"> {{ Request::segment(4) }} </span>
 					@else
 						<a class="breadcrumb-item active"> @lang('Proyectos') </a>
@@ -50,7 +50,7 @@
 							</div>
 						</div>
 						<div class="project-item-bottom text-center">
-							<a href="{{ route('proyecto', [Config::get('app.locale'),__('routes.proyecto'), $p->slug ])}}" class="card-link btn-jc btn-theme">@lang('Ver proyecto')</a>
+							<a href="{{ route('proyecto', [Config::get('app.locale'), __('routes.proyecto'), $p->slug ])}}" class="card-link btn-jc btn-theme">@lang('Ver proyecto')</a>
 						</div>
 							
 					</div>

@@ -9,9 +9,9 @@
         <div class="row">
             <div class="col">
                 <nav class="breadcrumb">
-                    <a class="breadcrumb-item" href=" {{ route('home', Config::get('app.locale')) }}"> @lang('Inicio') </a>
+                    <a class="breadcrumb-item" href=" {{ route('home', Config::get('app.locale') == 'es' ? NULL : Config::get('app.locale')) }}"> @lang('Inicio') </a>
 					
-					<a class="breadcrumb-item" href=" {{ route('proyectos', [Config::get('app.locale'), __('routes.proyectos')]) }}"> @lang('Proyectos') </a>
+					<a class="breadcrumb-item" href=" {{ route('proyectos', [Config::get('app.locale') == 'es' ? NULL : Config::get('app.locale'), __('routes.proyectos')]) }}"> @lang('Proyectos') </a>
 					<span class="breadcrumb-item active"> {{ $project->name }} </span>
 				</nav>
             </div>
@@ -77,7 +77,7 @@
 	
 	<div class="row row-content">
 		<div class="col text-center">
-			<a href="{{ route('proyectos', [Config::get('app.locale'), __("routes.proyectos")]) }}" class="btn-jc btn-theme"> @lang("Volver") </a>
+			<a href="{{ route('proyectos', [Config::get('app.locale') == 'es' ? NULL : Config::get('app.locale'), __("routes.proyectos")]) }}" class="btn-jc btn-theme"> @lang("Volver") </a>
 		</div>
 	</div>
 </div>

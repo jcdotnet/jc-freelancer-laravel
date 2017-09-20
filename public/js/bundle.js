@@ -69,7 +69,7 @@ function getCookie(name)
 }
 
 function getRandomService(){
-	if (baseUrl === $(location).attr('href'))
+	if (baseUrl === $(location).attr('href') || baseUrl === $(location).attr('href') + "es")
 	{
 		$.ajax({
 		  url: baseUrl + "/home",

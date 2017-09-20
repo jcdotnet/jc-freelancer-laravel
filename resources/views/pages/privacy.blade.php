@@ -11,7 +11,7 @@
         <div class="row">
 			<div class="col">
 				<nav class="breadcrumb">
-					<a class="breadcrumb-item" href="{{route('home', Config::get('app.locale')) }}"> @lang("Inicio") </a>
+					<a class="breadcrumb-item" href="{{route('home', Config::get('app.locale') == 'es' ? NULL : Config::get('app.locale')) }}"> @lang("Inicio") </a>
 					<span class="breadcrumb-item active">@lang("Privacidad")</span>
 				</nav>
 			</div>
@@ -137,7 +137,7 @@
 				<p>En ocasiones, los datos personales se proporcionarán a través de enlaces a sitios web de terceros. En este caso, en ningún momento el personal de "Jose Carlos Román Rubio" tendrá acceso a los datos personales que el Cliente facilite a dichos terceros.</p>
 				<p>El servidor dónde está alojada esta web utiliza cookies, que quedarán almacenadas en el ordenador del visitante. Las cookies son pequeños archivos que contienen cierta información sobre la visita a la web, como el día y la hora en la que comienza la visita, 
 					en la que se abandona, así como información sobre las distintas secciones consultadas. Si el usuario lo desea, puede configurar su navegador para avisar sobre si va a recibir una cookie, o para evitar recibirlas, hecho que no impedirá que se pueda acceder a la web. 
-					La obtención de datos personales a través de navegación web (cookies) se explica en nuestra <a href="{{ route('cookies', Config::get('app.locale')) }}">Política de Cookies</a>.
+					La obtención de datos personales a través de navegación web (cookies) se explica en nuestra <a href="{{ route('cookies', Config::get('app.locale') == 'es' ? NULL : Config::get('app.locale')) }}">Política de Cookies</a>.
 
 				<h4 class="text-center">REDES SOCIALES</h4>	
 

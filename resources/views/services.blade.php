@@ -10,7 +10,7 @@
         <div class="row">
 			<div class="col">
 				<nav class="breadcrumb">
-					<a class="breadcrumb-item" href="{{ route('home', Config::get('app.locale')) }}"> @lang("Inicio") </a>
+					<a class="breadcrumb-item" href="{{ route('home', Config::get('app.locale') == 'es' ? '': Config::get('app.locale')) }}"> @lang("Inicio") </a>
 					<span class="breadcrumb-item active">@lang("Servicios")</span>
 				</nav>
 			</div>
@@ -33,7 +33,7 @@
         </div>
         <div class="row row-content">
 			<div class="col text-center">
-				<a href="{{route('contacto', [Config::get('app.locale'), __("routes.contacto")])}}" class="btn-jc btn-theme">@lang("Solicita presupuesto")</a>
+				<a href="{{route('contacto', [Config::get('app.locale') == 'es' ? '': Config::get('app.locale'), __("routes.contacto")])}}" class="btn-jc btn-theme">@lang("Solicita presupuesto")</a>
 			</div>
         </div>
     </div>
@@ -59,7 +59,7 @@
         </div>
         <div class="row row-content">
 			<div class="col text-center">
-				<a href="{{route('contacto', [Config::get('app.locale'), __("routes.contacto")])}}" class="btn-jc btn-theme">@lang("Solicita presupuesto")</a>
+				<a href="{{route('contacto', [Config::get('app.locale') == 'es' ? '': Config::get('app.locale'), __("routes.contacto")])}}" class="btn-jc btn-theme">@lang("Solicita presupuesto")</a>
 			</div>           
         </div>
      </div>
@@ -85,7 +85,7 @@
         </div>
 		<div class="row row-content">
 			<div class="col text-center">
-				<a href="{{route('contacto', [Config::get('app.locale'), __("routes.contacto")])}}" class="btn-jc btn-theme">@lang("Solicita presupuesto")</a>
+				<a href="{{route('contacto', [Config::get('app.locale') == 'es' ? '': Config::get('app.locale'), __("routes.contacto")])}}" class="btn-jc btn-theme">@lang("Solicita presupuesto")</a>
 			</div>           
         </div>
     </div>
@@ -104,7 +104,7 @@
         </div>
 	    <div class="row row-content">
 			<div class="col text-center">
-				<a href="{{route('contacto', [Config::get('app.locale'), __("routes.contacto")])}}" class="btn-jc btn-theme">@lang("Contacta conmigo")</a>
+				<a href="{{route('contacto', [Config::get('app.locale') == 'es' ? '': Config::get('app.locale'), __("routes.contacto")])}}" class="btn-jc btn-theme">@lang("Contacta conmigo")</a>
 			</div>           
         </div>
     </div>

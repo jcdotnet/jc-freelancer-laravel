@@ -11,37 +11,29 @@
 |
 */
 
-/* redirections */
-
-Route::get('/', [
-	'uses' => 'AppController@getRedirect', 
+Route::get('/', function() {
+	return view('home');
+});
+Route::get('servicios' , function () {
+	return view('services');
+});	
+Route::get('proyectos', [
+	'uses' => 'ProjectController@getIndex' 
 ]);
-Route::get('/servicios', function () {
-	return redirect('es/servicios');
+Route::get('contacto', [
+	'uses' => 'AppController@getContact'
+]);
+Route::get('jc-freelancer-malaga', function () {
+	return view('pages.about');
 });
-Route::get('/proyectos', function () {
-	return redirect('es/proyectos');
+Route::get('cookies', function () {
+	return view('pages.cookies');
 });
-Route::get('/proyectos/skill/{skill_name}', function () {
-	return redirect('es/proyectos/skill/{skill_name}');
-});
-Route::get('/proyecto/{project_slug}', function () {
-	return redirect('es/proyecto/{project_slug}');
-});
-Route::get('/contacto', function () {
-	return redirect('es/contacto');
-});
-Route::get('/jc-freelancer-malaga', function () {
-	return redirect('es/jc-freelancer-malaga');
-});
-Route::get('/cookies', function () {
-	return redirect('es/cookies');
-});
-Route::get('/politica-privacidad', function () {
-	return redirect('es/politica-privacidad');
+Route::get('politica-privacidad', function () {
+	return view('pages.privacy');
 });
 
-/* front-end one-language */
+/* one-language pages */
 
 Route::get('/admin/login', [
 	'uses' => 'AdminController@getLogin',
@@ -156,9 +148,9 @@ Route::group([
 	]);	
 });
 
-/* new multilingual routes */
+/* multilanguage */
 
-Route::group(['prefix' => '{lang}'], function () {
+Route::group(['prefix' => '{lang?}'], function () {
 	 
 	Route::get('/', function() {
 		return view('home');		
@@ -212,4 +204,3 @@ Route::group(['prefix' => '{lang}'], function () {
 		return view('pages.privacy');
 	})->name('privacy');
  });
-

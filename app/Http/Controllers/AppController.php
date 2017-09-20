@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App;
+
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Response;
 
@@ -11,13 +13,6 @@ use App\Mail\Contact;
 
 class AppController extends Controller {
 	
-	public function getRedirect(Request $request)
-	{
-		if (substr( $request->server('HTTP_ACCEPT_LANGUAGE'), 0, 2 ) === 'es')
-			return redirect('es/'); // ,301);
-	    return redirect('en/'); // ,301);
-	}
-	
 	public function getContact()
 	{
 		$asuntos = array(__("Consulta"), __("Presupuesto"), __("Sugerencia"), __("Otros"));
@@ -25,7 +20,7 @@ class AppController extends Controller {
 	}
 	
 	public function postContact(Request $request)
-	{		
+	{	
 		$this->validate($request, [
 			'nombre' => 'required',
 			'email' => 'required|email',
