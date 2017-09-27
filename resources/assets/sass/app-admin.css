@@ -28,10 +28,8 @@
 	color: #FFF;
 }
 
-button.navbar-toggler.navbar-toggler-right {
-    border-color: #FDA527;
-    top: -6px;
-    right: 40px;
+#jc-toggler  {
+    top: -2px;
 }
 
 .btn-jc .badge 

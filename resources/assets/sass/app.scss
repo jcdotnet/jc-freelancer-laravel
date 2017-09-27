@@ -257,7 +257,7 @@ a::selection {
 
 .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
     background-color: transparent;
-    color: #FDA527;
+    color: $accent;
 }
 
 .dropdown-toggle::after {
@@ -266,21 +266,24 @@ a::selection {
 
 /* botones dispositivos móviles */
 
-.navbar-toggleable-sm span.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#FDA527' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-  /* color: $accent; */
+#jc-toggler {
+	right: 0px;
+	top:7px;	
+	font-size: 25px;
+    background: transparent;
+    color: #FFF;
+    -webkit-transition: .2s color linear;
+    -moz-transition: .2s color linear;
+    transition: .2s color linear;
 }
-button.navbar-toggler.navbar-toggler-right {
-  border-color: $accent;
-  top: 4px;
-}
-.navbar-toggler:focus, .navbar-toggler:hover {
-    outline: 0px;
+#jc-toggler:focus, #jc-toggler:active, {
+    color: $accent;
+	outline: 0px;
 }
 
 #navbar-flags {
     display: none;
-	margin-right: 77px;
+	margin-right: 50px;
 }
 
 #navbar-flags a{
@@ -288,9 +291,6 @@ button.navbar-toggler.navbar-toggler-right {
     font-weight: bold;
     cursor: pointer;
     line-height: 50px;
-    border:1px solid #FDA527;
-    padding: 10px;
-    border-radius: 5px;
     margin-right: 5px;
 	color: $accent;
 }
