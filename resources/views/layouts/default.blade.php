@@ -2,12 +2,15 @@
 <html lang="{{ Config::get('app.locale') }}">
 	<head>
 		@yield('head')
+		
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		
 		<link rel="icon" href="{{ asset('favicon.png') }}" type="image/png">		
 		<link rel="stylesheet" href="{{ asset('css/bundle.css') }}">
+		
 		@yield('styles')
+		
 		<script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -30,7 +33,7 @@
 		
 		<script>
 			var baseUrl = "{{ url('/', Config::get('app.locale')) }}"; // BASE URL FOR AJAX CALLS
-			var token = "{{ Session::token() }}";
+			var token = "{{ Session::token() }}";	
 		</script>
 		<script src="{{ asset('js/bundle.js') }}"></script>
 		

@@ -10,6 +10,7 @@
 			<div class="row row-content justify-content-center">
 				<div class="col-auto col-sm-auto">    
 					<div class="list-inline">
+						<a class="list-inline-item btn btn-social-icon btn-facebook" href="https://www.facebook.com/jc2net" target="_blank"><i class="fa fa-facebook"></i></a>
 						<a class="list-inline-item btn btn-social-icon btn-google-plus" href="https://plus.google.com/u/0/109018212858892270524" target="_blank"><i class="fa fa-google-plus"></i></a>
 						<a class="list-inline-item btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/romanrubio" target="_blank"><i class="fa fa-linkedin"></i></a>
 						<a class="list-inline-item btn btn-social-icon btn-twitter" href="https://twitter.com/jc2net" target="_blank"><i class="fa fa-twitter"></i></a>

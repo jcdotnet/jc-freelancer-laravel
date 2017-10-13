@@ -1,6 +1,7 @@
 // Google fonts
-@import url(https://fonts.googleapis.com/css?family=Open+Sans|Raleway);
+// @import url(https://fonts.googleapis.com/css?family=Open+Sans|Raleway);
 
+@import "google-fonts";
 @import "font-awesome.min.css";
 
 //@import "node_modules/bootstrap/scss/bootstrap";
@@ -53,7 +54,7 @@ a::selection {
 	text-transform: uppercase;
 	color: #FFF !important;
 	font-size: 0.786em;
-	font-weight: bold;
+	font-weight: 600;
 	letter-spacing: 2px;
 	-webkit-transition: 0.2s background linear;
     -moz-transition: 0.2s background linear;
@@ -214,7 +215,7 @@ a::selection {
     text-transform: uppercase; 
     letter-spacing: 1px;
 	font-size: 12px;
-    font-weight: bold;
+    font-weight: 600;
     position: relative;
     display: block;
 }
@@ -245,10 +246,10 @@ a::selection {
 .dropdown-menu>li>a {
     display: block;
     color: #999;
-    text-transform: uppercase;
+    text-transform: capitalize;
     letter-spacing: 1px;
     font-size: 10px;
-    font-weight: 400;
+    font-weight: 500;
     color: #FFF;
     height: 30px;
     line-height: 30px;
@@ -339,7 +340,7 @@ a::selection {
 
 
 #random-service {    
-    height: 180px; 
+    height: 200px; 
     display: table;    
 	margin:auto;
 }
@@ -352,7 +353,7 @@ a::selection {
     text-align: center;
 	margin: 0;
     font-size: 5em;
-	font-weight: bold;
+	font-weight: 600;
     line-height: 125%;
 	text-transform: uppercase;
     -ms-word-wrap: break-word;
@@ -411,7 +412,7 @@ a::selection {
 .number {
     display: table;
     font-size: 25px;
-    font-weight: bold;
+    font-weight: 600;
     line-height: 24px;
     color:floralwhite;
     height: 140px;
@@ -495,7 +496,10 @@ a::selection {
     color: floralwhite;
     text-decoration: none;
 }
-
+#footer .btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0px rgba(2, 117, 216, 0.25);
+}
 /* COOKIES */
 
 #cookie-consent {
