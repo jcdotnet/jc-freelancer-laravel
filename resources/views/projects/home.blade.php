@@ -2,6 +2,7 @@
 
 @section('head')
 	<title> @lang("Proyectos | Jose Carlos Román Rubio")</title>
+	<link rel="stylesheet" href="{{ asset('css/bundle.css') }}"  />
 @endsection
 
 @section('content')

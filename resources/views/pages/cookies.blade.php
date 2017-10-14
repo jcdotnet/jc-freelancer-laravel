@@ -2,6 +2,7 @@
 
 @section('head')
 	<meta name="robots" content="noindex, follow">
+	<link rel="stylesheet" href="{{ asset('css/bundle.css') }}"  />
 @endsection
 
 @section('content')

@@ -6,10 +6,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		
-		<link rel="icon" href="{{ asset('favicon.png') }}" type="image/png">		
-		<link rel="stylesheet" href="{{ asset('css/bundle.css') }}">
-		
-		@yield('styles')
+		<link rel="icon" href="{{ asset('favicon.png') }}" type="image/png">							
 		
 		<script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

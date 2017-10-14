@@ -1,7 +1,10 @@
 @extends ('layouts.default')
+
 @section('head')
 	<title> {{$project->nombre }} | Jose Carlos Román Rubio</title>
+	<link rel="stylesheet" href="{{ asset('css/bundle.css') }}"  />
 @endsection
+
 @section('content')
 
 <section id="breadcrumb" class="first-section">

@@ -3,6 +3,7 @@
 @section('head')
 	<title> @lang("JC, freelancer en Málaga | Jose Carlos Román Rubio") </title>
 	<meta name="description" content=" {{ __("Jose Carlos Román Rubio (JC). Soy  Ingeniero Técnico Informático (Universidad de Málaga), programador, desarrollador, freelancer... Descubre más sobre mí.") }}">
+	<link rel="stylesheet" href="{{ asset('css/bundle.css') }}"  />
 @endsection
 
 @section('content')

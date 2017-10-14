@@ -1,5 +1,9 @@
 @extends ('layouts.default')
 
+@section('head')
+	<link rel="stylesheet" href="{{ asset('css/bundle.css') }}"  />
+@endsection
+
 @section('content')
 	<div class="container first-section">
 		<div class="row row-content">
