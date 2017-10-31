@@ -4,12 +4,14 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/D:/xampp/htdocs/freelancer-laravel/.gitignore</file>
+            <file>file:/D:/xampp/htdocs/freelancer-laravel/app/Mail/Contact.php</file>
             <file>file:/D:/xampp/htdocs/freelancer-laravel/resources/views/admin/login.blade.php</file>
             <file>file:/D:/xampp/htdocs/freelancer-laravel/app/Http/Controllers/AdminController.php</file>
             <file>file:/D:/xampp/htdocs/freelancer-laravel/resources/views/admin/projects/add.blade.php</file>
             <file>file:/D:/xampp/htdocs/freelancer-laravel/composer.json</file>
             <file>file:/D:/xampp/htdocs/freelancer-laravel/resources/views/includes/cookie-notice.blade.php</file>
             <file>file:/D:/xampp/htdocs/freelancer-laravel/app/Http/Middleware/RedirectIfAuthenticated.php</file>
+            <file>file:/D:/xampp/htdocs/freelancer-laravel/app/Http/Controllers/Auth/RegisterController.php</file>
             <file>file:/D:/xampp/htdocs/freelancer-laravel/resources/lang/en/auth.php</file>
             <file>file:/D:/xampp/htdocs/freelancer-laravel/.gitattributes</file>
             <file>file:/D:/xampp/htdocs/freelancer-laravel/resources/assets/js/app.js</file>
@@ -28,18 +30,23 @@
             <file>file:/D:/xampp/htdocs/freelancer-laravel/resources/views/admin/projects/single.blade.php</file>
             <file>file:/D:/xampp/htdocs/freelancer-laravel/resources/views/includes/header.blade.php</file>
             <file>file:/D:/xampp/htdocs/freelancer-laravel/public/index.php</file>
+            <file>file:/D:/xampp/htdocs/freelancer-laravel/app/Http/Controllers/Auth/LoginController.php</file>
             <file>file:/D:/xampp/htdocs/freelancer-laravel/resources/views/admin/projects/skills.blade.php</file>
             <file>file:/D:/xampp/htdocs/freelancer-laravel/app/Http/Controllers/BlogController.php</file>
             <file>file:/D:/xampp/htdocs/freelancer-laravel/resources/views/projects/home.blade.php</file>
             <file>file:/D:/xampp/htdocs/freelancer-laravel/resources/views/layouts/default.blade.php</file>
             <file>file:/D:/xampp/htdocs/freelancer-laravel/public/mix-manifest.json</file>
             <file>file:/D:/xampp/htdocs/freelancer-laravel/resources/lang/es/routes.php</file>
+            <file>file:/D:/xampp/htdocs/freelancer-laravel/config/filesystems.php</file>
             <file>file:/D:/xampp/htdocs/freelancer-laravel/resources/views/admin/media/home.blade.php</file>
             <file>file:/D:/xampp/htdocs/freelancer-laravel/resources/views/includes/info-alert.blade.php</file>
+            <file>file:/D:/xampp/htdocs/freelancer-laravel/app/Http/Middleware/VerifyCsrfToken.php</file>
             <file>file:/D:/xampp/htdocs/freelancer-laravel/resources/views/contact.blade.php</file>
             <file>file:/D:/xampp/htdocs/freelancer-laravel/resources/lang/en.json</file>
             <file>file:/D:/xampp/htdocs/freelancer-laravel/resources/views/pages/cookies.blade.php</file>
             <file>file:/D:/xampp/htdocs/freelancer-laravel/app/Http/Controllers/SkillController.php</file>
+            <file>file:/D:/xampp/htdocs/freelancer-laravel/composer.lock</file>
+            <file>file:/D:/xampp/htdocs/freelancer-laravel/config/database.php</file>
             <file>file:/D:/xampp/htdocs/freelancer-laravel/routes/web.php</file>
             <file>file:/D:/xampp/htdocs/freelancer-laravel/app/Http/Controllers/Controller.php</file>
             <file>file:/D:/xampp/htdocs/freelancer-laravel/resources/views/services.blade.php</file>
@@ -57,6 +64,7 @@
             <file>file:/D:/xampp/htdocs/freelancer-laravel/.env.example</file>
             <file>file:/D:/xampp/htdocs/freelancer-laravel/public/.htaccess</file>
             <file>file:/D:/xampp/htdocs/freelancer-laravel/resources/views/includes/footer-admin.blade.php</file>
+            <file>file:/D:/xampp/htdocs/freelancer-laravel/config/cache.php</file>
             <file>file:/D:/xampp/htdocs/freelancer-laravel/resources/assets/sass/app-admin.css</file>
             <file>file:/D:/xampp/htdocs/freelancer-laravel/package.json</file>
             <file>file:/D:/xampp/htdocs/freelancer-laravel/resources/views/admin/projects/home.blade.php</file>
@@ -67,6 +75,7 @@
             <file>file:/D:/xampp/htdocs/freelancer-laravel/resources/views/home.blade.php</file>
             <file>file:/D:/xampp/htdocs/freelancer-laravel/resources/views/projects/single.blade.php</file>
             <file>file:/D:/xampp/htdocs/freelancer-laravel/public/js/bundle.js</file>
+            <file>file:/D:/xampp/htdocs/freelancer-laravel/app/Console/Kernel.php</file>
             <file>file:/D:/xampp/htdocs/freelancer-laravel/resources/views/admin/projects/update.blade.php</file>
             <file>file:/D:/xampp/htdocs/freelancer-laravel/public/css/bundle.css</file>
             <file>file:/D:/xampp/htdocs/freelancer-laravel/webpack.mix.js</file>
