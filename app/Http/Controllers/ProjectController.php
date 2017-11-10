@@ -44,8 +44,7 @@ class ProjectController extends Controller {
 		
 		return view('admin.projects.home', ['projects' => $projects]);  
 	}
-	
-	
+		
 	public function getSingle($lang, $proyecto = null, $project_slug = null) 
 	{
 		$project = Project::where('slug', $project_slug)->first();	
@@ -183,8 +182,37 @@ class ProjectController extends Controller {
 		}
 		return redirect()->back()->with(['fail' => 'No se ha podido eliminar el proyecto']);
 	}
+		
+	/* 
+	 * REST API 
+	 */
 	
+	public function getApiIndex() {
+		//$projects = Project::all();
+		//return json_encode($projects); // laravel provides toJson()
+		return Project::all()->toJson();
+	}
+	
+	public function getApiAsc() {
+		return Project::orderBy('start', 'asc')->get()->toJson();
+	}
+	
+	public function getApiDesc() {
+		return Project::orderBy('start', 'desc')->get()->toJson();
+	}
+	
+	public function getApiSingle($slug) {
+		$project = Project::where('slug', $slug)->first();
+		if (!$project) {
+			return response()->json(['error' => 'Proyecto no encontrado'], 404);
+		}
+		return $project->toJson();		
+	}
     
+	/* 
+	 * PRIVATE 
+	 */
+	
 	private function getExcerpts($projects, $words_count)
 	{
 		foreach ($projects as $project)
