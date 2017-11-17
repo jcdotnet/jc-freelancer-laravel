@@ -157,7 +157,7 @@
 	"Tipo": "Type",
 	"Comienzo": "Started",
 	"Áreas de trabajo": "Work areas",
-	"Números" : "Figures at a glance",
+	"Números" : "Figures",
 	"Desarrollo Web, móvil y escritorio. Programación." : "Web, mobile and desktop development. Programming.",
 	"Más de 20 clientes y más de 100 proyectos" : "Over 20 clients and over 100 projects",
 	"Educación" : "Education",
@@ -179,5 +179,7 @@
 	"Jose Carlos Román Rubio (JC). Soy  Ingeniero Técnico Informático (Universidad de Málaga), programador, desarrollador, freelancer... Descubre más sobre mí." :
 	"Jose Carlos Román Rubio (JC). Computer Engineer (Universidad de Málaga), programmer, developer, freelancer... Find out more about me."		,
 	"Página Web de Jose Carlos Román Rubio. Ingeniero Técnico Informático (UMA). Programador y desarrollador freelance para particulares y empresas.":
-	"Jose Carlos Román Rubio. Computer Engineer (UMA). Freelance software developer. I offer my services to particulars, freelancers and companies."
+	"Jose Carlos Román Rubio. Computer Engineer (UMA). Freelance software developer. I offer my services to particulars, freelancers and companies.",
+	"Currículum" : "Resume (PDF)",
+	"Descargar" : "Download"
 }

@@ -129,6 +129,14 @@
 				<dd class="col-sm-9"><a href="https://profiles.wordpress.org/jcrr" target="_blank">@lang("Ver perfil")</a></dd>
 				<dt class="col-sm-3">YouTube</dt>
 				<dd class="col-sm-9"><a href="https://www.youtube.com/channel/UC9wKRs6Mgf2wR2qfjYM0-uQ" target="_blank">@lang("Ver perfil")</a></dd>
+				<dt class="col-3">@lang('Currículum')</dt>
+				<dd class="col-9">
+					<a href="{{ Config::get('app.locale') === 'es' ? 'https://github.com/jcdotnet/curriculum/blob/master/docs/CV%20Jose%20Carlos%20Roman%20Rubio%20ES%20-%20public.pdf' 
+								: 'https://github.com/jcdotnet/curriculum/blob/master/docs/CV%20Jose%20Carlos%20Roman%20Rubio%20EN%20-%20public.pdf' }}" target="_blank">
+						@lang('Descargar')
+					 </a>
+									 
+				</dd>
 		   </dl>
 		</div>
 	</div>
