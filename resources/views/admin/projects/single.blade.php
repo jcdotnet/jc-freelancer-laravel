@@ -16,7 +16,7 @@
 			<div class="skills center">
 				<ul class="list-unstyled">
 					@foreach ($project->skills as $skill)								
-					<li><span class="badge badge-lg badge-default" style="color:#fff"> {{ $skill->name }} </span></li>
+					<li><span class="badge badge-lg badge-dark" style="color:#fff"> {{ $skill->name }} </span></li>
 					@endforeach
 				</ul>
 			</div>

@@ -18,17 +18,17 @@
     margin: auto;
 }
 
-.navbar-toggleable-sm {
+.navbar-expand-md {
 	margin-top: 0px;
 }
 
-.navbar-toggleable-sm .navbar-brand {
+.navbar-expand-md .navbar-brand {
 	padding: 0px 50px;
 	font-weight: bold;
 	color: #FFF;
 }
 
-#jc-toggler  {
+.jc-toggler  {
     top: -2px;
 }
 

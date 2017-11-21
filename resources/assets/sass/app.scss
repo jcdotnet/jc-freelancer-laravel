@@ -1,6 +1,3 @@
-// Google fonts
-// @import url(https://fonts.googleapis.com/css?family=Open+Sans|Raleway);
-
 @import "google-fonts";
 @import "font-awesome.min.css";
 
@@ -9,6 +6,7 @@
 
 @import "variables";
 
+@import "navigation"; 
 
 /* GENERAL */
 
@@ -151,150 +149,35 @@ a::selection {
 
 /* BARRA SUPERIOR*/
 #top-bar-container {
-    background: #f8f8f8;
-}
-
-#top-bar {
-    color: #888;
-    font-size: 13px;
-    line-height: 40px;
-    padding: 0px;
-	a {
+    	
+	& #top-bar {
 		color: #888;
-		text-decoration: none;
+		font-size: 13px;
+		line-height: 40px;
+		padding: 0px;
+		
+		.col {
+			background: #f8f8f8;
+			
+			a {
+				color: #888;
+				text-decoration: none;
+			}
+			a:hover {
+				color: $accent;
+			}
+			.fa {
+				font-size: 15px;
+				padding: 0px 5px 0px 15px; 
+			}
+			.flag {
+				display: inline;
+			}
+		}
 	}
-	a:hover {
-		color: $accent;
-	}
-	.fa {
-		font-size: 15px;
-		padding: 0px 5px 0px 15px; 
-	}
-	.flag {
-		display: inline;
-	}
 }
 
-/* NAVBAR */
 
-.navbar-toggleable-sm{
-	margin-top: 40px;
-	background: #121212;    
-    border-bottom: 0px solid #e7e7e7;
-    opacity: 0.9;
-}
-
-/*
-.navbar-brand,
-.navbar-nav li a {
-    padding-top: 0px;
-}
-*/
-.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
-    /* margin-left: -40px; */
-}
-
-.navbar-brand img {
-    max-height: 60px;
-}
-
-/* workaround laravel */
-.navbar-toggleable-sm .navbar-nav>.open>a, .navbar-toggleable-sm .navbar-nav>.open>a:focus, .navbar-toggleable-sm .navbar-nav>.open>a:hover {
-    color: #FDA527;
-    background-color: #121212;
-}
-.navbar-toggleable-sm .navbar-nav>li>a:before{
-	content:'\00B7'; 
-	color: #FFF;
-    padding-right: 5px;
-}
-.navbar-toggleable-sm .navbar-nav>li>a{
-    color: #FFF;
-	padding-left: 0px;
-    padding-right: 10px;
-    text-transform: uppercase; 
-    letter-spacing: 1px;
-	font-size: 12px;
-    font-weight: 600;
-    position: relative;
-    display: block;
-}
-
-.navbar-toggleable-sm .navbar-nav>li>a:focus, .navbar-toggleable-sm .navbar-nav>li>a:hover {
-    color: #FDA527;
-}
-    
-.navbar-toggleable-sm .navbar-nav>.active>a, .navbar-toggleable-sm .navbar-nav>.active>a:focus, .navbar-toggleable-sm.navbar-nav>.active>a:hover {
-    color: #FDA527;
-    background-color: transparent;
-}
-
-.navbar-nav>li>.dropdown-menu {
-    background: $background-skin; 
-    border-bottom: 0px;
-    border-left: 0px;
-    border-right: 0px;
-    border-top: 2px solid;
-    border-color: $accent;
-    
-    left: 50px;
-    padding: 30px 20px;
-    min-width: 200px;
-    margin-top: 25px;
-}
-    
-.dropdown-menu>li>a {
-    display: block;
-    color: #999;
-    text-transform: capitalize;
-    letter-spacing: 1px;
-    font-size: 10px;
-    font-weight: 500;
-    color: #FFF;
-    height: 30px;
-    line-height: 30px;
-    text-decoration: none;
-}
-
-.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
-    background-color: transparent;
-    color: $accent;
-}
-
-.dropdown-toggle::after {
-	display: none;
-}
-
-/* botones dispositivos móviles */
-
-#jc-toggler {
-	right: 0px;
-	top:7px;	
-	font-size: 25px;
-    background: transparent;
-    color: #FFF;
-    -webkit-transition: .2s color linear;
-    -moz-transition: .2s color linear;
-    transition: .2s color linear;
-}
-#jc-toggler:focus, #jc-toggler:active, {
-    color: $accent;
-	outline: 0px;
-}
-
-#navbar-flags {
-    display: none;
-	margin-right: 50px;
-}
-
-#navbar-flags a{
-    text-decoration: none;
-    font-weight: bold;
-    cursor: pointer;
-    line-height: 50px;
-    margin-right: 5px;
-	color: $accent;
-}
 
 /* HOME */
 .hero.hero-top{
@@ -522,16 +405,6 @@ a::selection {
     cursor: pointer;
 }
 
-@media only screen and (min-width: 768px) {
-    ul.nav li.dropdown:hover > ul.dropdown-menu {
-        display: block;    
-    }
-	.navbar-toggleable-sm .navbar-nav>li:first-child a:before {
-	   display:none;
-    }
-	
-
-}
 
 @media only screen and (max-width: 991px) {
 	#random-service {
@@ -543,47 +416,6 @@ a::selection {
 }
 
 @media only screen and (max-width: 767px) {
-   
-	.navbar-toggleable-sm 
-	{
-		margin-top: 0px;
-	}
-	
-	nav.navbar .container {
-		width: 100%;
-
-	}
-	
-    nav #top-bar .fa{
-        font-size: 15px;
-        padding: 0px 2px 0px 5px; 
-    }
-      
-    .navbar-toggleable-sm .navbar-collapse {       
-        border: 0px solid #FDA527;
-    }
-    .navbar-brand img {
-		max-height: 40px;
-	}    
-	.navbar-nav li a {
-        height: 40px;
-        line-height: 50px;
-        margin-left: 20px; 
-    }
-    
-    .navbar-nav>li>.dropdown-menu {
-        border-top: 0px solid;
-		padding: 0px 0px 0px 30px;
-		margin: 0px
-    }
-	
-    
-	.navbar-toggleable-sm .navbar-nav .open .dropdown-menu>li>a {
-		height: 100px;
-        line-height: 100px;
-		color:#FFF;
-    }
-
 	.hero.hero-top{
 		margin-top: 0px;
 	}

@@ -11,7 +11,7 @@
 			<div class='col-sm-6'>
 				<div class="row">
 					<div class="col-12 card">	
-						<div class="card-block">
+						<div class="card-body">
 							<h2 class="card-title text-center">Últimos proyectos</h2>
 							<ul class="list-group list-group-flush">
 								@if (count($projects) == 0)
@@ -48,7 +48,7 @@
 			<div class='col-sm-6'>
 				<div class="row">
 					<div class="col-12 card">	
-						<div class="card-block">
+						<div class="card-body">
 							<h2 class="card-title text-center"> Últimas entradas </h2>				
 											
 							<ul class="list-group list-group-flush">

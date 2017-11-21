@@ -9,7 +9,7 @@
 			@foreach ($projects as $p)
             <div class="col-md-6 col-lg-4 d-flex">
 				<div class="card mb-3 pb-5">
-					<div class="card-block">					
+					<div class="card-body">					
 						<h4 class="card-title"> {{ $p->nombre }} </h4>
 						<h6 class="card-subtitle mb-2 text-muted">  {{ date('m/Y', strtotime($p->start)) }} - {{ $p->end ? date('m/Y', strtotime($p->end)) : __('actualidad') }} </h6>					
 						<p class="card-text"> {!! $p->descripcion !!}  </p>

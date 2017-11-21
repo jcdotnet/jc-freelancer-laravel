@@ -8,9 +8,9 @@
 
 	<div class="card text-center">
 		<div class="text-center mt-2">
-			<img class="card-img-top" src="{{ asset('images/jc-logo-150.png')}}" alt="Jose Carlos Román Rubio. Admin Area" width="150px">
+			<img src="{{ asset('images/jc-logo-150.png')}}" alt="Jose Carlos Román Rubio. Admin Area" width="150px">
 		</div>
-		<div class="card-block">
+		<div class="card-body">
 			<form method="post" action="{{route('admin.login')}}">
 				<div class="form-group">
 					<label for="usuario">Usuario: </label>

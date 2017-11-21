@@ -1,11 +1,10 @@
 <header>
-	<nav class="navbar navbar-toggleable-sm fixed-top">
+	<nav class="navbar navbar-expand-md fixed-top">
 		<div class="container">
-			<button id="jc-toggler" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-items" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="fa fa-bars"></span>
-			</button>
-			
 			<a  href="{{ route('admin') }}" class="navbar-brand" >ADMIN AREA</a>
+			<button class="navbar-toggler jc-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-items" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="jc-toggler-icon">&nbsp;</span>
+			</button>
 
 			<div id="navbar-items" class="collapse navbar-collapse">
 				<ul class="navbar-nav ml-auto">

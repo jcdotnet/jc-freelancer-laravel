@@ -1,0 +1,200 @@
+/* 
+    Created on : 21-nov-2017, 17:15:43
+    Author     : JC
+*/
+
+.navbar-expand-md {
+	margin-top: 40px;
+	background: #121212;    
+    border-bottom: 0px solid #e7e7e7;
+    opacity: 0.9;
+	
+	& .navbar-nav>.open>a, & .navbar-nav>.open>a:focus, & .navbar-nav>.open>a:hover {
+		color: #FDA527;
+		background-color: #121212;
+	}
+	
+	& .navbar-nav>li>a{
+		color: #FFF;
+		padding-left: 0px;
+		padding-right: 10px;
+		text-transform: uppercase; 
+		letter-spacing: 1px;
+		font-size: 12px;
+		font-weight: 600;
+		position: relative;
+		display: block;
+	}
+	
+	& .navbar-nav>li>a:focus, & .navbar-nav>li>a:hover {
+		color: #FDA527;
+	}
+	
+	& .navbar-nav>.active>a, & .navbar-nav>.active>a:focus, & .navbar-nav>.active>a:hover {
+		color: #FDA527;
+		background-color: transparent;
+	}
+	
+	& .navbar-nav>li>a:before{
+		content:'\00B7'; 
+		color: #FFF;
+		padding-right: 5px;
+	}	
+}
+
+.navbar-brand img {
+    max-height: 60px;
+}
+
+.navbar-nav>li>.dropdown-menu {
+    background: $background-skin; 
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 2px solid;
+    border-color: $accent;
+    
+    left: 50px;
+    padding: 30px 20px;
+    min-width: 200px;
+    margin-top: 25px;
+}
+    
+.dropdown-menu>li>a {
+    display: block;
+    color: #999;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-size: 10px;
+    font-weight: 500;
+    color: #FFF;
+    height: 30px;
+    line-height: 30px;
+    text-decoration: none;
+	
+	&:focus, &:hover {
+		background-color: transparent;
+		color: $accent;
+	}
+}
+
+.dropdown-toggle::after {
+	display: none;
+}
+
+/* botones dispositivos móviles */
+.jc-toggler {
+	right: 0px;
+    background: transparent;
+    color: #FFF;
+    -webkit-transition: color .2s linear;
+    -moz-transition: color .2s linear;
+    transition: color .2s linear;
+	
+
+	&:link, &:focus, { /* active */
+		outline: 0px;
+	}
+	
+	&-icon {
+		position: relative;
+		margin-top: 1em;
+		&,
+		&::before,
+		&::after {
+			display: inline-block;
+			width: 1.5rem;
+			height: 4px;
+			border-radius: 10px;
+			background-color: #FFF;
+		}
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			left: 0;
+			transition: all .2s;
+			
+		}
+		&::before {
+			top: -0.5rem;			
+		}
+		&::after {
+			top: 0.5rem;			
+		}
+	}
+	.tapped &-icon {
+		background-color: transparent; 
+	}
+	.tapped &-icon::before {
+		top: 0;
+		transform: rotate(135deg); 
+	}
+	.tapped &-icon::after {
+		top: 0;
+		transform: rotate(-135deg); 
+	}
+}
+
+#navbar-flags {
+    display: none;
+	margin-left: 100px;
+	position: absolute;
+	top: 10px;
+	right: 20%;
+	
+	a {
+		text-decoration: none;
+		font-weight: bold;
+		cursor: pointer;
+		line-height: 50px;
+		margin-right: 5px;
+	    color: $accent;
+	}
+}
+
+
+@media only screen and (min-width: 768px) {
+    ul.nav li.dropdown:hover > ul.dropdown-menu {
+        display: block;    
+    }
+	.navbar-expand-md .navbar-nav>li:first-child a:before {
+	   display:none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+	.navbar-expand-md  
+	{
+		margin-top: 0px;
+	}
+	
+	nav.navbar .container {
+		width: 100%;
+
+	}
+	
+    .navbar-expand-md  .navbar-collapse {       
+        border: 0px solid #FDA527;
+    }
+    .navbar-brand img {
+		max-height: 40px;
+	}    
+	.navbar-nav li a {
+        height: 40px;
+        line-height: 50px;
+        margin-left: 20px; 
+    }
+    
+    .navbar-nav>li>.dropdown-menu {
+        border-top: 0px solid;
+		padding: 0px 0px 0px 30px;
+		margin: 0px
+    }
+	   
+	.navbar-expand-md  .navbar-nav .open .dropdown-menu>li>a {
+		height: 100px;
+        line-height: 100px;
+		color:#FFF;
+    }
+}

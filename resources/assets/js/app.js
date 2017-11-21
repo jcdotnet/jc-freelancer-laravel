@@ -6,10 +6,14 @@ $(function() {
 
     $('#navbar-items')
         .on('shown.bs.collapse', function() {
+			$('.navbar-expand-md').css("opacity", "1");
 			$('#navbar-flags').css("display", "inline-block");
+	        $('.jc-toggler').addClass("tapped");
         })
-        .on('hidden.bs.collapse', function() {  	
+        .on('hidden.bs.collapse', function() {  
+			$('.navbar-expand-md').css("opacity", "0.9");
 			$('#navbar-flags').css("display", "none");
+			$('.jc-toggler').removeClass("tapped");
         });
     
 	getRandomService();
@@ -78,32 +82,32 @@ function setCookie(name, value, days) {
 
 function setNavbar()
 {
-    if ($('.navbar-toggleable-sm').is(':hover'))
+    if ($('.navbar-expand-md').is(':hover')) // .navbar-expand-md:hover')) jquery > 1.9.1
     {
-        $('.navbar-toggleable-sm').first().css("background", "#121212");   
+        $('.navbar-expand-md').first().css("background", "#121212");   
     }
     else if ($(".hero.hero-top").length && window.matchMedia('(min-width: 768px)').matches && $(this).scrollTop() > 50)
     {
-        $('.navbar-toggleable-sm').first().css("background", "#121212");       
+        $('.navbar-expand-md').first().css("background", "#121212");       
     }
     else if ($(".hero.hero-top").length && window.matchMedia('(max-width: 768px)').matches && $(this).scrollTop() > 10)
     {
-        $('.navbar-toggleable-sm').first().css("background", "#121212");        
+        $('.navbar-expand-md').first().css("background", "#121212");        
     }
     else if ($(".hero.hero-top").length)
     {
-        $('.navbar-toggleable-sm').first().css("background", "transparent");  
+        $('.navbar-expand-md').first().css("background", "transparent");  
     }
     else
     {
-        $('.navbar-toggleable-sm').first().css("background", "#121212");
+        $('.navbar-expand-md').first().css("background", "#121212");
     }
 	
     if ($(this).scrollTop() > 1){
-		$('.navbar-toggleable-sm').css("margin-top", "0");
+		$('.navbar-expand-md').css("margin-top", "0");
 		
     }
     else{
-		$('.navbar-toggleable-sm').css("margin-top", window.matchMedia('(min-width: 768px)').matches ? "40px" : "0px");
+		$('.navbar-expand-md').css("margin-top", window.matchMedia('(min-width: 768px)').matches ? "40px" : "0px");
     }  
 }
