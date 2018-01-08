@@ -13,5 +13,5 @@ return [
 	'project' => 'project',
 	'proyecto' => 'project',
 	'services' => 'services',
-	'servicios' => 'services'
+	'servicios' => 'services',
 ];

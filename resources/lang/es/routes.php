@@ -8,5 +8,5 @@ return [
 	'project' => 'proyecto',
 	'proyecto' => 'proyecto',
 	'services' => 'servicios',
-	'servicios' => 'servicios'
+	'servicios' => 'servicios',
 ];

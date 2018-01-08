@@ -34,7 +34,6 @@ Route::get('politica-privacidad', function () {
 });
 
 /* one-language pages */
-
 Route::get('/admin/login', [
 	'uses' => 'AdminController@getLogin',
 	'as' => 'login' 
@@ -203,4 +202,29 @@ Route::group(['prefix' => '{lang?}'], function () {
 	Route::get('/politica-privacidad', function () {
 		return view('pages.privacy');
 	})->name('privacy');
+	
+	Route::group(['prefix' => 'training'], function () {
+		
+		Route::get('/java', function () {
+			return view('pages.java');
+		})->name('java');
+		
+		Route::get('/java-enterprise/{file}', [
+			'uses' => 'AppController@getDownloadPDF',
+			'as' => 'j2ee.titulo'
+		]);
+		Route::get('/java-enterprise-temario/{file}', [
+			'uses' => 'AppController@getDownloadPDF',
+			'as' => 'j2ee.temario'
+		]);
+		Route::get('/java-universidad-apuntes/{file}', [
+			'uses' => 'AppController@getDownloadZIP',
+			'as' => 'java.apuntes'
+		]);
+		Route::get('/java-universidad-examen/{file}', [
+			'uses' => 'AppController@getDownloadPDF',
+			'as' => 'java.examen.pdf'
+		]);
+	});
  });
+ 

@@ -46,7 +46,7 @@
 						<div class="card-text text-center mb-2">
 							<div class="list-inline">
 								@foreach ($p->skills as $skill)						
-									<a href="{{ route('proyectos.skills', [Config::get('app.locale') , __('routes.proyectos'), $skill->name] ) }}" class="badge badge-default" style="color:#fff"> {{ $skill->name }} </a>
+									<a href="{{ route('proyectos.skills', [Config::get('app.locale') , __('routes.proyectos'), $skill->name] ) }}" class="badge badge-secondary" style="color:#fff"> {{ $skill->name }} </a>
 								@endforeach
 							</div>
 						</div>

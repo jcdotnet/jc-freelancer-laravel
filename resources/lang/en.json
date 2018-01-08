@@ -181,5 +181,13 @@
 	"Página Web de Jose Carlos Román Rubio. Ingeniero Técnico Informático (UMA). Programador y desarrollador freelance para particulares y empresas.":
 	"Jose Carlos Román Rubio. Computer Engineer (UMA). Freelance software developer. I offer my services to particulars, freelancers and companies.",
 	"Currículum" : "Resume (PDF)",
-	"Descargar" : "Download"
+	"Descargar" : "Download",
+	"Desarrollo de aplicaciones con J2EE ": "J2EE Application Development ",
+	"Programación Orientada a Objetos " : "Object-Oriented Programming ",
+	"Diploma":"Cerficate of completion",
+	"Apuntes": "Course slides",
+	"Temario": "Course syllabus",
+	"Libros": "Books I own",
+	"Examen (Sobresaliente)": "Exam (A)",
+	"Recursos disponibles:" : "Available resources:"
 }

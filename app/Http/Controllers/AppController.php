@@ -58,5 +58,25 @@ class AppController extends Controller {
             __("Desarrollo de servicios Web"));
 		
 		return Response::json(['servicio'=> $servicios[rand(0, count($servicios)-1)]], 200);				
-	}      
+	}  
+	
+	public function getDownloadPDF($lang, $file_name) {
+		//$file= public_path(). "/download/$file_name.pdf"; // dev
+		$file= $_SERVER['DOCUMENT_ROOT']."/download/$file_name.pdf"; //prod
+		$headers = [
+              'Content-Type' => 'application/pdf',
+           ];
+
+		return response()->download($file, "$file_name.pdf", $headers);
+	}
+	
+	public function getDownloadZIP($lang, $file_name) {
+		//$file= public_path(). "/download/$file_name.zip"; // dev
+		$file= $_SERVER['DOCUMENT_ROOT']."/download/$file_name.zip"; // prod
+		$headers = [
+              'Content-Type' => 'application/zip',
+           ];
+
+		return response()->download($file, "$file_name.zip", $headers);
+	}
 }

@@ -16,60 +16,33 @@ class Language
      * @return mixed
      */
     public function handle($request, Closure $next)
-    {		
-		if ($request->segment(1) !== "admin") // && $request->segment(1) !== "api" // coming soon
+    {
+		$segments = $request->segments();
+		$query = $request->query();
+				
+		if ($request->segment(1) !== "admin") 
 		{
 			$locale = "es";
-			
+				
 			if(Session::has('locale')){		
 				$locale = Session::get('locale');
-				App::setlocale($locale);
+				App::setlocale($locale);	
 				
-				$segments = $request->segments();
-				$query = $request->query();
-				$url = $request->path(); //  $request->url();
-				foreach ($segments as $segment)
-				{
-					if (FALSE === strpos(__("routes.$segment"), "routes")) 
-					{
-						$url = str_replace($segment, __("routes.$segment") ,$request->url());
-					}
-				}
-				if (count($segments) === 1 && $request->segment(1) !== 'en' && count($query)) {
-					
-					return redirect('/en/'. (FALSE === strpos(__("routes.$segment"), "routes") ? __("routes.$segments[0]") : $segments[0]) . '?' . http_build_query($query));
-				}
-				else if (count($segments) === 1 && $request->segment(1) !== 'en') 
-				{				
-					return redirect('/en/'. (FALSE === strpos(__("routes.$segment"), "routes") ? __("routes.$segments[0]") : $segments[0]));
-				}
-				else if (count($segments) == 1 && $locale == "es" && count($query)) 
-				{
-					return redirect(str_replace_first($request->segment(1), '' ,$url). '?' . http_build_query($query) );
-				}				
-				else if (count($segments) == 1 && $locale == "es") 
-				{
-					return redirect(str_replace_first($request->segment(1), '' ,$url));
-				}				
-				else if (count($segments) == 2 && $locale == "es" && count($query)) 
-				{
-					return redirect(str_replace_first($request->segment(1).'/', '' ,$url). '?' . http_build_query($query));			
-				}
+				$localized_segments = $this->localize_segments($segments);
 				
-				else if (count($segments) == 2 && $locale == "es") {
-					return redirect(str_replace_first($request->segment(1).'/', '' ,$url));
+				if (count($segments) && strtoupper($locale) == "ES" && count($query)) {
+					return $this->redirect_ES($request, $localized_segments, $query);
 				}
-				else if (count($segments) && count($query)) 
+				else if (count($segments) && strtoupper($locale) == "ES") 
 				{
-					return redirect(str_replace_first($request->segment(1), $locale ,$url). '?' . http_build_query($query));
+					return $this->redirect_ES($request, $localized_segments, 0);
+				}
+				else if (count($segments) && count($query)) {
+					return $this->redirect_locale($request, $localized_segments, $locale, $query);
 				}
 				else if (count($segments)) {
-						return redirect(str_replace_first($request->segment(1), $locale ,$url));
-				}
-				else if ($locale !== "es" && count($query))
-				{
-					return redirect('/'.$locale. '?' . http_build_query($query));
-				}
+					return $this->redirect_locale($request, $localized_segments, $locale, $query);
+				}			
 				else if ($locale !== "es")
 				{
 					return redirect('/'.$locale);
@@ -78,25 +51,57 @@ class Language
 			else if ($request->lang == NULL || $request->lang == "es")  
 			{
 				$locale = "es";
+				App::setlocale($locale);	
 			}			
 			else if ($request->lang == "en")
 			{
 				$locale = "en";
+				App::setlocale($locale);	
 			}
 			else  
 			{
 				 return abort(404);
-			}					
-			App::setlocale($locale);			
+			}										
 		}
 		return $next($request);
     }
 	
-	function str_replace_first($search, $replace, $subject) {
-		$pos = strpos($subject, $search);
-		if ($pos !== false) {
-			return substr_replace($subject, $replace, $pos, strlen($search));
+	function localize_segments($segments) {
+		$localized_segments = array();
+		foreach ($segments as $segment)
+		{			
+			if (FALSE === strpos(__("routes.$segment"), "routes")) 
+			{
+				array_push($localized_segments, __("routes.$segment"));
+			}
+			else {
+				array_push($localized_segments, $segment);
+			}
 		}
-		return $subject;
+		return implode($localized_segments, '/');
+	}
+	
+	function redirect_ES($request, $localized_segments, $query_args) {
+		if (count($request->segments())>2) {
+			return redirect("/es".str_replace_first($request->segment(1), '' ,$localized_segments). ($query_args ? '?' . http_build_query($query_args) : ""));
+		}
+		else if (strtoupper($request->segment(1)) == "EN" || strtoupper($request->segment(1)) == "ES") {
+			return redirect(str_replace_first($request->segment(1), '' ,$localized_segments). ($query_args ? '?' . http_build_query($query_args) : ""));
+		}
+		else { 
+			return redirect($localized_segments. ($query_args ? '?' . http_build_query($query_args) : "" ));
+		}
+	}
+	
+	function redirect_locale($request, $localized_segments, $locale, $query_args) {
+		if (strtoupper($request->segment(1)) === "ES") {
+			return redirect("/$locale".str_replace_first($request->segment(1), '' ,$localized_segments). ($query_args ? '?' . http_build_query($query_args) : ""));
+		}
+		else if (strtoupper($request->segment(1)) !== strtoupper($locale)) {
+			return redirect(("/$locale"."/"."$localized_segments") . ($query_args ? '?' . http_build_query($query_args) : "" ));
+		}
+		else { 
+			return redirect($localized_segments. ($query_args ? '?' . http_build_query($query_args) : "" ));
+		}
 	}
 }
