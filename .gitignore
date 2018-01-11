@@ -1,11 +1,14 @@
-/node_modules
-/public/hot
+#dependencies
+node_modules
+vendor
+
+#IDE
+nbproject
+
+# Laravel files 
 /public/download
 /public/storage
 /storage/*.key
-/vendor
-/.idea
-/.vagrant
 Homestead.json
 Homestead.yaml
 .env

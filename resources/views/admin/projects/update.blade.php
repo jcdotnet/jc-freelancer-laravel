@@ -1,9 +1,22 @@
 @extends('layouts.admin')
 
-@section('content')
+@section('head')
+	<script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey={{ env('TINYMCE_KEY') }}"></script>
+	<script>
+		tinymce.init({ 
+			selector: 'textarea',
+			branding: false,
+			plugins: 'lists link code image textcolor emoticons',
+		    menubar: false,
+			toolbar: 'undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify |  | bullist numlist outdent indent | link image | forecolor backcolor emoticons | code'
+		});
+	</script>
+@endsection
 
+@section('content')
 @include('includes/info-alert')
 <div class="container">
+	<h2 class="row-header">Editar proyecto</h2>
 	<div class="row">
 		<div class="col-12">
 			<form method="post" action="{{ route('admin.project.post.update', ['project_id' => $project->id]) }}">
@@ -30,7 +43,7 @@
 				<div class="form-group">
 					<div class="form-inline">
 						<label for="skills-select">Tecnologías:</label>
-						<select name="skills-select" id="skills-select" class="form-control">
+						<select name="skills-select" id="skills-select" class="form-control mx-2">
 							@foreach ($skills as $skill)
 							<option value="{{$skill->id}}"> {{$skill->name}} </option>
 							@endforeach
@@ -40,7 +53,7 @@
 					<div class="added-skills">
 						<ul class="list-inline">
 							@foreach ($project_skills as $project_skill)
-							<li> <a href="#" data-id="{{$project_skill->id}}"> {{$project_skill->name}}</a></li>
+							<li> <a href="#" data-id="{{$project_skill->id}}" class="badge badge-secondary"> {{$project_skill->name}}</a></li>
 							@endforeach
 						</ul>
 					</div>

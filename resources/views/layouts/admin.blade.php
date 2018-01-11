@@ -7,6 +7,7 @@
 			
 	    <link rel="icon" href="{{ asset('favicon.png') }}" type="image/png">
 		<link rel="stylesheet" href="{{ asset('css/bundle-admin.css') }}">
+		@yield('head')
 	</head>
 	<body>		
 		@include('includes/header-admin')
