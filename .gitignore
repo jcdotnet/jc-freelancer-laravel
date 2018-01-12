@@ -1,6 +1,6 @@
 # Project dependencies
 node_modules
-vendor
+/vendor
 
 # IDE files
 nbproject
@@ -8,6 +8,4 @@ nbproject
 # Laravel files 
 /public/storage
 /storage/*.key
-Homestead.json
-Homestead.yaml
 .env
