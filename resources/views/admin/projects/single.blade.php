@@ -49,8 +49,8 @@
         @foreach ($project->images as $image)
 			<div class="col-md-3">
 				<figure class="figure">
-					<a href="{{asset('storage/'.$image->path)}}">
-						<img src="{{asset('storage/'.$image->path)}}" class="figure-img img-fluid img-thumbnail rounded" alt="{{$image->description}}"> <!-- style="width:100%" -->
+					<a href="{{asset('storage/images/'.$image->path)}}">
+						<img src="{{asset('storage/images/'.$image->path)}}" class="figure-img img-fluid img-thumbnail rounded" alt="{{$image->description}}"> <!-- style="width:100%" -->
 					</a>
 					<figcaption class="figure-caption text-center"><h4>{{$image->description}}</h4></figcaption>
 				</figure>

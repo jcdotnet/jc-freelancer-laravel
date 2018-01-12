@@ -61,8 +61,7 @@ class AppController extends Controller {
 	}  
 	
 	public function getDownloadPDF($lang, $file_name) {
-		//$file= public_path(). "/download/$file_name.pdf"; // dev
-		$file= $_SERVER['DOCUMENT_ROOT']."/download/$file_name.pdf"; //prod
+		$file= storage_path('app/public/download/'). "$file_name.pdf";
 		$headers = [
               'Content-Type' => 'application/pdf',
            ];
@@ -71,8 +70,7 @@ class AppController extends Controller {
 	}
 	
 	public function getDownloadZIP($lang, $file_name) {
-		//$file= public_path(). "/download/$file_name.zip"; // dev
-		$file= $_SERVER['DOCUMENT_ROOT']."/download/$file_name.zip"; // prod
+		$file= storage_path('app/public/download/'). "$file_name.zip";
 		$headers = [
               'Content-Type' => 'application/zip',
            ];

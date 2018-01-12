@@ -43,17 +43,17 @@
 		   </dl>			
 		</div>
 		<div class="hidden-sm-down col-md-5">
-			<img src="{{ asset('images/logo1.png') }}" height="50px" alt="Android development">
-			<img src="{{ asset('images/logo2.png') }}" height="50px" alt="Angular development">
-			<img src="{{ asset('images/logo3.png') }}" height="50px" alt="Apache">
-			<img src="{{ asset('images/logo4.png') }}" height="50px" alt="HTML">
-			<img src="{{ asset('images/logo5.png') }}" height="50px" alt="Ionic framework">
-			<img src="{{ asset('images/logo6.png') }}" height="50px" alt="JavaSctipr development">
-			<img src="{{ asset('images/logo7.png') }}" height="50px" alt="MySQL">
-			<img src="{{ asset('images/logo8.png') }}" height="50px" alt="nodeJS">
-			<img src="{{ asset('images/logo9.png') }}" height="50px" alt="PHP">
-			<img src="{{ asset('images/logo10.png') }}" height="50px" alt="Visual Studio, dot NET">
-			<img src="{{ asset('images/logo11.png') }}" height="50px" alt="WordPress">			
+			<img src="{{ asset('storage/images/logo1.png') }}" height="50px" alt="Android development">
+			<img src="{{ asset('storage/images/logo2.png') }}" height="50px" alt="Angular development">
+			<img src="{{ asset('storage/images/logo3.png') }}" height="50px" alt="Apache">
+			<img src="{{ asset('storage/images/logo4.png') }}" height="50px" alt="HTML">
+			<img src="{{ asset('storage/images/logo5.png') }}" height="50px" alt="Ionic framework">
+			<img src="{{ asset('storage/images/logo6.png') }}" height="50px" alt="JavaSctipr development">
+			<img src="{{ asset('storage/images/logo7.png') }}" height="50px" alt="MySQL">
+			<img src="{{ asset('storage/images/logo8.png') }}" height="50px" alt="nodeJS">
+			<img src="{{ asset('storage/images/logo9.png') }}" height="50px" alt="PHP">
+			<img src="{{ asset('storage/images/logo10.png') }}" height="50px" alt="Visual Studio, dot NET">
+			<img src="{{ asset('storage/images/logo11.png') }}" height="50px" alt="WordPress">			
 		</div>
 	</div>
 </div>
@@ -67,7 +67,7 @@
 	<div class="row row-content">
 		<div class="hidden-sm-down col-md-4">
 			<div class="card">
-				<img class="card-img-top img-fluid" src="{{ asset('images/facultad.jpg') }}" alt="UMA. Universidad de Málaga">
+				<img class="card-img-top img-fluid" src="{{ asset('storage/images/facultad.jpg') }}" alt="UMA. Universidad de Málaga">
 				<div class="card-block">
 				  <h4 class="card-title">Universidad de Málaga</h4>
 				  <p class="card-text">ETS Ingeniería Informática.</p>

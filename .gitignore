@@ -1,12 +1,11 @@
-#dependencies
+# Project dependencies
 node_modules
 vendor
 
-#IDE
+# IDE files
 nbproject
 
 # Laravel files 
-/public/download
 /public/storage
 /storage/*.key
 Homestead.json

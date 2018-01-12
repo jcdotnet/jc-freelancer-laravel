@@ -6,8 +6,8 @@
 				<span id="top-bar-email"><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:info@josecarlosroman.com">info@josecarlosroman.com </a></span>
 			
 				<div class="pull-right">
-					<a href="{{url('en/changeLocale/en')}}" class="language" data-locale="en" class="flag"><img src="{{ asset("images/en_UK.png") }}" width="25"> </a>
-					<a class="language"  href="{{url('es/changeLocale/es')}}" data-locale="es" class="flag"><img  src="{{ asset("images/es_ES.png") }}" width="25"></a> 
+					<a href="{{url('en/changeLocale/en')}}" class="language" data-locale="en" class="flag"><img src="{{ asset("storage/images/en_UK.png") }}" width="25"> </a>
+					<a class="language"  href="{{url('es/changeLocale/es')}}" data-locale="es" class="flag"><img  src="{{ asset("storage/images/es_ES.png") }}" width="25"></a> 
 				</div> 
 			</div>
 		</div>
@@ -15,7 +15,7 @@
 
 	<nav id="main-navbar" class="navbar navbar-expand-md fixed-top">
 		<div class="container">
-			<a href="{{ route('home', Config::get('app.locale') == 'es' ? '': Config::get('app.locale')) }}" class="navbar-brand" ><img src=" {{ asset("images/jc_letters.png") }}"></a>
+			<a href="{{ route('home', Config::get('app.locale') == 'es' ? '': Config::get('app.locale')) }}" class="navbar-brand" ><img src=" {{ asset("storage/images/jc_letters.png") }}"></a>
 			<div id="navbar-flags" class="pull-right">
 					<a href="{{url('en/changeLocale/en')}}" class="language" data-locale="en">EN</a>
 					<a href="{{url('es/changeLocale/es')}}" class="language" data-locale="es">ES</a>

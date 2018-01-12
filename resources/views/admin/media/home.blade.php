@@ -27,8 +27,8 @@
 		@foreach ($media as $image)
 		<div class="col-md-3">
 			<div class="figure">
-				<a href="{{asset('storage/'.$image->path)}}">
-					<img src="{{asset('storage/'.$image->path)}}" class="figure-img img-fluid img-thumbnail" alt="{{$image->description}}">
+				<a href="{{asset('storage/images/'.$image->path)}}">
+					<img src="{{asset('storage/images/'.$image->path)}}" class="figure-img img-fluid img-thumbnail" alt="{{$image->description}}">
 				</a>
 				<figcaption class="figure-caption text-center">
 					<h4>{{$image->description}}</h4>

@@ -8,7 +8,7 @@
 
 	<div class="card text-center">
 		<div class="text-center mt-2">
-			<img src="{{ asset('images/jc-logo-150.png')}}" alt="Jose Carlos Román Rubio. Admin Area" width="150px">
+			<img src="{{ asset('storage/images/jc-logo-150.png')}}" alt="Jose Carlos Román Rubio. Admin Area" width="150px">
 		</div>
 		<div class="card-body">
 			<form method="post" action="{{route('admin.login')}}">

@@ -26,7 +26,7 @@ class MediaController extends Controller
 		
 		if ($imagen->save())
 		{
-			$request->file('path')->storeAs('public', $imagen->path);
+			$request->file('path')->storeAs('public/images', $imagen->path);
 			return redirect()->back()->with(["success" => "Imagen añadida"]);
 		}
 		return redirect()->back();		 
@@ -37,7 +37,7 @@ class MediaController extends Controller
 		$image =Image::find($image_id);
 
 		if ($image->delete()) {
-			Storage::delete('public/'.$image->path);
+			Storage::delete('public/images/'.$image->path);
 			return redirect()->back()->with(["success" => "Imagen eliminada"]);
 		}		
 		return redirect()->back()->with(['fail' => "Error al eliminar la imagen"]);

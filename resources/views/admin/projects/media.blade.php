@@ -10,8 +10,8 @@
         @foreach ($images as $image)
 			<div class="col-md-3">
 				<div>
-					<a href="{{asset('storage/'.$image->path)}}">
-						<img src="{{asset('storage/'.$image->path)}}" alt="{{$image->description}}" style="width:100%">
+					<a href="{{asset('storage/images/'.$image->path)}}">
+						<img src="{{asset('storage/images/'.$image->path)}}" alt="{{$image->description}}" style="width:100%">
 					</a>
 					<div class="caption">
 					<h3>{{$image->description}}</h3>
