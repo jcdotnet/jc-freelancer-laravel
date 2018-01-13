@@ -9,4 +9,6 @@ return [
 	'proyecto' => 'proyecto',
 	'services' => 'servicios',
 	'servicios' => 'servicios',
+	'libros' => 'libros',
+	'books' => 'libros'
 ];

@@ -180,7 +180,8 @@
 	"Jose Carlos Román Rubio (JC). Computer Engineer (Universidad de Málaga), programmer, developer, freelancer... Find out more about me."		,
 	"Página Web de Jose Carlos Román Rubio. Ingeniero Técnico Informático (UMA). Programador y desarrollador freelance para particulares y empresas.":
 	"Jose Carlos Román Rubio. Computer Engineer (UMA). Freelance software developer. I offer my services to particulars, freelancers and companies.",
-	"Currículum" : "Resume (PDF)",
+	"Currículum" : "Curriculum",
+	"CV" : "Resume",
 	"Descargar" : "Download",
 	"Desarrollo de aplicaciones con J2EE ": "J2EE Application Development ",
 	"Programación Orientada a Objetos " : "Object-Oriented Programming ",
@@ -188,6 +189,10 @@
 	"Apuntes": "Course slides",
 	"Temario": "Course syllabus",
 	"Libros": "Books I own",
+	"Mis libros": "Books I own",
 	"Examen (Sobresaliente)": "Exam (A)",
-	"Recursos disponibles:" : "Available resources:"
+	"Recursos disponibles:" : "Available resources:",
+	"Combinados con la documentación oficial es la mejor forma de aprender nuevas tecnologías. " : "Books are the best way of learning new technologies. Along with the official documentation, of course. ",
+	"Éstos son los que tengo en mi estantería." : "I have these ones in my bookshelf.",
+	"Mis libros | Jose Carlos Román Rubio" : "Books I own | Jose Carlos Román Rubio"
 }

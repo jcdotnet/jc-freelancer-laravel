@@ -14,4 +14,6 @@ return [
 	'proyecto' => 'project',
 	'services' => 'services',
 	'servicios' => 'services',
+	'libros' => 'books',
+	'books' => 'books'
 ];

@@ -26,6 +26,9 @@ Route::get('contacto', [
 Route::get('jc-freelancer-malaga', function () {
 	return view('pages.about');
 });
+Route::get('libros' , function () {
+	return view('pages.books');
+});
 Route::get('cookies', function () {
 	return view('pages.cookies');
 });
@@ -190,11 +193,11 @@ Route::group(['prefix' => '{lang?}'], function () {
 	Route::get('/jc-freelancer-malaga', function () {
 		return view('pages.about');
 	})->name('about');	
-
-	Route::get('changeLocale/{locale}', function ($locale) {	
-        return redirect()->back()->with('locale', $locale);
-    });
 	
+	Route::get('{libros}' , function () {
+		return view('pages.books');
+	})->name('books')->where('libros', '(libros|books)');
+
 	Route::get('/cookies', function () {
 		return view('pages.cookies');
 	})->name('cookies');
@@ -202,6 +205,10 @@ Route::group(['prefix' => '{lang?}'], function () {
 	Route::get('/politica-privacidad', function () {
 		return view('pages.privacy');
 	})->name('privacy');
+	
+	Route::get('changeLocale/{locale}', function ($locale) {	
+        return redirect()->back()->with('locale', $locale);
+    });	
 	
 	Route::group(['prefix' => 'training'], function () {
 		

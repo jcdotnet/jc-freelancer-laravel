@@ -40,9 +40,17 @@
 				<dd class="col-9">@lang('Desarrollo Web, móvil y escritorio. Programación.') </dd>
 				<dt class="col-3">@lang('Números')</dt>
 				<dd class="col-9">@lang('Más de 20 clientes y más de 100 proyectos')</dd>
+				<dt class="col-3">@lang('CV')</dt>
+				<dd class="col-9">
+					<a href="{{ Config::get('app.locale') === 'es' ? 'https://github.com/jcdotnet/curriculum/blob/master/docs/CV%20Jose%20Carlos%20Roman%20Rubio%20ES%20-%20public.pdf' 
+								: 'https://github.com/jcdotnet/curriculum/blob/master/docs/CV%20Jose%20Carlos%20Roman%20Rubio%20EN%20-%20public.pdf' }}" target="_blank">
+						@lang('Descargar')
+					</a>									 
+				</dd>	
 		   </dl>			
 		</div>
 		<div class="hidden-sm-down col-md-5">
+			<img src="{{ asset('storage/images/logo0.png') }}" height="50px" alt="Java development">	
 			<img src="{{ asset('storage/images/logo1.png') }}" height="50px" alt="Android development">
 			<img src="{{ asset('storage/images/logo2.png') }}" height="50px" alt="Angular development">
 			<img src="{{ asset('storage/images/logo3.png') }}" height="50px" alt="Apache">
@@ -68,7 +76,7 @@
 		<div class="hidden-sm-down col-md-4">
 			<div class="card">
 				<img class="card-img-top img-fluid" src="{{ asset('storage/images/facultad.jpg') }}" alt="UMA. Universidad de Málaga">
-				<div class="card-block">
+				<div class="card-body">
 				  <h4 class="card-title">Universidad de Málaga</h4>
 				  <p class="card-text">ETS Ingeniería Informática.</p>
 				</div>
@@ -85,7 +93,12 @@
 				<dd class="col-12">					
 					<p>@lang('2006. Desarrollo de aplicaciones J2EE con prácticas en Novasoft. FORMAN. Duración: 360 horas')</p>
 					<p>@lang('2007. Microsoft Certified Technology Specialist (.NET Framework 2.0). FORMAN. Duración: 670 horas.')</p>
-				</dd>				
+				</dd>
+				<dt class="col-12">@lang('Libros')</dt>				
+				<dd class="col-12">
+					@lang("Combinados con la documentación oficial es la mejor forma de aprender nuevas tecnologías. ")
+					<a href="{{ route('books', [Config::get('app.locale') == 'es' ? NULL : Config::get('app.locale'), __('routes.books')])}}"> @lang("Éstos son los que tengo en mi estantería.")</a>
+				</dd>			
 			</dl>
 		</div>
 	</div>
@@ -129,14 +142,6 @@
 				<dd class="col-sm-9"><a href="https://profiles.wordpress.org/jcrr" target="_blank">@lang("Ver perfil")</a></dd>
 				<dt class="col-sm-3">YouTube</dt>
 				<dd class="col-sm-9"><a href="https://www.youtube.com/channel/UC9wKRs6Mgf2wR2qfjYM0-uQ" target="_blank">@lang("Ver perfil")</a></dd>
-				<dt class="col-3">@lang('Currículum')</dt>
-				<dd class="col-9">
-					<a href="{{ Config::get('app.locale') === 'es' ? 'https://github.com/jcdotnet/curriculum/blob/master/docs/CV%20Jose%20Carlos%20Roman%20Rubio%20ES%20-%20public.pdf' 
-								: 'https://github.com/jcdotnet/curriculum/blob/master/docs/CV%20Jose%20Carlos%20Roman%20Rubio%20EN%20-%20public.pdf' }}" target="_blank">
-						@lang('Descargar')
-					 </a>
-									 
-				</dd>
 		   </dl>
 		</div>
 	</div>
