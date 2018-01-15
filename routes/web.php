@@ -36,6 +36,17 @@ Route::get('politica-privacidad', function () {
 	return view('pages.privacy');
 });
 
+/* redirects */
+Route::get('facebook', function () {
+    return redirect('https://www.facebook.com/jc2net/');
+});
+Route::get('twitter', function () {
+    return redirect('https://twitter.com/jc2net');
+});
+Route::get('youtube', function () {
+    return redirect('https://www.youtube.com/channel/UC9wKRs6Mgf2wR2qfjYM0-uQ');
+});
+
 /* one-language pages */
 Route::get('/admin/login', [
 	'uses' => 'AdminController@getLogin',
@@ -48,7 +59,6 @@ Route::post('/admin/login', [
 ]);
 
  /* admin area */
- 
 Route::group([
 	'prefix' => '/admin',
 	'middleware' => 'auth'
@@ -151,7 +161,6 @@ Route::group([
 });
 
 /* multilanguage */
-
 Route::group(['prefix' => '{lang?}'], function () {
 	 
 	Route::get('/', function() {
