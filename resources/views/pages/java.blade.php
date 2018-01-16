@@ -75,24 +75,21 @@
 		    <div class="col mt-3 row-header">
 		       <h1 class="center"> @lang('Libros')</h1>
 			</div>
-			<div class="row row-content">           
-				<div class="row text-center text-lg-left">
-
-					<div class="col-lg-3 col-md-4 col-xs-6">
-						<a href="https://www.amazon.com/Java-Enterprise-Nutshell-Practical-OReilly/dp/0596101422/" target="_blank" class="d-block mb-4 h-100">
-						  <img class="img-fluid img-thumbnail" src="{{ asset('storage/images/j2ee.jpg') }}" alt="Java Enterprise in a nutshell">
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-4 col-xs-6">
-						<a href="https://www.amazon.com/Java-Complete-Reference-Tenth/dp/1259589331/" target="_blank" class="d-block mb-4 h-100">
-						  <img class="img-fluid img-thumbnail" src="{{ asset('storage/images/java9.jpg') }}" alt="Java, The complete reference. Tenth Edition.">
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-4 col-xs-6">
-						<a href="https://www.amazon.com/Pro-Spring-Depth-Guide-Framework/dp/1484228073/" target="_blank" class="d-block mb-4 h-100">
-						  <img class="img-fluid img-thumbnail" src="{{ asset('storage/images/PRO_Spring_5.jpg') }}" alt="PRO Spring 5">
-						</a>
-					</div>
+			<div class="row row-content text-center text-lg-left">           
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+					<a href="https://www.amazon.com/Java-Enterprise-Nutshell-Practical-OReilly/dp/0596101422/" target="_blank" class="d-block mb-4 h-100">
+					  <img class="img-fluid img-thumbnail" src="{{ asset('storage/images/j2ee.jpg') }}" alt="Java Enterprise in a nutshell">
+					</a>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+					<a href="https://www.amazon.com/Java-Complete-Reference-Tenth/dp/1259589331/" target="_blank" class="d-block mb-4 h-100">
+					  <img class="img-fluid img-thumbnail" src="{{ asset('storage/images/java9.jpg') }}" alt="Java, The complete reference. Tenth Edition.">
+					</a>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+					<a href="https://www.amazon.com/Pro-Spring-Depth-Guide-Framework/dp/1484228073/" target="_blank" class="d-block mb-4 h-100">
+					  <img class="img-fluid img-thumbnail" src="{{ asset('storage/images/PRO_Spring_5.jpg') }}" alt="PRO Spring 5">
+					</a>
 				</div>
 			</div>
         </div>
