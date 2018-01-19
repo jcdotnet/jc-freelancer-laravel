@@ -1,28 +1,30 @@
 /**
  * Admin JavaScript, no jQuery
  */
-
-var addedSkillsText;
-var addedSkillsIDs;
+var addedSkillsText; // project added skills, works also for post categories
+var addedSkillsIDs; //  project added skills, works also for post categories
 var addedImagesIDs;
 
 document.onreadystatechange = function() {
   if (document.readyState === 'complete') { 
-    // skills
 
+	// create project skills and blog categories
+    if (document.getElementsByClassName('btn-skill').length>0)
+		document.getElementsByClassName('btn-skill')[0].addEventListener('click', createNewSkill);
+	if (document.getElementsByClassName('btn-category').length>0)
+		document.getElementsByClassName('btn-category')[0].addEventListener('click', createNewCategory);
+	
+	// edit/delete project skills and blog categories
     var editSections = document.getElementsByClassName('edit');
 	if (editSections)
 	{
 		for (i = 0; i < editSections.length; i++) {
-			editSections[i].firstElementChild.children[1].firstChild.addEventListener('click', startEdit);
-			if (editSections[i].firstElementChild.children.length > 2)  
-				editSections[i].firstElementChild.children[2].firstChild.addEventListener('click', startDelete);
+			editSections[i].firstElementChild.firstElementChild.children[1].firstElementChild.addEventListener('click', startEdit);
+			if (editSections[i].firstElementChild.firstElementChild.children.length > 2)  
+				editSections[i].firstElementChild.firstElementChild.children[2].firstChild.addEventListener('click', startDelete);
 		}	
     }
-	if (document.getElementsByClassName('btn-skill').length>0)
-		document.getElementsByClassName('btn-skill')[0].addEventListener('click', createNewSkill);
-	
-	// projects skills
+	// project added skills and post added categories
     addedSkillsIDs = document.getElementById('skills');
 	if (document.getElementsByClassName('added-skills').length > 0) {
 		addedSkillsText = document.getElementsByClassName('added-skills')[0];  
@@ -33,7 +35,7 @@ document.onreadystatechange = function() {
 	if (document.getElementsByClassName('btn-skills').length > 0)
 		document.getElementsByClassName('btn-skills')[0].addEventListener('click', addSkillToProject);
 	
-	// projects and posts images 
+	// project added images 
 	addedImagesIDs = document.getElementById('images');
 	var imageClass = document.getElementsByClassName('image')
 	if (imageClass.length > 0)
@@ -45,36 +47,68 @@ document.onreadystatechange = function() {
   }
 };
 
-function startEdit(event) {
+function createNewSkill(event) {
     event.preventDefault();
-    event.target.textContent = "Guardar";
-    var li = event.target.parentNode.parentNode.children[0];
-    li.children[0].value = event.target.parentNode.parentNode.parentNode.previousElementSibling.textContent;
+    
+    var name = document.getElementById('skill-name').value;
+    if (name.length === 0) {
+        alert("Please enter a valid skill name!");
+        return;
+    }
+    ajax("POST", "/admin/projects/skills", "name=" + name, endCreate, [name]);
+}
+
+function createNewCategory(event) {
+    event.preventDefault();
+    var name = document.getElementById('category-name').value;
+    if (name.length === 0) {
+        alert("Please enter a valid category name!");
+        return;
+    }
+    ajax("POST", "/admin/categories", "name=" + name, endCreate, [name]);
+}
+
+function endCreate(params, success, responseObj) {
+    var name = params[0];
+    location.reload();
+}
+
+function startEdit(event) {
+	event.preventDefault();
+
+	event.target.innerText = "Guardar"; //event.target.textContent = "Guardar";
+	var li = event.target.parentNode.parentNode.children[0]; // = var li = event.path[2].children[0];	
+	li.children[0].value = event.target.parentNode.parentNode.parentNode.parentNode.previousElementSibling.textContent; // event.path[4].previous...
     li.style.display = "inline-block";
     setTimeout(function() {
         li.children[0].style.maxWidth = "120px";
     }, 1);
     event.target.removeEventListener('click', startEdit);
-    event.target.addEventListener('click', saveEdit);
+	event.target.addEventListener('click', saveEdit);// do some stuff
+    
+    
 }
 
 function saveEdit(event) {
     event.preventDefault();
     var li = event.target.parentNode.parentNode.children[0];
-    var skillName = li.children[0].value;
-    var skillId = event.target.parentNode.parentNode.parentNode.parentNode.dataset['id'];
-    if (skillName.length === 0) {
+    var theName = li.children[0].value;
+    var theId = event.target.parentNode.parentNode.parentNode.parentNode.parentNode.dataset['id'];
+    if (theName.length === 0) {
         alert("Please enter a valid Skill name!");
         return;
     }
-    ajax("POST", "/admin/projects/skill/update", "name=" + skillName + "&skill_id=" + skillId, endEdit, [event]);
+	if (event.target.classList.contains('category-will-edit')) 
+		ajax("POST", "/admin/category/update", "name=" + theName + "&category_id=" + theId, endEdit, [event]);
+	else
+		ajax("POST", "/admin/projects/skill/update", "name=" + theName + "&skill_id=" + theId, endEdit, [event]);   
 }
 
 function endEdit(params, success, responseObj) {
     var event = params[0];
     if (success) {
         var newName = responseObj.new_name;
-	    event.target.parentNode.parentNode.parentNode.previousElementSibling.textContent = newName;
+	    event.target.parentNode.parentNode.parentNode.parentNode.previousElementSibling.textContent = newName;
     }
     event.target.textContent = "Editar";
     var li = event.target.parentNode.parentNode.children[0];
@@ -86,41 +120,22 @@ function endEdit(params, success, responseObj) {
     event.target.addEventListener('click', startEdit)
 }
 
-function createNewSkill(event) {
-    event.preventDefault();
-
-    var name = document.getElementById('skill-name').value;
-    if (name.length === 0) {
-        alert("Please enter a valid Category name!");
-        return;
-    }
-    ajax("POST", "/admin/projects/skills", "name=" + name, newSkillCreated, [name]);
-}
-
-function newSkillCreated(params, success, responseObj) {
-    var name = params[0];
-    location.reload();
-}
-
 function startDelete(event) {
-    // Optional Modal here
-    deleteSkill(event);
-}
-
-function deleteSkill(event) {
     event.preventDefault();
     event.target.removeEventListener('click', startDelete);
-	var skillId = event.target.parentNode.parentNode.parentNode.parentNode.parentNode.dataset['id'];
-
-    ajax("GET", "/admin/projects/skill/" + skillId + "/delete", null, skillDeleted, [event.target.parentNode.parentNode.parentNode.parentNode.parentNode]);
+	var theId = event.target.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.dataset['id'];
+    if (event.target.classList.contains('category-will-delete')) 
+		ajax("GET", "/admin/categories/" + theId + "/delete", null, endDelete, [event.target.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode]);
+	else
+		ajax("GET", "/admin/projects/skill/" + theId + "/delete", null, endDelete, [event.target.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode]);
 }
 
-function skillDeleted(params, success, responseObj) {
-    var divSkill = params[0];
+function endDelete(params, success, responseObj) {
+    var div = params[0];
     if (success) {
-        divSkill.style.backgroundColor = "#ffc4be";
+        div.style.backgroundColor = "#ffc4be";
         setTimeout(function() {
-            divSkill.remove();
+            div.remove();
             location.reload();
         }, 300);
     }
@@ -140,9 +155,11 @@ function addSkillToProject(event) {
         addedSkillsIDs.value = selectedSkillID;
     }
     var li = document.createElement('li');
+	li.classList.add("list-inline-item");
     var link = document.createElement('a');
     link.href = "#";
     link.innerText = selectedSkillName;
+	link.classList.add("badge", "badge-secondary");
     link.dataset['id'] = selectedSkillID;
     link.addEventListener('click', removeSkillFromProject);
     li.appendChild(link);
@@ -194,6 +211,7 @@ function parseImages() {
     return addedImagesIDs.value.split(",");
 }
 
+// AJAX CALL
 function ajax(method, url, params, callback, callbackParams) {
     var http = new XMLHttpRequest();; // IE7+, Firefox, Chrome, Opera, Safari
 
@@ -204,7 +222,7 @@ function ajax(method, url, params, callback, callbackParams) {
                 callback(callbackParams, true, obj);
             }
             else if(http.status == 400) {
-                alert("Tecnología no salvada. Inténtalo de nuevo");
+                alert("Error al salvar. Inténtalo de nuevo");
                 callback(callbackParams, false);
 
             }

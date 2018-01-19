@@ -22,7 +22,7 @@
 						</div>
 						<div class="text-center list-inline">
 							<a href="{{ route('admin.project', ['project_slug' => $p->slug]) }}" class="btn-jc btn-theme"> Ver </a>
-							<a href="{{ route('admin.project.update', ['project_id' => $p->id]) }}" class="btn-jc btn-theme"> Edit </a>
+							<a href="{{ route('admin.projects.update', ['project_id' => $p->id]) }}" class="btn-jc btn-theme"> Edit </a>
 							<a href="{{ route('admin.project.media.add', ['project_id' => $p->id]) }}" class="btn-jc btn-theme"> Media</a>
 							<a href="{{ route('admin.project.delete', ['project_id' => $p->id]) }}" onclick="return confirm('Are you sure?')" class="btn btn-danger"> Delete</a>  
 						</div>

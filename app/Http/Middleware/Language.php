@@ -28,6 +28,9 @@ class Language
 				$locale = Session::get('locale');
 				App::setlocale($locale);	
 				
+				if (substr($request->segment(1), 0, 3) ===  "art")
+					return $next($request);
+				
 				$localized_segments = $this->localize_segments($segments);
 				
 				if (count($segments) && strtoupper($locale) == "ES" && count($query)) {

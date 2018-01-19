@@ -9,10 +9,25 @@ use App\Project;
 
 class MediaController extends Controller
 {
-    public function getIndex() {
-		$media = Image::orderBy('created_at', 'desc')->paginate(12);
+	public function getIndex($project_id) {
+				
+		$project=Project::find($project_id);
+		if(!$project)
+		{
+			return redirect()->route('admin')->with(['fail' => 'Proyecto no encontrado']);
+		}		
+		$images = Image::orderBy('created_at', 'desc')->paginate(12);
+
+		$project_images = $project->images->all();
+		$project_images_ids = array();
 		
-		return view('admin.media.home', ['media' => $media]);
+		$i = 0;
+		foreach($project_images as $project_image)
+		{
+			$project_images_ids[$i] = $project_image->id;
+			$i++;
+		}						
+		return view('admin.projects.media', ['project' => $project, 'images' => $images, 'project_images' => $project_images, 'project_images_ids' => $project_images_ids]);
 	}
 			
 	public function postIndex(Request $request) {
@@ -42,27 +57,6 @@ class MediaController extends Controller
 		}		
 		return redirect()->back()->with(['fail' => "Error al eliminar la imagen"]);
 	}	
-
-	public function getProjectMedia($project_id) {
-				
-		$project=Project::find($project_id);
-		if(!$project)
-		{
-			return redirect()->route('admin')->with(['fail' => 'Proyecto no encontrado']);
-		}		
-		$images = Image::paginate(12);	
-
-		$project_images = $project->images->all();
-		$project_images_ids = array();
-		
-		$i = 0;
-		foreach($project_images as $project_image)
-		{
-			$project_images_ids[$i] = $project_image->id;
-			$i++;
-		}						
-		return view('admin.projects.media', ['project' => $project, 'images' => $images, 'project_images' => $project_images, 'project_images_ids' => $project_images_ids]);
-	}
 	
 	public function postProjectMedia(Request $request) {
 	    $project = Project::find($request['project_id']);

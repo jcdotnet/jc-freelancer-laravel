@@ -47,7 +47,23 @@ Route::get('youtube', function () {
     return redirect('https://www.youtube.com/channel/UC9wKRs6Mgf2wR2qfjYM0-uQ');
 });
 
-/* one-language pages */
+/* BLOG, front-end */
+Route::get('arts', [
+	'uses' => 'BlogController@getIndex',
+	'as' => 'articulos'
+]);
+
+Route::get('arts/categoria/{category_name}', [
+	'uses' => 'BlogController@getIndex',
+	'as' => 'articulos.categorias'
+]);
+
+Route::get('/art/{post_slug}', [
+	'uses' => 'BlogController@getSingle',
+	'as' => 'articulo'
+]);
+
+/* Admin login */
 Route::get('/admin/login', [
 	'uses' => 'AdminController@getLogin',
 	'as' => 'login' 
@@ -66,23 +82,14 @@ Route::group([
 	Route::get('/', [
 		'uses' => 'AdminController@getIndex',
 		'as' => 'admin'
-	]);	
-	
-	Route::get('/media', [
-		'uses' => 'MediaController@getIndex',
-		'as' => 'admin.media.add'
 	]);
 	
-	Route::post('/media', [
-		'uses' => 'MediaController@postIndex',
-		'as' => 'admin.media'
+	Route::get('/logout', [
+		'uses' => 'AdminController@getLogout',
+		'as' => 'admin.logout'
 	]);
-	
-	Route::get('/media/{image_id}/delete', [
-		'uses' => 'MediaController@getDelete',
-		'as' => 'admin.media.delete'
-	]);
-	
+
+	/* PROJECT routes */
 	Route::get('/projects', [
 		'uses' => 'ProjectController@getAdminIndex',
 		'as' => 'admin.projects'
@@ -93,19 +100,19 @@ Route::group([
 		'as' => 'admin.projects.add'
 	]);
 	
-	Route::get('/project/{project_id}/update', [
-		'uses' => 'ProjectController@getUpdateProject',
-		'as' => 'admin.project.update'
-	]);	
-	
 	Route::post('/project/add', [
 		'uses' => 'ProjectController@postAddProject',
 		'as' => 'admin.project.add'
 	]);
 	
+	Route::get('/project/{project_id}/update', [
+		'uses' => 'ProjectController@getUpdateProject',
+		'as' => 'admin.projects.update'
+	]);	
+		
 	Route::post('/project/update', [
 		'uses' => 'ProjectController@postUpdateProject',
-		'as' => 'admin.project.post.update'
+		'as' => 'admin.project.update'
 	]);
 	
 	Route::get('/project/{project_slug}', [
@@ -118,6 +125,7 @@ Route::group([
 		'as' => 'admin.project.delete'
 	]);
 	
+	/* PROJECT routes, skills */
     Route::get('/projects/skills', [
 		'uses' => 'SkillController@getIndex',
 		'as' => 'admin.projects.skills'
@@ -138,8 +146,9 @@ Route::group([
 		'as' => 'admin.skill.delete'
 	]);
    
+	/* PROJECT routes, images */
 	Route::get('/project/{project_id}/media', [
-		'uses' => 'MediaController@getProjectMedia',
+		'uses' => 'MediaController@getIndex',
 		'as' => 'admin.project.media.add'
 	]);
 	
@@ -148,16 +157,69 @@ Route::group([
 		'as' => 'admin.project.media'
 	]);
 	
-    
-    Route::get('/blog', [
-		'uses' => 'AdminController@getIndex',
-		'as' => 'admin.blog'
+	Route::post('/media', [
+		'uses' => 'MediaController@postIndex',
+		'as' => 'admin.media'
+	]);
+	Route::get('/media/{image_id}/delete', [
+		'uses' => 'MediaController@getDelete',
+		'as' => 'admin.media.delete'
+	]);
+
+    /* BLOG routes */
+    Route::get('/posts', [
+		'uses' => 'BlogController@getAdminIndex',
+		'as' => 'admin.posts'
+	]);
+	
+	Route::get('/posts/{post_slug}/{is_admin}', [
+		'uses' => 'BlogController@getSingle',
+		'as' => 'admin.post'
+	]);	
+
+	Route::get('/posts/add', [
+		'uses' => 'BlogController@getAddPost',
+		'as' => 'admin.posts.add'
+	]);	
+	Route::post('/post/add', [
+		'uses' => 'BlogController@postAddPost',
+		'as' => 'admin.post.add'
+	]);
+	
+	Route::get('/post/{post_id}/update', [
+		'uses' => 'BlogController@getUpdatePost',
+		'as' => 'admin.posts.update'
+	]);	
+	Route::post('/post/update', [
+		'uses' => 'BlogController@postUpdatePost',
+		'as' => 'admin.post.update'
+	]);
+	
+	Route::get('/post/{post_id}/delete', [
+		'uses' => 'BlogController@getDeletePost',
+		'as' => 'admin.post.delete'
 	]);	
 	
-	Route::get('/logout', [
-		'uses' => 'AdminController@getLogout',
-		'as' => 'admin.logout'
-	]);	
+	/* BLOG categories */
+	Route::get('/categories', [
+		'uses' => 'CategoryController@getIndex',
+		'as' => 'admin.categories'
+	]);
+	
+	Route::post('/categories',[
+		'uses' => 'CategoryController@postAddCategory',
+		'as' => 'admin.category.post'
+	]);
+	
+	Route::post('/category/update', [
+		'uses' => 'CategoryController@postUpdateCategory',
+		'as' => 'admin.category.update'
+	]);
+	
+	Route::get('/categories/{category_id}/delete', [
+		'uses' => 'CategoryController@getDeleteCategory',
+		'as' => 'admin.category.delete'
+	]);
 });
 
 /* multilanguage */
@@ -219,6 +281,7 @@ Route::group(['prefix' => '{lang?}'], function () {
         return redirect()->back()->with('locale', $locale);
     });	
 	
+	/* Background */
 	Route::group(['prefix' => 'training'], function () {
 		
 		Route::get('/java', function () {

@@ -41,10 +41,10 @@
 	color:#FDA527;
 }
 
-li.skill-edit {
+li.skill-edit, li.category-edit {
 	display: none;
 }
-li.skill-edit input {
+li.skill-edit input, li.category-edit input {
 	transition: all 0.3s;
 	max-width: 0;
 }

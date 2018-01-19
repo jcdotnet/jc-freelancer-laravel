@@ -9,9 +9,8 @@
 			<div id="navbar-items" class="collapse navbar-collapse">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item {{Request::is('admin') ? 'active':''}}"><a class="nav-link" href="{{ route('admin') }}"> DASHBOARD </a></li>				
-					<li class="nav-item {{Request::is('admin/media*') ? 'active':''}}"><a class="nav-link" href="{{ route('admin.media.add')}}"> MEDIA</a></li>
-					<li class="nav-item {{Request::is('admin/projects*') ? 'active':''}}"><a class="nav-link" href="{{ route('admin.projects') }}"> PROYECTOS </a></li>
-					<li class="nav-item {{Request::is('admin/blog*') ? 'active':''}}"><a class="nav-link" href="{{ route('admin.blog')}}"> BLOG </a></li>
+					<li class="nav-item {{Request::is('admin/project*') || Request::is('admin/media*') ? 'active':''}}"><a class="nav-link" href="{{ route('admin.projects') }}"> PROYECTOS </a></li>
+					<li class="nav-item {{Request::is('admin/post*') || Request::is('admin/categ*')? 'active':''}}"><a class="nav-link" href="{{ route('admin.posts')}}"> ARTÍCULOS </a></li>
 					<li class="nav-item"><a class="nav-link" href="{{ route('admin.logout') }}"> logout</a></li>
 				</ul>
 			</div>

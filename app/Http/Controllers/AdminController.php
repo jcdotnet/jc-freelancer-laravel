@@ -3,16 +3,17 @@
 namespace App\Http\Controllers;
 
 use App;
+use App\Post;
 use App\Project;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 class AdminController extends Controller {
 	
-	public function getIndex()
-	{
+	public function getIndex() {    
 		$projects = Project::orderBy('updated_at', 'desc')->take(3)->get();
-		return view('admin.home', ['projects' => $projects]);
+		$posts = Post::where('author', Auth::user()->name)->orderBy('updated_at', 'desc')->take(3)->get(); 
+		return view('admin.home', ['projects' => $projects, 'posts' => $posts]);
 	}
 	
 	public function getLogin()
@@ -40,4 +41,3 @@ class AdminController extends Controller {
 		return redirect()->route('home', ["lang" => App::getLocale()]);
 	}
 }
-

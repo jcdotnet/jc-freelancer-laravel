@@ -41,7 +41,7 @@
 	<h2 class="row-header">Editar proyecto</h2>
 	<div class="row">
 		<div class="col-12">
-			<form method="post" action="{{ route('admin.project.post.update', ['project_id' => $project->id]) }}">
+			<form method="post" action="{{ route('admin.project.update', ['project_id' => $project->id]) }}">
 				<div class="form-group">
 					<label for="nombre">Nombre:</label>
 					<input type="text" name="nombre" id="nombre" class="form-control {{ $errors->has('nombre')? 'alert alert-danger':'' }}" 
@@ -75,7 +75,7 @@
 					<div class="added-skills">
 						<ul class="list-inline">
 							@foreach ($project_skills as $project_skill)
-							<li> <a href="#" data-id="{{$project_skill->id}}" class="badge badge-secondary"> {{$project_skill->name}}</a></li>
+							<li class="list-inline-item"> <a href="#" data-id="{{$project_skill->id}}" class="badge badge-secondary"> {{$project_skill->name}}</a></li>
 							@endforeach
 						</ul>
 					</div>

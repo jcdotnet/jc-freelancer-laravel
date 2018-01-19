@@ -35,9 +35,9 @@
 			</h1>
 			
 			<div class="skills">
-				<ul class="list-unstyled">
+				<ul class="list-inline">
 					@foreach ($project->skills as $skill)								
-					<li><span class="badge badge-lg badge-dark" style="color:#fff"> {{ $skill->name }} </span></li>
+					<li class="list-inline-item"><span class="badge badge-lg badge-dark" style="color:#fff"> {{ $skill->name }} </span></li>
 					@endforeach
 				</ul>
 			</div>
