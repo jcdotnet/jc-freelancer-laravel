@@ -18,7 +18,7 @@
 				</div>
 				<div class="form-group">
 					<label for="password">Contraseña: </label>
-					<input type="password" name="password" id="usuario" class="form-control {{ $errors->has('password')? 'alert alert-danger':'' }}" >
+					<input type="password" name="password" id="password" class="form-control {{ $errors->has('password')? 'alert alert-danger':'' }}" >
 				</div>
 				<input type='submit' class="btn btn-jc btn-success" value="Entrar">
 				<input type="hidden" name="_token" value="{{ Session::token() }}" >

@@ -17,15 +17,18 @@
 	height: 400px;
     margin: auto;
 }
-
 .navbar-expand-md {
-	margin-top: 0px;
+	/*margin-top: 0px;*/
+}
+
+.navbar-expand-md.fixed-top {
+	top:0;
 }
 
 .navbar-expand-md .navbar-brand {
 	padding: 0px 50px;
 	font-weight: bold;
-	color: #FFF;
+	color: #121212; 
 }
 
 .jc-toggler  {
@@ -38,7 +41,7 @@
 }
 .btn-jc.btn-theme .badge 
 {
-	color:#FDA527;
+	color: #008EC2;
 }
 
 li.skill-edit, li.category-edit {

@@ -1,5 +1,5 @@
 <header>
-
+	
     <div id="top-bar-container" class="container-fluid d-none d-md-block">
 		<div class="row" id="top-bar">	
 			<div class="col">
@@ -12,10 +12,10 @@
 			</div>
 		</div>
 	</div>
-
+	
 	<nav id="main-navbar" class="navbar navbar-expand-md fixed-top">
 		<div class="container">
-			<a href="{{ route('home', Config::get('app.locale') == 'es' ? '': Config::get('app.locale')) }}" class="navbar-brand" ><img src=" {{ asset("storage/images/jc_letters.png") }}"></a>
+			<a href="{{ route('home', Config::get('app.locale') == 'es' ? '': Config::get('app.locale')) }}" class="navbar-brand" ><img src=" {{ asset("storage/images/jc_letters_80.png") }}"></a>
 			<div id="navbar-flags" class="pull-right">
 					<a href="{{url('en/changeLocale/en')}}" class="language" data-locale="en">EN</a>
 					<a href="{{url('es/changeLocale/es')}}" class="language" data-locale="es">ES</a>

@@ -15,8 +15,20 @@ $(function() {
 			$('#navbar-flags').css("display", "none");
 			$('.jc-toggler').removeClass("tapped");
         });
+    	
+	if ($('.hero').length) {
+		addNavbarHeroClass();
+	}
+	
+	$('.dropdown').hover(function() { 
+	    $(this).addClass('show'); 
+	    $(this).find('.dropdown-menu').addClass('show');
+    }, 
+    function() {
+	    $(this).removeClass('show'); $(this).find('.dropdown-menu').removeClass('show');
+    });
     
-	getRandomService();
+	getRandomService();	
     setInterval(setNavbar, 100);	
 	setInterval(getRandomService, 3000); 
 	
@@ -82,32 +94,25 @@ function setCookie(name, value, days) {
 
 function setNavbar()
 {
-    if ($('.navbar-expand-md').is(':hover')) // .navbar-expand-md:hover')) jquery > 1.9.1
-    {
-        $('.navbar-expand-md').first().css("background", "#121212");   
-    }
-    else if ($(".hero.hero-top").length && window.matchMedia('(min-width: 768px)').matches && $(this).scrollTop() > 50)
-    {
-        $('.navbar-expand-md').first().css("background", "#121212");       
-    }
-    else if ($(".hero.hero-top").length && window.matchMedia('(max-width: 768px)').matches && $(this).scrollTop() > 10)
-    {
-        $('.navbar-expand-md').first().css("background", "#121212");        
-    }
-    else if ($(".hero.hero-top").length)
-    {
-        $('.navbar-expand-md').first().css("background", "transparent");  
-    }
-    else
-    {
-        $('.navbar-expand-md').first().css("background", "#121212");
-    }
+	if ( $(this).scrollTop() < $(".hero").height())
+	{
+		addNavbarHeroClass();
+	}
+	else if ($('.navbar-expand-md').hasClass('navbar-hero'))
+	{
+		$('.navbar-expand-md').removeClass("navbar-hero");
+	}
 	
-    if ($(this).scrollTop() > 1){
-		$('.navbar-expand-md').css("margin-top", "0");
-		
+    if ($(this).scrollTop() > 39){
+		$('.navbar-expand-md.fixed-top').css("top", "0");
+		$('.navbar-expand-md').css("transition", "all 0.2s linear");
     }
-    else{
-		$('.navbar-expand-md').css("margin-top", window.matchMedia('(min-width: 768px)').matches ? "40px" : "0px");
-    }  
+    else{		
+		$('.navbar-expand-md.fixed-top').css("top", window.matchMedia('(min-width: 768px)').matches ? "40px" : "0px");
+		$('.navbar-expand-md').css("transition", "all 0.2s linear");
+    } 
+}
+
+function addNavbarHeroClass() {
+	if (!$('.navbar-expand-md').hasClass('navbar-hero')) $('.navbar-expand-md').addClass("navbar-hero");
 }

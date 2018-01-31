@@ -7,6 +7,7 @@
 @import "variables";
 
 @import "navigation"; 
+@import "hero";
 
 /* GENERAL */
 
@@ -23,7 +24,7 @@ body {
 }
 
 ::selection {
-    background: #FDA527;
+    background: $accent;
 }
 
 a, a:visited {
@@ -31,20 +32,23 @@ a, a:visited {
     text-decoration: none;
 }
 a:hover {
-    color: #FDA527;
+    color: $accent;
 }
 a:active, a:focus {
-    color: #FDA527;
+    color: $accent;
     text-decoration: none;
 }
 a::selection {
 	color: #FFF;
 }
 
+#main {	
+	height:100%;
+}
+
 .background {
     background-color: #d3d3d3;
 }
-
 
 .btn-jc {
 	display: inline-block;
@@ -79,11 +83,11 @@ a::selection {
 	background-color: #000;
 }
 .btn-theme-inverse:hover {
-	background-color: #FDA527;
+	background-color: $accent;
 }
 
 .btn-theme {
-	background-color: #FDA527;
+	background-color: $accent;
 }
 .btn-theme:hover {
 	background-color: #000;
@@ -93,26 +97,22 @@ a::selection {
 	border-radius: 5px;
 }
 
-
-.subtitle {
-	color:grey;
-}
-
 .first-section {
 	padding-top: 100px;
 }
 
 .highlighted { 
     font-weight: bold; 
-	color: #FDA527;
+	color: $accent;
 }
 
 .highlighted::selection {
 	color: #FFF;
 }
 
-#main {	
-	height:100%;
+.parrafo, .size-xl
+{
+    font-size: 18px;    
 }
 
 .row-header, .row-subheader {
@@ -125,7 +125,7 @@ a::selection {
 .row-header:after {
     content: "";
     display: block;
-    background-color: #151515;
+    background-color: $skin-color;
     width: 30px;
     height: 1px;
     margin: 15px auto 0;
@@ -142,112 +142,15 @@ a::selection {
 .size-l {
 	font-size: 16px;
 }
-.parrafo, .size-xl
-{
-    font-size: 18px;    
+
+.subtitle {
+	color:grey;
 }
-
-/* BARRA SUPERIOR*/
-#top-bar-container {
-    	
-	& #top-bar {
-		color: #888;
-		font-size: 13px;
-		line-height: 40px;
-		padding: 0px;
-		
-		.col {
-			background: #f8f8f8;
-			
-			a {
-				color: #888;
-				text-decoration: none;
-			}
-			a:hover {
-				color: $accent;
-			}
-			.fa {
-				font-size: 15px;
-				padding: 0px 5px 0px 15px; 
-			}
-			.flag {
-				display: inline;
-			}
-		}
-	}
-}
-
-
 
 /* HOME */
-.hero.hero-top{
-	display:table;
-	width:100%;
-	height:100%;
-    background: url("../storage/images/tactile_noise.png");
-    color: #f8f8f2; /*floralwhite;*/ 	
-	margin-top: -40px;
-}
-
-.hero-content
-{
-	display:table-cell;
-	vertical-align: middle;
-	text-align: center;
-}
-
-.hero-tagline {
-	display: inline-block;
-    color: #FFF;
-    font-size: 14px;
-    margin: 0 auto;
-    text-transform: uppercase;
-	letter-spacing: 0.5px;
-    padding-bottom: 5px;
-	border-bottom: 3px solid rgba(255, 255, 255, 0.15);
-    margin-bottom: 5px;	
-}
-
-.hero-action
-{
-	display: inline-block;
-    /*font-weight:bold;*/ 
-	margin: 0px auto;
-    /*text-transform: uppercase;*/
-	font-size: 18px;
-	letter-spacing: 1px;
-	padding-bottom: 20px;
-	/*padding-top: 5px;*/
-	/*border-top: 3px solid rgba(255, 255, 255, 0.15);*/
-}
-
-
-#random-service {    
-    height: 200px; 
-    display: table;    
-	margin:auto;
-}
-
-
-#random-service-text {
-    display: table-cell;
-	color: #FDA527;
-    vertical-align: middle;
-    text-align: center;
-	margin: 0;
-    font-size: 5em;
-	font-weight: 600;
-    line-height: 125%;
-	text-transform: uppercase;
-    -ms-word-wrap: break-word;
-    word-wrap: break-word;
-}
- 
-
 #mensajes {
    /* margin-top: 50px;*/
 }
-
 .mensaje
 {
     min-height: 450px;    
@@ -258,7 +161,6 @@ a::selection {
     height: 100px;
     width: 100%;
 }
-
 .mensaje-header
 {
     display: table-cell;
@@ -274,7 +176,7 @@ a::selection {
 	display:table-cell;
 	vertical-align: middle;
     padding-top: 20px;
-    color: #FDA527; 
+    color: $accent; 
 }
 .mensaje-icon-rounded {
 	font-size:40px;
@@ -283,7 +185,7 @@ a::selection {
     margin-top: 10px;
     width: 90px; 
     height: 90px; 
-    color: #FDA527; 
+    color: $accent; 
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     border-radius: 100%; 
@@ -291,7 +193,6 @@ a::selection {
 }
 
 /* HOME - cifras */
-
 .number {
     display: table;
     font-size: 25px;
@@ -301,7 +202,7 @@ a::selection {
     height: 140px;
     width: 140px;
     text-align: center;
-    background: #FDA527;
+    background: $accent;
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     border-radius: 100%;
@@ -311,7 +212,6 @@ a::selection {
     display: table-cell;
     vertical-align: middle;
 }
-
 
 .number span
 {
@@ -360,17 +260,15 @@ a::selection {
 }
 
 /* CONTACTO */
-
 .form-control-jc {
     width: 50%;
 }
 
 
 /* FOOTER */
-
 #footer
 {
-    background-color: #121212;
+    background-color: $skin-color-dark;
     color: floralwhite;
     font-size:larger;
 }
@@ -383,8 +281,8 @@ a::selection {
     outline: 0;
     box-shadow: 0 0 0 0px rgba(2, 117, 216, 0.25);
 }
-/* COOKIES */
 
+/* COOKIES */
 #cookie-consent {
     text-align: center;
     position:fixed;
@@ -405,35 +303,7 @@ a::selection {
     cursor: pointer;
 }
 
-
-@media only screen and (max-width: 991px) {
-	#random-service {
-	   height: 150px;  
-	}
-	#random-service-text {
-	   font-size: 4em; 
-	}
-}
-
-@media only screen and (max-width: 767px) {
-	.hero.hero-top{
-		margin-top: 0px;
-	}
-	.hero-content {
-		padding-left: 0px 50px;
-	}
-	
-	.hero-action
-    {
-		font-size: 15px;
-	}
-
-	#random-service {
-	   height: 150px;  
-	}
-	#random-service-text {
-	   font-size: 2em; 
-	}
+@media only screen and (max-width: 767px) {	
     .mensaje    
     {
         min-height: auto;    

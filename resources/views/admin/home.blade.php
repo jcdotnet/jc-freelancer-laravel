@@ -6,7 +6,7 @@
 		@include('includes/info-alert')
 		
 		<div class="row"> 
-			<div class="card-deck">
+			<div class="card-deck col-12">
 				<div class="card">	
 					<div class="card-body">
 						<h3 class="card-title text-center">Últimos proyectos</h3>
