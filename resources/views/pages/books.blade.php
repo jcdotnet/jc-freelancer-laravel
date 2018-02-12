@@ -54,6 +54,11 @@
 					</a>
 				</div>
 				<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+					<a href="https://www.amazon.com/Pro-NET-Core-Andrew-Troelsen/dp/1484230175" target="_blank" class="d-block mb-4 h-100">
+					  <img class="img-fluid img-thumbnail" src="{{ asset('storage/images/pro_c_sharp_7.jpg') }}" alt="PRO C#7 with .NET and .NET core">
+					</a>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3">
 					<a href="https://www.amazon.com/Pro-Spring-Depth-Guide-Framework/dp/1484228073/" target="_blank" class="d-block mb-4 h-100">
 					  <img class="img-fluid img-thumbnail" src="{{ asset('storage/images/PRO_Spring_5.jpg') }}" alt="PRO Spring 5">
 					</a>
