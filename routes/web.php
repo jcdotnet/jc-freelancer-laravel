@@ -17,6 +17,9 @@ Route::get('/', function() {
 Route::get('servicios' , function () {
 	return view('services');
 });	
+Route::get('mantenimiento-web', function () {
+	return view('pages.maintenance');
+});	
 Route::get('proyectos', [
 	'uses' => 'ProjectController@getIndex' 
 ]);
@@ -233,10 +236,16 @@ Route::group(['prefix' => '{lang?}'], function () {
 		'uses' => 'AppController@postHome'
 	]);
 
+	/* services */
 	Route::get('{servicios}' , function () {
 		return view('services');
 	})->name('servicios')->where('servicios', '(servicios|services)');
+	
+	Route::get('mantenimiento-web', function () {
+		return view('pages.maintenance');
+	})->name('maintenance');	
 
+	/* projects */
 	Route::get('{proyectos}', [
 		'uses' => 'ProjectController@getIndex',
 		'as' => 'proyectos'
@@ -252,6 +261,7 @@ Route::group(['prefix' => '{lang?}'], function () {
 		'as' => 'proyecto'
 	])->where('proyecto', '(proyecto|project)');
 
+	/* other pages */
 	Route::get('{contacto}', [
 		'uses' => 'AppController@getContact'
 	])->name('contacto')
@@ -281,7 +291,7 @@ Route::group(['prefix' => '{lang?}'], function () {
         return redirect()->back()->with('locale', $locale);
     });	
 	
-	/* Background */
+	/* background */
 	Route::group(['prefix' => 'training'], function () {
 		
 		Route::get('/java', function () {

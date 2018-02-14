@@ -20,7 +20,9 @@ html, body {
 
 body {
     font-family: 'Raleway', sans-serif;
-    font-weight: normal;      
+    font-weight: normal; 
+	letter-spacing: 0.2px;
+	color: $text-color;
 }
 
 ::selection {
@@ -117,7 +119,7 @@ a::selection {
 
 .row-header, .row-subheader {
     text-align: center;
-	color: #151515;
+	color: $skin-color-dark;
     padding-bottom: 30px;
 	font-family: ralewaybold;
 }
@@ -125,7 +127,7 @@ a::selection {
 .row-header:after {
     content: "";
     display: block;
-    background-color: $skin-color;
+    background-color: $skin-color-dark;
     width: 30px;
     height: 1px;
     margin: 15px auto 0;
@@ -164,12 +166,12 @@ a::selection {
 .mensaje-header
 {
     display: table-cell;
-	color: gray;
-	font-family: ralewaybold;
+	color: $skin-color-dark;
+	font-size: 2.2rem;
 	text-align: center;
     text-transform: uppercase;
     vertical-align: middle;
-    height: 100px;
+    height: 100px;	
 }
 .mensaje-icon {
 	font-size:40px;
@@ -237,13 +239,13 @@ a::selection {
 }
 
 .project {
-	color: gray;
+	color: #text-color;
 }
 .project-title  {
 	display:inline-block;
     text-transform: uppercase;
 	letter-spacing: 1px;
-    border-bottom: 3px solid gray;	
+    border-bottom: 3px solid $text-color;	
 }
 
 .project-description {

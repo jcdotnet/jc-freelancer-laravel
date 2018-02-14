@@ -54,6 +54,7 @@
 					@lang("<li> Desarrollo de aplicaciones Web (desde páginas simples hasta todo el desarrollo full-stack) usando JavaScript, PHP o .NET. </li><li> Desarrollo Front-End con frameworks MVC JavaScript (Angular) y PHP (Laravel). </li><li> Creación de APIs (servicios web basados en arquitecturas REST o SOAP) para el acceso de aplicaciones a fuentes de datos. </li><li> Eliminación de errores o advertencias. </li><li> Personalización de páginas Web. </li> <li> Adaptación de páginas Web a dispositivos móviles. </li><li> Creación de tiendas online (PrestaShop, WooCommerce). </li>")
 					@if (Config::get('app.locale') === "es")
 					<li>Páginas Web escaparate para nuevos autónomos. Más información <strong><a href="https://josecarlosroman.com/wordpress/pagina-web-escaparate-autonomos/" target="_blank"> aquí.</a></strong></li>
+					<li><a href="{{ route('maintenance', Config::get('app.locale') == 'es' ? '': Config::get('app.locale')) }}">@lang("Mantenimiento Web")</a></li>
 					@endif
 				</ul>
 			</div>                    
