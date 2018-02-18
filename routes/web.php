@@ -241,9 +241,9 @@ Route::group(['prefix' => '{lang?}'], function () {
 		return view('services');
 	})->name('servicios')->where('servicios', '(servicios|services)');
 	
-	Route::get('mantenimiento-web', function () {
+	Route::get('{maintenance}', function () {
 		return view('pages.maintenance');
-	})->name('maintenance');	
+	})->name('maintenance')->where('maintenance', '(mantenimiento-web|web-maintenance)');	
 
 	/* projects */
 	Route::get('{proyectos}', [

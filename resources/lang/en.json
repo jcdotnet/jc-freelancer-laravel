@@ -124,7 +124,7 @@
               "Desarrollo Web" :  "Web development",  
             
              "<li> Desarrollo de aplicaciones Web (desde páginas simples hasta todo el desarrollo full-stack) usando JavaScript, PHP o .NET. </li><li> Desarrollo Front-End con frameworks MVC JavaScript (Angular) y PHP (Laravel). </li><li> Creación de APIs (servicios web basados en arquitecturas REST o SOAP) para el acceso de aplicaciones a fuentes de datos. </li><li> Eliminación de errores o advertencias. </li><li> Personalización de páginas Web. </li> <li> Adaptación de páginas Web a dispositivos móviles. </li><li> Creación de tiendas online (PrestaShop, WooCommerce). </li>":     
-             "<li> Front-end, back-end and full-stack Web development using JavaScript / PHP / .NET. </li><li> MVC Frameworks development with JavaScript (Angular) and PHP (Laravel). </li><li> SOAP-based and REST-based Web services development.</li><li> Bugs fixing. </li><li> Website customization. </li> <li> Responsive design. </li><li> E-commerce websites using PrestaShop and WooCommerce. </li></ul>",
+             "<li> Front-end, back-end and full-stack Web development using JavaScript / PHP / .NET. </li><li> MVC Frameworks development with JavaScript (Angular) and PHP (Laravel). </li><li> SOAP-based and REST-based Web services development.</li><li> Bugs fixing. </li><li> Website customization. </li> <li> Responsive design. </li><li> E-commerce websites using PrestaShop and WooCommerce. </li>",
                   "<p>WordPress se ha convertido en la <span class='highlighted'>herramienta más usada hoy en día para crear páginas Web</span>. Por eso he decidido crear un apartado específico para este gestor de contenidos. ¿Por qué es tan popular WordPress? WordPress es fácil de instalar, tienes un tema o un plugin para practicamente todo lo que necesites y una gran comunidad de desarrolladores detrás; además es buena opción para el SEO.":
 			      "<p><span class='highlighted'>WordPress is the most used platform to create websites </span>. That's why I have decided to add WordPress as a featured service. Why is WordPress so popular? WordPress is an easy-to-install content management system that <span class='highlighted'> ships with the largest theme and plugin ecosystem for your needs and is SEO-friendly.</span>",
 			      "A continuación te ofrezco mis servicios para que tengas <span class='highlighted'>tu propia página en WordPress actualizada, segura y fácil de administrar.</span></p>":
@@ -197,5 +197,57 @@
 	"Mis libros | Jose Carlos Román Rubio" : "Books I own | Jose Carlos Román Rubio",
 	"Artículos": "Articles",
 	"sobre ": "about ",
-	"Leer":"Read"
+	"Leer":"Read",
+	"Mantenimiento Web" : "Web maintenance",
+	"Mantenimiento Web | Jose Carlos Román Rubio" : "Web maintenance | Jose Carlos Román Rubio",
+	"Mantenimiento Web. ¿En qué consiste y por qué debo contratar los servicios de un freelancer?, ¿Cuánto cuesta? Todas las respuestas en esta página.":
+	"Web maintenance. Why is so important? What does it cost? Why should you hire a professional? If you have a website, you will be interested in reading this article",
+	"El mantenimiento Web, ¿por qué es importante?" : "Web maintenance, why?",
+	"El mantenimiento de tu página o aplicación Web, y el mantenimiento de una aplicación en general, es muy importante si realmente te importa y quieres dar una buena imagen a tus visitantes o clientes. Piensa en el mantenimiento de tu hogar, de tu coche. El mantenimiento de tu Web consiste en exactamente lo mismo." :
+	"You might be wondering: What's all the fuss about maintaining websites? I have my website and it's working. Why should I spend more money on something that I've already paid?",
+	"<strong>¿Qué pasa si no la mantienes?</strong> Pues depende, y depende de muchos factores. Puede que alguna funcionalidad empiece a fallar, que se muestren errores, que sea vulnerable y te ataquen o puedes que no pase nada pero eso es muy complicado.":
+	"Ok, I see your point. I'll tell you why you should maintain your website: Same reason that you maintain your car, your house or whatever it's important to you. Do you also care about your website?",
+    "Al final siempre va a fallar algo. Es como el ejemplo del coche, puedes tener suerte pero si no lo mantienes te empezará a dar problemas." :
+	"<strong>Believe me, like everything listed above, websites also break</strong>. They might either stop working suddenly, either display errors, either get attacked if they are not updated. There a lot of ways websites can fail if you don't take care about them.",
+	"<strong>He visto muchas páginas Webs que a las semanas o pocos meses de su creación ya no funcionaban. </strong>Muchas de ellas con un error 500 del servidor. Y lo curioso de todo esto es que en muchos de los casos ni los propietarios sabían que su Web no iba." :
+	"As a developer I've seen lots of websites failing because they were abandoned. Some owners think that once they are built they are going to be up and running.",
+	"¿Quién me hace el mantenimiento Web?" : "Who maintains my website?",
+	"El mantenimiento debe llevarlo un profesional. Si has contratado a un desarrollador Web lo normal es que te lo lleve él ya que es quien mejor conoce el trabajo que se ha hecho con la página." :
+	"It should be done by a professional. If you have hired a web developer ask them about the mainteinance since they will know better than anyone else how your website has been developed.",
+	"De hecho dentro del desarrollo Web no entra solo la creación de la página o aplicación Web. El desarrollo consiste en su análisis previo, diseño, implementación y mantenimiento. Si el profesional no te habla de mantenimiento posiblemente no sea un desarrollador Web." :
+	"Web maintenance is actually a part of the software development process.",
+	"<strong>En el caso de que no te ofrezcan mantenimiento o tengas ya tu página o aplicación Web te recomiendo que te pongas en contacto con un profesional.</strong>":
+	"<strong>If you already have a website, I recommend you contact a professional.</strong>",
+	"¿Qué entra en el mantenimiento Web?" : "How is the maintenance performed?",
+	"Cada Web es diferente y por lo tanto <span class=\"highlighted\"> para cada Web las tareas a llevar a cabo son diferentes, pero el objetivo es el mismo: Que tu Web esté siempre igual que estaba cuando la creaste.</span>":
+	"Every website is different and so are the maintenance tasks. However <span class=\"highlighted\">the goal is the same independent of the website complexity: The website must be up and runnig as it was when it was built.</span>",
+	
+	"Podemos decir entonces que el profesional se encarga de tareas como actualizaciones o correcciones de posibles errores para que estés tranquilo/a en todo momento.":
+	"The main tasks are focused to achieve this goal. The professional must be in charge of updating and protecting the website, as well as fixing errors and related tasks.",
+    
+	"Esas son las tareas que el cliente \"no ve\". Luego están las tareas que el cliente necesita y aquí es donde hay que diferenciar qué es mantenimiento y qué no.":
+	"Apart from these main tasks the client may need the professional to help them out. Which tasks must the professional perform and which not?",
+	
+	"<strong>El freelancer o la empresa que se encarga del mantenimiento tiene que preocuparse de que la Web esté siempre igual y trabajar sobre el contenido existente, pero no de añadir nuevas funcionalidades o ampliarla.</strong>" :
+	"The professional are in charge of having the website up and running, they work on what already exists, thw roek on the content, but they don't have the obligation of adding new features.",
+	
+	"Puedes pedirle al profesional que te cambie algún texto existente, que te mire algo que no entiendas o que te corrija algo que está mal. Es decir, trabajar con el contenido existente." : 
+	"For example, you might want the professional to help you out to change any content, also you can need help for fixing any errors." ,
+	
+	"No puedes pedirle que te convierta una página Web escaparate en una tienda online o que te convierta una Web en multilingüe, por ejemplo." :
+	"On the other hand you can't ask the professional to convert your showcase website into a online store. You will have to request a quote since you are asking for a new feature." ,
+	
+	"¿Cuánto cuesta?" : "Pricing",
+	"De nuevo, depende de la página o aplicación Web. Lo que desaconsejo totalmente es contratar a un freelancer o a una empresa que cobre por horas.":
+	"Well, again, it depends on the Web complexity. The important key here is to pay a fixed price per month, that way the professional will work when needed. Hourly contracts might be very risky in this scenario, the professional might need more hours than expected to complete the maintenance tasks.",
+	
+	"<span class=\"highlighted\">Entre los servicios que ofrezco en esta página se encuentra el de <em>Mantenimiento Web.</em></span> Ofrezco a mis clientes mantenimientos por tan SOLO 30 euros al mes. Esa tarifa puede aumentar dependiendo de la complejidad de tu Web, aunque en la mayoría de los casos no superará los 50-100 euros por página Web." :
+	"You can find in my website Web maintenance services for ONLY 30 euros. I usually charge my clients between 50 and 100 euros (price per website), which are very competitive rates.",
+	
+	"Para más información no dudes en ": "Need a freelancer? Please  ",
+	"contactar conmigo" : "contact me",
+	"Como siempre te atenderé encantado y me implicaré totalmente con tu proyecto." : "I will respond all your enquiries as soon as I can. Thank you in advance.",
+	
+	"El mantenimiento de tu Web desde tan solo 30 euros al mes." : "Get your website maintained from only 30 euros per month.",
+	"https://ctt.ec/SHQRL": "https://ctt.ec/L27DZ"
 }

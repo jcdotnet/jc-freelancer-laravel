@@ -15,5 +15,7 @@ return [
 	'services' => 'services',
 	'servicios' => 'services',
 	'libros' => 'books',
-	'books' => 'books'
+	'books' => 'books',
+	'mantenimiento-web' => 'web-maintenance',
+	'web-maintenance' => 'web-maintenance'
 ];
