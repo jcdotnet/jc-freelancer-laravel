@@ -8,6 +8,7 @@
 
 @import "navigation"; 
 @import "hero";
+@import "titles";
 
 /* GENERAL */
 
@@ -49,7 +50,7 @@ a::selection {
 }
 
 .background {
-    background-color: #d3d3d3;
+    background-color: $light-background;
 }
 
 .btn-jc {
@@ -100,7 +101,7 @@ a::selection {
 }
 
 .first-section {
-	padding-top: 100px;
+	margin-top: 87px; // top bar + nav bar + border
 }
 
 .highlighted { 
@@ -117,21 +118,6 @@ a::selection {
     font-size: 18px;    
 }
 
-.row-header, .row-subheader {
-    text-align: center;
-	color: $skin-color-dark;
-    padding-bottom: 30px;
-	font-family: ralewaybold;
-}
-
-.row-header:after {
-    content: "";
-    display: block;
-    background-color: $skin-color-dark;
-    width: 30px;
-    height: 1px;
-    margin: 15px auto 0;
-}
 .row-content {
     margin: 0px auto;
     padding-top:  5px;
@@ -253,7 +239,7 @@ a::selection {
 	/*margin: 0 auto;*/
 	margin: auto;
 	left: 0px;
-	right: opx;
+	right: 0px;
     bottom: 10px;
 }
 
@@ -265,6 +251,10 @@ a::selection {
     text-transform: uppercase;
 	letter-spacing: 1px;
     border-bottom: 3px solid $text-color;	
+}
+
+.project-title-no-underline  {
+    border-bottom: none;	
 }
 
 .project-description {
@@ -325,6 +315,14 @@ a::selection {
 }
 
 @media only screen and (max-width: 767px) {	
+	/* headers
+	h1 {
+		font-size: 1.7rem;
+	}
+	*/
+	.first-section {
+		margin-top: 68px; // nav bar + border
+	}
     .mensaje    
     {
         min-height: auto;    

@@ -7,10 +7,11 @@
 @endsection
 
 @section('content')
-<section id="breadcrumb" class="first-section">
-   <div class="container">    
-        <div class="row">
-			<div class="col">
+<section id="page-title" class="title-standard first-section">
+   <div class="container">  
+        <div class="row align-items-center text-center">
+			<div class="col-12 title-content">
+				<h1>@lang("Mis libros")</h1>				
 				<nav class="breadcrumb">
 					<a class="breadcrumb-item" href="{{ route('home', Config::get('app.locale') == 'es' ? '': Config::get('app.locale')) }}"> @lang("Inicio") </a>
 					<span class="breadcrumb-item active">@lang("Mis libros")</span>
@@ -20,13 +21,9 @@
     </div>
 </section>
 
-
 <section id="jc-bookshelf">
     <div class="container">
-		<div class="row">
-		    <div class="col-12 mt-3 row-header">
-		       <h1 class="center"> @lang('Mis libros')</h1>
-			</div>
+		<div class="row mt-4">
 			<div class="row row-content text-center">           				
 				<div class="col-12 col-sm-6 col-md-4 col-lg-3">
 					<a href="{{ asset('storage/images/arquitectura del PC.jpg') }}" target="_blank" class="d-block mb-4 h-100">

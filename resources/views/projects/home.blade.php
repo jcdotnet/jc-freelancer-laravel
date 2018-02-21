@@ -7,11 +7,12 @@
 
 @section('content')
 
-<section id="breadscrumb" class="first-section">
-	<div class="container">    
-        <div class="row">
-            <div class="col">
-                <nav class="breadcrumb">
+<section id="page-title" class="title-standard first-section">
+   <div class="container">  
+        <div class="row align-items-center text-center">
+			<div class="col-12 title-content">
+				<h1>@lang('Proyectos')</h1>				
+				<nav class="breadcrumb">
                     <a class="breadcrumb-item" href=" {{ route('home', Config::get('app.locale') == 'es' ? NULL : Config::get('app.locale')) }}"> @lang('Inicio') </a>
 					@if (!empty(Request::segment(3))) {{-- hemos filtrado por tecnologías --}}
 						<a class="breadcrumb-item" href=" {{ route('proyectos', [Config::get('app.locale') == 'es' ? NULL : Config::get('app.locale'), __('routes.proyectos')])}}"> @lang('Proyectos') </a>
@@ -20,14 +21,8 @@
 						<a class="breadcrumb-item active"> @lang('Proyectos') </a>
 					@endif
 				</nav>
-            </div>
+			</div>
 		</div>
-		
-		<div class="row">
-			<div class="col row-header">
-                <h3> @lang('Proyectos') </h3>
-            </div>
-		</div>    
     </div>
 </section>
 
@@ -35,7 +30,7 @@
 <section id="proyectos">  
 	<div class="container">
 		
-        <div class="row">
+        <div class="row mt-4">
 			@foreach ($projects as $p)	
 			<div class="col-sm-6 col-lg-4 d-flex"> 
 				<div class="card mb-3 pb-5">

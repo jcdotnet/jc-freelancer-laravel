@@ -47,7 +47,7 @@
               "Soy un apasionado de la programación desde pequeño y tengo la carrera de ingeniería técnica en informática. Además siempre estoy realizando cursos, estoy al día en las últimas tecnologías y sigo las mejores practicas en programación." :
 			  "I'm passionate about programming since childhood and I received my computer engineering degree in 2014. Besides, I have enrolled to several courses, I’m skilled in many technologies and I apply the best coding practices.",  
               "Tarifas económicas" : "Affordable prices",   
-              "Mis tarifas son económicas, intento dar el mejor servicio al mejor precio posible puesto que me encanta el trabajo que hago y mi meta es poder ayudar a los demás con ello. No dudes en ponerse en contacto conmigo y pedir presupuesto para tu proyecto." : 
+              "Mis tarifas son económicas, intento dar el mejor servicio al mejor precio posible puesto que me encanta el trabajo que hago y mi meta es poder ayudar a los demás con ello. No dudes en ponerte en contacto conmigo y pedir presupuesto para tu proyecto." : 
 		      "My rates are low and my work is high-quality, please feel free to get a quote for your project by going to he contact page. I love my job and my goal is to apply all that I have learned to help others in any way I can.",  
               "Dedicación total":  "Client centric"   ,
               "Mi dedicación a tu idea o proyecto será total y estaremos comunicados desde el primer día hasta que finalice. If you don't speak spanish we can communicate in written English (switch please to English version above)." :
@@ -249,5 +249,7 @@
 	"Como siempre te atenderé encantado y me implicaré totalmente con tu proyecto." : "I will respond all your enquiries as soon as I can. Thank you in advance.",
 	
 	"El mantenimiento de tu Web desde tan solo 30 euros al mes." : "Get your website maintained from only 30 euros per month.",
-	"https://ctt.ec/SHQRL": "https://ctt.ec/L27DZ"
+	"https://ctt.ec/SHQRL": "https://ctt.ec/L27DZ",
+	"Tecnologías": "Skills",
+	"Detalles": "Details"
 }

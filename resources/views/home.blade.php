@@ -57,7 +57,7 @@
 				<div class="mensaje-header-container">
 					<h1 class="mensaje-header"> @lang("Tarifas económicas") </h1>
                 </div>
-                <p class="size-xl text-center"> @lang("Mis tarifas son económicas, intento dar el mejor servicio al mejor precio posible puesto que me encanta el trabajo que hago y mi meta es poder ayudar a los demás con ello. No dudes en ponerse en contacto conmigo y pedir presupuesto para tu proyecto.")</p>
+                <p class="size-xl text-center"> @lang("Mis tarifas son económicas, intento dar el mejor servicio al mejor precio posible puesto que me encanta el trabajo que hago y mi meta es poder ayudar a los demás con ello. No dudes en ponerte en contacto conmigo y pedir presupuesto para tu proyecto.")</p>
             </div>
             <div class="col-12 col-sm-6 col-lg-3 mensaje">
 				<div class="text-center">
@@ -103,7 +103,7 @@
 <section id="must-know">
     <div class="container">
         <div class="row justify-content-center">
-			<div class="col row-header">
+			<div class="col section-subtitle">
 				<h2> @lang("¿Por qué contratar a un freelancer?") </h2>
 			</div>
 		</div>

@@ -1,0 +1,103 @@
+/* 
+    Created on : 21-feb-2018, 9:11:05
+    Author     : JC
+*/
+
+/*
+/* PAGE TITLES 
+/* *********** */
+
+.title-standard {	
+	background-color: $accent;
+	& .title-content {
+		margin-top: 4%;
+		margin-bottom: 4%;
+	}
+	& h1 {
+		color: #FFF;
+		font-size: 2.2rem;
+		letter-spacing: -1px;
+		text-transform: uppercase;
+	}
+	& .breadcrumb {
+		display: block;
+		margin-right: auto; 
+		margin-left: auto;
+		background-color: $accent;		
+		padding: 0;
+		margin-bottom: 0;
+		
+		& .breadcrumb-item + .breadcrumb-item::before {
+			display: inline-block;
+			padding-right: 0.2rem;
+			padding-left: 0.2rem;
+			color: #FFF;
+			content: "/";
+		}
+		& .breadcrumb-item, & .breadcrumb-item.active {
+			color: #FFF;
+		}
+	}
+}
+
+// TO-DO: title-hero
+
+@media only screen and (max-width: 767px) {	
+	.title-standard {
+		& h1 {
+			font-size: 2.0rem;
+			margin-bottom: 0.2rem;
+		}
+	}
+}
+
+@media only screen and (max-width: 575px) {	
+	.title-standard {
+		& h1 {
+			font-size: 1.7rem;
+			margin-bottom: 0.1rem;
+		}
+		& .breadcrumb-item {
+			font-size: 0.7rem;
+		}
+	}
+}
+
+/*
+/* SECTION TITLES
+/* ************** */
+
+.section-title, .section-subtitle, .row-header, .row-subheader {
+	margin-top: 1rem;
+}
+
+.section-title {
+	color: $skin-color-dark;
+	& h2 {
+		font-weight: 400;
+		text-transform: uppercase;		
+	}
+	& span {
+		font-weight: 700;
+		letter-spacing: 0.1rem;		
+	}
+	& span:before {
+		margin:100px;
+	}		
+}
+
+.row-header, .row-subheader, .section-subtitle, .section-subtitle-simple {
+    text-align: center;
+	color: $skin-color-dark;
+    padding-bottom: 30px;
+	font-family: ralewaybold;
+}
+
+.row-header:after, .section-subtitle:after {
+    content: "";
+    display: block;
+    background-color: $skin-color-dark;
+    width: 30px;
+    height: 1px;
+    margin: 15px auto 0;
+}

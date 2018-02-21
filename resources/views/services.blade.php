@@ -6,10 +6,11 @@
 @endsection
 
 @section('content')
-<section id="breadcrumb" class="first-section">
-   <div class="container">    
-        <div class="row">
-			<div class="col">
+<section id="page-title" class="title-standard first-section">
+   <div class="container">  
+        <div class="row align-items-center text-center">
+			<div class="col-12 title-content">
+				<h1>@lang("Servicios")</h1>				
 				<nav class="breadcrumb">
 					<a class="breadcrumb-item" href="{{ route('home', Config::get('app.locale') == 'es' ? '': Config::get('app.locale')) }}"> @lang("Inicio") </a>
 					<span class="breadcrumb-item active">@lang("Servicios")</span>
@@ -24,7 +25,7 @@
    <div class="container">
 	    <div class="row">
 		    <div class="col mt-3 row-header">
-		       <h1> @lang("Aplicaciones de escritorio y de móvil")</h1>
+		       <h2> @lang("Aplicaciones de escritorio y de móvil")</h2>
 			</div>
 	    </div>
         <div class="row row-content">           
@@ -45,7 +46,7 @@
     <div class="container">
 		<div class="row">
 		    <div class="col mt-3 row-header">
-		       <h1 class="center"> @lang("Aplicaciones Web")</h1> 
+		       <h2 class="center"> @lang("Aplicaciones Web")</h2> 
 			</div>
 	    </div>		
         <div class="row row-content">           
@@ -72,7 +73,7 @@
     <div class="container">
 		<div class="row">
 		    <div class="col mt-3 row-header">
-		       <h1 class="center"> @lang('WordPress')</h1>
+		       <h2 class="center"> @lang('WordPress')</h2>
 			</div>
 	    </div>
         <div class="row row-content">           
@@ -98,7 +99,7 @@
    <div class="container">
 	   <div class="row">
 		    <div class="col mt-3 row-header">
-		       <h1 class="center"> @lang("Programación")</h1>
+		       <h2 class="center"> @lang("Programación")</h2>
 			</div>
 	    </div>	   
         <div class="row row-content">           
@@ -117,7 +118,7 @@
    <div class="container"> 
 	   <div class="row">
 		    <div class="col mt-5 row-header">
-		       <h1 class="center"> @lang("Testimonios")</h1>
+		       <h2 class="center"> @lang("Testimonios")</h2>
 			</div>
 	    </div>	
         <div class="row row-content">

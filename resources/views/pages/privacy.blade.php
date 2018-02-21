@@ -7,10 +7,11 @@
 
 @section('content')
 
-<section id="breadcrumb" class="first-section">
-   <div class="container">    
-        <div class="row">
-			<div class="col">
+<section id="page-title" class="title-standard first-section">
+   <div class="container">  
+        <div class="row align-items-center text-center">
+			<div class="col-12 title-content">
+				<h1>Aviso legal y política de privacidad</h1>				
 				<nav class="breadcrumb">
 					<a class="breadcrumb-item" href="{{route('home', Config::get('app.locale') == 'es' ? NULL : Config::get('app.locale')) }}"> @lang("Inicio") </a>
 					<span class="breadcrumb-item active">@lang("Privacidad")</span>
@@ -18,20 +19,12 @@
 			</div>
 		</div>
     </div>
-
-	<div class="container">
-		<div class="row">
-			<div class="col row-header">
-				<h1>Aviso legal y política de privacidad</h1>	
-			</div>
-		</div>
-	</div>
 </section>
 
 
 <section>
    <div class="container">
-       <div class="row row-content">
+       <div class="row row-content mt-4">
 		   <div class="col">
 				<p>En cumplimiento de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y Comercio Electrónico (LSSI CE), informamos a los usuarios de los datos de la empresa propietaria de esta web: </p>
                 <p><u>Responsable</u></p>

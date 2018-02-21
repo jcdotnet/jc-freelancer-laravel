@@ -7,10 +7,11 @@
 
 @section('content')
 
-<section id="breadscrumb" class="first-section">
-   <div class="container">    
-        <div class="row">
-			<div class="col">
+<section id="page-title" class="title-standard first-section">
+   <div class="container">  
+        <div class="row align-items-center text-center">
+			<div class="col-12 title-content">
+				<h1>Política de cookies</h1>				
 				<nav class="breadcrumb">
 					<a class="breadcrumb-item" href="{{route('home', Config::get('app.locale') == 'es' ? NULL : Config::get('app.locale'))}}"> @lang("Inicio") </a>
 					<span class="breadcrumb-item active">Cookies</span>
@@ -18,20 +19,12 @@
 			</div>
 		</div>
     </div>
-
-	<div class="container">
-		<div class="row">
-			<div class="col row-header">
-				<h1>Política de cookies</h1>	
-			</div>
-		</div>
-	</div>
 </section>
 	
 
 <section>
     <div class="container">
-        <div class="row row-content">
+        <div class="row row-content mt-4">
 			<div class="col">
 				<p>En cumplimiento de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y Comercio Electrónico le informamos de la utilización de cookies en las webs 
 					y aplicaciones de "Jose Carlos Román Rubio" ("Jose Carlos Román Rubio", en adelante), con el fin de facilitar y mejorar la navegación a los usuarios, 
