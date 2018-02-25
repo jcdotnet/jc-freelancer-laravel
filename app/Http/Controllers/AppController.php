@@ -41,21 +41,26 @@ class AppController extends Controller {
 	
 	public function postHome () 
 	{
-		$servicios = array(__("Rediseño de páginas Web"), __("Conversión de HTML a WordPress"),  
+		$servicios = array(__("Rediseño de páginas Web"), __("Páginas Web escaparate"),  
             __("Adaptación a dispositivos móviles"),  __("Páginas Web corporativas"),   
             __("Solución de errores y/o advertencias"), __("Aplicaciones nativas para Android"), 
-			__("Servicios de programación"), __("Actualización de páginas Web"),  
+			__("Aplicaciones Web"), __("Actualización de páginas Web"),  
             __("Aplicaciones de escritorio"), __("Páginas Web en WordPress"),   
             __("Tiendas online en PrestaShop"), __("Tiendas online con WooCommerce"),   
-            __("Implementación de ideas y proyectos"), __("Aplicaciones multilenguaje"),   
-            __("Aplicaciones híbridas"), __("Desarrollo en Ionic"),    
+            __("Ayuda en HTML, CSS y JavaScript"), __("Aplicaciones multilenguaje"),   
+            __("Aplicaciones híbridas"), __("Desarrollo en Ionic"), 
+			__("Desarrollo en NativeScript"), 
             __("Aplicaciones para móviles"), __("Páginas Web personales"),   
             __("Optimización Web (WPO)"), __("Traducciones de temas WordPress"),  
             __("Páginas Web listas para usar"), __("Desarrollo en JavaScript"),  
             __("Desarrollo en Angular"), __("Desarrollo en PHP"),  
             __("Desarrollo en Laravel"),  __("Desarrollo en frameworks MVC"),  
-            __("Desarrollo en .NET"), __("Desarrollo en WPF"),  
-            __("Desarrollo de servicios Web"));
+            __("Desarrollo en .NET"), __("Desarrollo en WPF"),
+			__("Desarrollo en Java"), __("Desarrollo en Spring"),
+            __("Desarrollo de servicios Web"), 
+			__("Mantenimiento Web"), __("Mantenimiento WordPress"),
+			__("Desarrollo de servicios Web"), __("Desarrollo en Spring"),
+			__("Asistencia WordPress"));
 		
 		return Response::json(['servicio'=> $servicios[rand(0, count($servicios)-1)]], 200);				
 	}  

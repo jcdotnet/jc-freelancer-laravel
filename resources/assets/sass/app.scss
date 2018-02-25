@@ -113,11 +113,6 @@ a::selection {
 	color: #FFF;
 }
 
-.parrafo, .size-xl
-{
-    font-size: 18px;    
-}
-
 .row-content {
     margin: 0px auto;
     padding-top:  5px;
@@ -130,6 +125,13 @@ a::selection {
 .size-l {
 	font-size: 16px;
 }
+.parrafo, .size-xl
+{
+    font-size: 17px;    
+}
+size-xxl {
+	font-size: 18px;
+}
 
 .subtitle {
 	color:grey;
@@ -141,23 +143,22 @@ a::selection {
 }
 .mensaje
 {
-    min-height: 450px;    
+    min-height: 400px;    
 }
 
 .mensaje-header-container {
-    display: table;  
-    height: 100px;
+    display: table;
+	height:70px;
     width: 100%;
 }
 .mensaje-header
 {
     display: table-cell;
 	color: $skin-color-dark;
-	font-size: 2.2rem;
+	/*font-size: 2.2rem;*/
 	text-align: center;
     text-transform: uppercase;
-    vertical-align: middle;
-    height: 100px;	
+    vertical-align: top;
 }
 .mensaje-icon {
 	font-size:40px;
@@ -314,6 +315,16 @@ a::selection {
     cursor: pointer;
 }
 
+@media only screen and (max-width: 991px) {
+	.mensaje-header-container {
+		height: auto;
+		margin-bottom: 0.5rem;
+	}
+	.mensaje    
+    {
+        min-height: auto;    
+    }
+}
 @media only screen and (max-width: 767px) {	
 	/* headers
 	h1 {
@@ -323,10 +334,6 @@ a::selection {
 	.first-section {
 		margin-top: 68px; // nav bar + border
 	}
-    .mensaje    
-    {
-        min-height: auto;    
-    }
     
     .mensaje-header
     {

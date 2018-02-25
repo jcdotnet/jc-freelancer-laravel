@@ -32,7 +32,10 @@
                  
            
                "Inicio" :  "Home", 
-              "¿Necesita un profesional para su proyecto?" :  "Get your project done with a freelancer",   
+              "¿Necesita un profesional para su proyecto?" :  "Get your project done with a freelancer",
+	          "Tu proyecto en las mejores manos" : "Get it done with a freelancer",
+	          "Si has llegado hasta aquí probablemente estés buscando un programador. Quizás un desarrollador Web o simplemente un profesional freelance que pueda ayudarte. Si es así has llegado al sitio correcto: Me dedico profesionalmente al desarrollo de aplicaciones informáticas y a continuación puedes ver todo lo que te ofrezco." :
+			  "If you have reached my website you are probably looking for a professional. Maybe either a freelance Web developer, or a programmer who helps you out, or you just have a project to carry out. If so, you're in luck. Below you can find out more about what I can offer to you and your business.",
               "¿Necesita ayuda?" :  "Need help?",   
         "Más información" : "Learn more",  
 		"Más información." : "Learn more.", 
@@ -55,7 +58,7 @@
               "Enlaces":  "Links",
               "Mis servicios" :  "My services",   
               
-               "¿Por qué contratar a un freelancer?" :  "Why should you hire a freelancer?", 
+               "¿Por qué contratar a un <span>freelancer</span>?" :  "Why should you hire a <span>freelancer</span>?", 
             
                  "El trabajador autónomo o freelancer es la solución ideal para particulares o empresas que tengan un proyecto y busquen a un profesional que pueda adaptarse a los horarios y requerimientos del mismo. Un freelancer está continuamente formándose ya que sus ingresos no son fijos y dependen del número de clientes que tengan; por esa razón el freelancer hará un estudio del trabajo y pondrá todos sus conocimientos a la disposición del cliente para sacarlo adelante. Además, contratando a un freelancer estás ayudando a personas emprendedoras que han decidido dedicarse a lo que les gusta.":
                  "You can gain a lot by hiring a freelancer as they need to meet the expectation of their clients and they usually want to do more. In that sense, a freelancer is continuosly learning and you can pick easily work-ready talents for any projects. Also, if you are a company, you don't have to pay any social insurances since the freelancer is a self-employed worker, so you are saving money too. Furthermore, by hiring a freelancer you are helping to entrepreneurs to make their dreams true.",
@@ -76,15 +79,15 @@
             
               "Limpiar":  "Reset",   
 
-              "Rediseño de páginas Web" :  "Websites re-design",  
-              "Conversión de HTML a WordPress" :  "HTML templates to WordPress themes",  
+              "Aplicaciones Web" : "Web apps",
+		      "Rediseño de páginas Web" :  "Websites redesign",  
+              "Páginas Web escaparate" :  "Showcase websites",  
               "Adaptación a dispositivos móviles" :  "Responsive websites", 
               "Páginas Web corporativas" : "Corporate websites",  
               "Solución de errores y/o advertencias" : "Errors and warnings fixing",
-			  "Ajustes de estilos CSS" : "Website CSS fixing",
+			  "Ayuda en HTML, CSS y JavaScript" : "HTML, CSS and JavaScript jobs",
               "Aplicaciones nativas para Android" : "Android development",  
-              "Servicios de programación" : "Programming services",  
-              "Actualización de páginas Web" : "Websites updating",  
+              "Actualización de páginas Web" : "Websites upgrading",
               "Aplicaciones de escritorio" : "Desktop applications",  
               "Páginas Web en WordPress" :  "WordPress development",  
               "Tiendas online en PrestaShop" :  "PrestaShop ecommerce websites", 
@@ -92,7 +95,8 @@
               "Implementación de ideas y proyectos" :  "Projects implementation",  
               "Aplicaciones multilenguaje" :  "Multilanguage applications",     
               "Aplicaciones híbridas" :  "Hybrid applications development",  
-              "Desarrollo en Ionic" :  "Ionic framework development",  
+              "Desarrollo en Ionic" :  "Ionic framework development",
+	          "Desarrollo en NativeScript" :  "NativeScript development",
 	          "Aplicaciones para móviles" :  "Mobile apps development",  
               "Páginas Web personales" :  "Personal websites",  
               "Optimización Web (WPO)":  "Web performance optimization",   
@@ -101,11 +105,17 @@
               "Desarrollo en JavaScript" :  "JavaScript development",
 	          "Desarrollo en Angular" :  "Angular development",
 	          "Desarrollo en PHP" :  "PHP development",
-			  "Desarrollo en Laravel" :  "Laravel development",
-	          "Desarrollo en frameworks MVC" : "MVC frameworks development",
-              "Desarrollo en .NET" :  ".NET development",  
-              "Desarrollo en WPF"  :  "WPF development",  
-              "Desarrollo de servicios Web" :  "Web services development",  
+			  "Desarrollo en Laravel" :  "Laravel development",	          
+			  "Desarrollo en frameworks MVC" : "MVC frameworks development",
+			  "Desarrollo en .NET" :  ".NET development",  
+              "Desarrollo en WPF"  :  "WPF development",
+			  "Desarrollo en Java"  :  "Java development",
+	          "Desarrollo en Spring" : "Spring development",
+              "Desarrollo de servicios Web" :  "Web services development",
+	          "Mantenimiento Web" :  "Web maintenance",
+			  "Mantenimiento WordPress" :  "WordPress maintenance",
+	          "Asistencia WordPress" :  "Wordpress assistance",
+	         
 
               "Servicios" :  "Services",  
 	          "servicios" : "services",
@@ -178,7 +188,7 @@
 	"JC, freelancer en Málaga | Jose Carlos Román Rubio" : "JC, freelancer, Málaga | Jose Carlos Román Rubio" ,
 	"Jose Carlos Román Rubio (JC). Soy  Ingeniero Técnico Informático (Universidad de Málaga), programador, desarrollador, freelancer... Descubre más sobre mí." :
 	"Jose Carlos Román Rubio (JC). Computer Engineer (Universidad de Málaga), programmer, developer, freelancer... Find out more about me."		,
-	"Página Web de Jose Carlos Román Rubio. Ingeniero Técnico Informático (UMA). Programador y desarrollador freelance para particulares y empresas.":
+	"Página Web de Jose Carlos Román Rubio. Ingeniero Técnico Informático (UMA). Freelancer. Programador y desarrollador para particulares y empresas.":
 	"Jose Carlos Román Rubio. Computer Engineer (UMA). Freelance software developer. I offer my services to particulars, freelancers and companies.",
 	"Currículum" : "Curriculum",
 	"CV" : "Resume",

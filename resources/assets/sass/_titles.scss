@@ -68,22 +68,24 @@
 /* ************** */
 
 .section-title, .section-subtitle, .row-header, .row-subheader {
-	margin-top: 1rem;
+	padding-top: 3rem;
 }
 
 .section-title {
 	color: $skin-color-dark;
 	& h2 {
 		font-weight: 400;
-		text-transform: uppercase;		
+		text-transform: uppercase;
+		letter-spacing: -0.5px;
+        line-height: 2rem;		
 	}
 	& span {
 		font-weight: 700;
 		letter-spacing: 0.1rem;		
 	}
-	& span:before {
-		margin:100px;
-	}		
+	& p {
+		color: #777;
+	}
 }
 
 .row-header, .row-subheader, .section-subtitle, .section-subtitle-simple {
@@ -100,4 +102,13 @@
     width: 30px;
     height: 1px;
     margin: 15px auto 0;
+}
+
+@media only screen and (max-width: 991px) {	
+	.section-title {
+		& h2 {
+			font-size: 1.7rem;
+			line-height: 1.7rem;
+		}
+	}
 }

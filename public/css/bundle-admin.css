@@ -8734,7 +8734,7 @@ a.text-dark:focus, a.text-dark:hover {
   text-align: center;
 }
 
-.hero .hero-tagline {
+.hero .hero-title {
   display: inline-block;
   color: #FFF;
   font-size: 14px;
@@ -8867,7 +8867,7 @@ a.text-dark:focus, a.text-dark:hover {
 /* SECTION TITLES
 /* ************** */
 .section-title, .section-subtitle, .row-header, .row-subheader {
-  margin-top: 1rem;
+  padding-top: 3rem;
 }
 
 .section-title {
@@ -8877,6 +8877,8 @@ a.text-dark:focus, a.text-dark:hover {
 .section-title h2 {
   font-weight: 400;
   text-transform: uppercase;
+  letter-spacing: -0.5px;
+  line-height: 2rem;
 }
 
 .section-title span {
@@ -8884,8 +8886,8 @@ a.text-dark:focus, a.text-dark:hover {
   letter-spacing: 0.1rem;
 }
 
-.section-title span:before {
-  margin: 100px;
+.section-title p {
+  color: #777;
 }
 
 .row-header, .row-subheader, .section-subtitle, .section-subtitle-simple {
@@ -8902,6 +8904,13 @@ a.text-dark:focus, a.text-dark:hover {
   width: 30px;
   height: 1px;
   margin: 15px auto 0;
+}
+
+@media only screen and (max-width: 991px) {
+  .section-title h2 {
+    font-size: 1.7rem;
+    line-height: 1.7rem;
+  }
 }
 
 /* GENERAL */
@@ -9023,10 +9032,6 @@ a::selection {
   color: #FFF;
 }
 
-.parrafo, .size-xl {
-  font-size: 18px;
-}
-
 .row-content {
   margin: 0px auto;
   padding-top: 5px;
@@ -9041,6 +9046,14 @@ a::selection {
   font-size: 16px;
 }
 
+.parrafo, .size-xl {
+  font-size: 17px;
+}
+
+size-xxl {
+  font-size: 18px;
+}
+
 .subtitle {
   color: grey;
 }
@@ -9051,23 +9064,22 @@ a::selection {
 }
 
 .mensaje {
-  min-height: 450px;
+  min-height: 400px;
 }
 
 .mensaje-header-container {
   display: table;
-  height: 100px;
+  height: 70px;
   width: 100%;
 }
 
 .mensaje-header {
   display: table-cell;
   color: #121212;
-  font-size: 2.2rem;
+  /*font-size: 2.2rem;*/
   text-align: center;
   text-transform: uppercase;
-  vertical-align: middle;
-  height: 100px;
+  vertical-align: top;
 }
 
 .mensaje-icon {
@@ -9221,6 +9233,16 @@ a::selection {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 991px) {
+  .mensaje-header-container {
+    height: auto;
+    margin-bottom: 0.5rem;
+  }
+  .mensaje {
+    min-height: auto;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   /* headers
 	h1 {
@@ -9229,9 +9251,6 @@ a::selection {
 	*/
   .first-section {
     margin-top: 68px;
-  }
-  .mensaje {
-    min-height: auto;
   }
   .mensaje-header {
     height: auto;
