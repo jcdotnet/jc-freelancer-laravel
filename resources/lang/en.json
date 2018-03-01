@@ -33,7 +33,7 @@
            
                "Inicio" :  "Home", 
               "¿Necesita un profesional para su proyecto?" :  "Get your project done with a freelancer",
-	          "Tu proyecto en las mejores manos" : "Get it done with a freelancer",
+	          "Tu proyecto <span>en las mejores manos</span>" : "Get it done with a <span>freelancer</span>",
 	          "Si has llegado hasta aquí probablemente estés buscando un programador. Quizás un desarrollador Web o simplemente un profesional freelance que pueda ayudarte. Si es así has llegado al sitio correcto: Me dedico profesionalmente al desarrollo de aplicaciones informáticas y a continuación puedes ver todo lo que te ofrezco." :
 			  "If you have reached my website you are probably looking for a professional. Maybe either a freelance Web developer, or a programmer who helps you out, or you just have a project to carry out. If so, you're in luck. Below you can find out more about what I can offer to you and your business.",
               "¿Necesita ayuda?" :  "Need help?",   
@@ -261,5 +261,13 @@
 	"El mantenimiento de tu Web desde tan solo 30 euros al mes." : "Get your website maintained from only 30 euros per month.",
 	"https://ctt.ec/SHQRL": "https://ctt.ec/L27DZ",
 	"Tecnologías": "Skills",
-	"Detalles": "Details"
+	"Detalles": "Details",
+	"Me llamo Jose Carlos Román Rubio (profesionalmente soy conocido como JC) y soy de Málaga (España). Tengo más de 10 años de experiencia en programación y soy Ingeniero Ténico Informático por la Universidad de Málaga. En 2016 empecé mi carrera como freelancer. Concretamente soy programador y desarrollador freelance, desarrollando todo tipo de aplicaciones informáticas.":
+	"My name is Jose Carlos Román Rubio and I'm from Málaga, Spain. I have over 10 years experience in programming and I am currently working as a freelancer. Formerly, in March 2014, I graduated from University of Málaga with a computer engineering bachelor's degree.",
+	"A continuación, voy a compartir mis números como trabajador freelance:":
+	"Next, I would like to share some figures about my freelancing career:",
+	"He trabajado con más de 20 clientes (particulares y sobre todo empresas). La mayoría de ellos son españoles y más de la mitad han vuelto a contratar mis servicios.":
+	"I have worked for over 20 clients from all over the world, most of them from Spain though. More than half are returning clients and they range from companies to individuals.",
+	"He realizado más de 100 proyectos, todos facturados.":
+	"I have succesfully completed more than 100 projects."
 }

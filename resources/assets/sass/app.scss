@@ -20,14 +20,17 @@ html, body {
 }
 
 body {
-    font-family: 'Raleway', sans-serif;
-    font-weight: normal; 
-	letter-spacing: 0.2px;
-	color: $text-color;
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 1.7; /* 1.5 */
+    color: $text-color;		  
+	/*letter-spacing: 0.2px;*/ /* same as my WordPress website */
 }
 
 ::selection {
     background: $accent;
+	color: #FFF;
 }
 
 a, a:visited {
@@ -114,7 +117,6 @@ a::selection {
 }
 
 .row-content {
-    margin: 0px auto;
     padding-top:  5px;
     padding-bottom: 20px;    
 }
@@ -137,7 +139,9 @@ size-xxl {
 	color:grey;
 }
 
-/* HOME */
+/* 
+  HOME 
+* **** */
 #mensajes {
    /* margin-top: 50px;*/
 }
@@ -181,7 +185,25 @@ size-xxl {
 	background: #CCC; 
 }
 
-/* HOME - cifras */
+#jc-overview {
+	padding: 2rem 0;
+	font-weight: 700;
+	color: #FFF;
+	background-color: $accent;
+	& img {
+		width: 180px;
+	}
+	& h1 {
+		font-size: 32px;
+	}
+	& h3 {
+		font-size: 24px;
+		text-transform: capitalize;
+		color: #000;
+	} 
+}
+
+
 .number {
     display: table;
     font-size: 25px;
@@ -191,23 +213,66 @@ size-xxl {
     height: 140px;
     width: 140px;
     text-align: center;
+	margin-bottom: 1rem;
     background: $accent;
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     border-radius: 100%;
+	
+	.number-content {
+		display: table-cell;
+		vertical-align: middle;
+	}
+	
+	span {
+		display: block;
+		font-size: 20px;
+		font-weight: normal;
+		text-transform: lowercase;
+	}
 }
 
-.number .number-content {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.number span
-{
-    display: block;
-    font-size: 20px;
-    font-weight: normal;
-    text-transform: lowercase;
+#testimonials {
+	& .carousel {
+		& .carousel-caption {
+			position: relative;
+			left: 0;
+		}
+		& .carousel-control-prev, & .carousel-control-next {
+			background: none;
+			font-size: 2.3rem;
+			font-weight: bold;
+			bottom: -70%; /*100%; */
+		}		
+		& .carousel-control-prev-icon, & .carousel-control-next-icon {
+			background-image: none;	
+		}
+		& .carousel-control-prev-icon:before {
+			content: "\f104";
+			font-family: "FontAwesome";
+			color: $accent;
+		}
+		& .carousel-control-next-icon:after
+		{
+			content: "\f105";
+			font-family: "FontAwesome";
+			color: $accent;
+		}
+		& .carousel-item blockquote {
+			color: $text-color;
+			font-size: 1.1rem;
+			margin: 0;
+		}
+		& .carousel-item blockquote p:before {
+			display: block;
+			content: "\f10d";
+			font-family: "Fontawesome";
+			font-size: 1.5rem;
+			color: $skin-color-dark;
+			/* float: left; */
+			/*margin-right: 0.7rem;*/			
+		}
+	}
 }
 
 /* SERVICIOS */
@@ -245,7 +310,7 @@ size-xxl {
 }
 
 .project {
-	color: #text-color;
+	color: $text-color;
 }
 .project-title  {
 	display:inline-block;
@@ -315,6 +380,25 @@ size-xxl {
     cursor: pointer;
 }
 
+@media only screen and (min-width: 768px) {	
+	#testimonials .carousel .carousel-control-prev, 
+	#testimonials .carousel .carousel-control-next {
+			bottom: -50%;
+	}
+}
+
+@media only screen and (min-width: 992px) {	
+	#testimonials  {
+			min-height: 380px;
+	}
+}
+
+@media only screen and (min-width: 1200px) {	
+	#testimonials  {
+			min-height: 350px;
+	}
+}
+
 @media only screen and (max-width: 991px) {
 	.mensaje-header-container {
 		height: auto;
@@ -322,15 +406,11 @@ size-xxl {
 	}
 	.mensaje    
     {
-        min-height: auto;    
+        min-height: inherit;    
     }
 }
 @media only screen and (max-width: 767px) {	
-	/* headers
-	h1 {
-		font-size: 1.7rem;
-	}
-	*/
+
 	.first-section {
 		margin-top: 68px; // nav bar + border
 	}

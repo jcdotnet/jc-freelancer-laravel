@@ -13,7 +13,7 @@
 		</div>
 	</div>
 	
-	<nav id="main-navbar" class="navbar navbar-expand-md fixed-top">
+	<nav id="main-navbar" class="navbar navbar-expand-md fixed-top navbar-hero">
 		<div class="container">
 			<a href="{{ route('home', Config::get('app.locale') == 'es' ? '': Config::get('app.locale')) }}" class="navbar-brand" ><img src=" {{ asset("storage/images/jc_letters_80.png") }}"></a>
 			<div id="navbar-flags" class="pull-right">

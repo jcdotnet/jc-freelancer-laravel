@@ -222,6 +222,9 @@
 	{
 		margin-top: 0px;
 		
+		&.fixed-top {
+			top: 0px;
+		}
 		& .navbar-collapse {       
 			border: none;
 		}

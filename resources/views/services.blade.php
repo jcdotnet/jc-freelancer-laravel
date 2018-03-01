@@ -114,23 +114,4 @@
 </section> 
  
  
-<section id="testimonials">
-   <div class="container"> 
-	   <div class="row">
-		    <div class="col mt-5 row-header">
-		       <h2 class="center"> @lang("Testimonios")</h2>
-			</div>
-	    </div>	
-        <div class="row row-content">
-			<div class="col">
-				<blockquote class="blockquote">
-                    <p class="mb-0"> Jc es un brillante programador. Es responsable, apasionado de su trabajo, y tiene muy buen criterio a la hora de afrontar el diseño de cualquier proyecto, además de una gran capacidad para aprender nuevas tecnologías en poco tiempo.</p>      
-                    <footer class="blockquote-footer">Antonio Márquez Marín,
-                        <cite>Software engineer</cite>
-                    </footer>
-                </blockquote>
-            </div>
-        </div>
-    </div>
-</section>
 @endsection
