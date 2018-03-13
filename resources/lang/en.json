@@ -4,8 +4,11 @@
 	"Hello everyone! I'm a self-employed software engineer, born and raised in Málaga (Spain) and I'm offering my services all over the world since January 2016. You can contact me either if you need to develop an application (console, desktop, web, mobile...), or have great ideas and need someone to carry them out or just need a programmer for your project. I'm looking forward to hearing from you!" ,
     
     "Sobre mí":  "About me",   
-    "Programador freelance en Málaga | Jose Carlos Román Rubio" : "Freelance software developer | Jose Carlos Román Rubio",   
-    "Asunto" :  "Subject",  
+    "Sobre mí, <span>conoce al freelance</span>": "Meet the <span>freelance developer</span>",
+	"Mi nombre es <strong>Jose Carlos Román Rubio</strong> y trabajo como programador freelance ayudando a particulares y a empresas a realizar sus proyectos. También colaboro con empresas y con otros profesionales con el objetivo de ofrecer mejores servicios.":
+	"My name is <strong>Jose Carlos Román Rubio</strong> and currently I'm working as a freelance software developer. In addition to my freelancer job I also take as many online courses as I can (I'm addicted to them), love <3 animals, music and much much more.",
+	"Programador freelance en Málaga | Jose Carlos Román Rubio" : "Freelance software developer | Jose Carlos Román Rubio",    
+	"Asunto" :  "Subject",  
     "Volver" :  "Back",  
     "Consulta" :  "General enquiry",  
               "Formulario de contacto" : "Contact form",   
@@ -16,16 +19,16 @@
               "Contacta conmigo" :  "Contact me",   
     "Este sitio usa cookies. Si continúa navegando consideramos que acepta su uso. " :  "This website uses cookies to ensure you get the best experience on our website. ",  
     "De acuerdo." : "Got it!",   
-              "Descripción:" : "Description:",   
-              "Desarrollo de aplicaciones para Windows":  "Windows applications development", 
+    "Descripción:" : "Description:",   
+    "Desarrollo de aplicaciones para Windows":  "Windows applications development", 
             
                  
-"<ul><li>Desarrollo de aplicaciones de consola o de escritorio para Windows. </li><li>Desarrollo de aplicaciones Android usando Java y Android Studio.</li><li>Desarrollo de aplicaciones iOS y Android usando Ionic.</li></ul><p>Todas estas aplicaciones pueden incluir acceso a datos, al sistema, a servicios Web, a la nube, etc.</p>" :             
-"<ul><li>Console or desktop Windows applications development.</li><li>Android development using Java and Android studio.</li><li>Android and iOS development using the Ionic Framework.</li></ul><p>Applications developed above are customizable and can include database, system or web services access, among many others.</p>",
+	"<ul><li>Desarrollo de aplicaciones de consola o de escritorio para Windows. </li><li>Desarrollo de aplicaciones Android usando Java y Android Studio.</li><li>Desarrollo de aplicaciones iOS y Android usando Ionic.</li></ul><p>Todas estas aplicaciones pueden incluir acceso a datos, al sistema, a servicios Web, a la nube, etc.</p>" :             
+	"<ul><li>Console or desktop Windows applications development.</li><li>Android development using Java and Android studio.</li><li>Android and iOS development using the Ionic Framework.</li></ul><p>Applications developed above are customizable and can include database, system or web services access, among many others.</p>",
                  
             
-        "Correo electrónico":  "Email",   
-              "Lo que debes saber antes de contratarme":  "Things you must know about me",   
+    "Correo electrónico":  "Email",   
+    "Lo que debes saber antes de contratarme":  "Things you must know about me",   
             
 "<ul><li> Estoy dado alta en Hacienda bajo el epígrafe 764, actividad: 'Diplomados en Informática'.</li><li> Tarifo por proyectos completos o por fases del proyecto, emitiendo siempre factura una vez finalizado el proyecto o una fase de éste.</li><li> Soy un apasionado de la programación y me adapto a casi todas las tecnologías.</li><li> No soy diseñador, por lo que me siento más cómodo con proyectos más orientados a la programación.</li><li> Mis tarifas son económicas y garantizo siempre que sea posible la finalización del proyecto: la satisfacción del cliente es muy importante para mí.</li><li> Mi dedicación a tu idea o proyecto será total desde el primer día hasta que lo finalice.</li><li> En todo momento estaremos comunicados: if you don't speak spanish we can communicate in written English (switch please to English version). </li></ul>" :                 
 "<ul><li> I received my computer engineering degree in 2014.</li><li> I’m skilled in many languages and technologies and my goal is to apply all that I have learned to help others in any way I can. </li><li> I'm more a programmer than a designer. That being said, I offer both programming and design oriented projects. </li><li> I will always issue you an invoice once the project has been finished.</li><li><em> (only for non-spanish speakers) </em> I'm more comfortable communicating in written English since my speaking level is not so good.</li></ul>",
@@ -159,9 +162,12 @@
 	"Siguientes": "Next",
 	"En estos momentos no ofrezco mis servicios freelance, aun así puedes contactar conmigo si lo deseas. Disculpa las molestias.": "I'm not offering my freelance services at the moment. Even so, you can contact me anytime if you want. Sorry for the inconvenience.",
 	"Página en construcción": "Coming soon",
+	"Programador freelance": "Freelance developer",
 	"Qué hago": "What I do",
 	"Cómo soy": "My traits",
 	"Dónde estoy": "Where you can find me",
+	"Puedes encontrarme en redes sociales, portales freelance, plataformas de aprendizaje, comunidades de desarrolladores, etc.":
+	"You can find me on social networks, freelance sites, developer communities, online learning platforms, and so on.",
 	"Contrátame en Freelancer.com": "Hire me on Freelancer.com",
 	"Trabajo": "Job",
 	"Tipo": "Type",
@@ -185,9 +191,9 @@
 	"Testimonios": "Testimonials",
 	"Privacidad" : "Privacy",
 	"Política de privacidad" : "Privacy policy",
-	"JC, freelancer en Málaga | Jose Carlos Román Rubio" : "JC, freelancer, Málaga | Jose Carlos Román Rubio" ,
-	"Jose Carlos Román Rubio (JC). Soy  Ingeniero Técnico Informático (Universidad de Málaga), programador, desarrollador, freelancer... Descubre más sobre mí." :
-	"Jose Carlos Román Rubio (JC). Computer Engineer (Universidad de Málaga), programmer, developer, freelancer... Find out more about me."		,
+	"Programador freelance en Málaga | Jose Carlos Román Rubio" : "Freelance software developer | Jose Carlos Román Rubio" ,
+	"Me llamo Jose Carlos Román Rubio, soy Ingeniero Informático y trabajo como programador y desarrollador freelance ayudando a particulares y empresas." :
+	"My name is Jose Carlos Román Rubio. I have a Computer Engineering degree (UMA.es) and I am a freelance software developer (Web, desktop, etc).",
 	"Página Web de Jose Carlos Román Rubio. Ingeniero Técnico Informático (UMA). Freelancer. Programador y desarrollador para particulares y empresas.":
 	"Jose Carlos Román Rubio. Computer Engineer (UMA). Freelance software developer. I offer my services to particulars, freelancers and companies.",
 	"Currículum" : "Curriculum",

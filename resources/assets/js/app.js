@@ -45,7 +45,7 @@ $(function() {
 			$('#navbar-flags').css("display", "none");
 			
 	}).resize();
-	
+	  	
 	$('#cookie-consent').css("display", getCookie('complianceCookie') === "1" ?  "none": "block");	
 });
 

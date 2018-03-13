@@ -1,5 +1,7 @@
 {
+    "/js/lightslider.min.js": "/js/lightslider.min.js",
     "/css/bundle.css": "/css/bundle.css",
+    "/css/lightslider.min.css": "/css/lightslider.min.css",
     "/js/bundle.js": "/js/bundle.js",
     "/css/bundle-admin.css": "/css/bundle-admin.css",
     "/js/bundle-admin.js": "/js/bundle-admin.js"

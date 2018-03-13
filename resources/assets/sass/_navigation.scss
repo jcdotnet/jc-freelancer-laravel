@@ -242,10 +242,11 @@
         line-height: 50px;
         margin-left: 20px; 
     }
-    
-    .navbar-nav>li>.dropdown-menu {
-        padding: 0px 0px 0px 30px;
-		margin: 0px;
+    .dropdown-menu {
+		border: none;
+	}
+    .navbar-expand-md .navbar-nav > li > .dropdown-menu {
+        padding: 10px 20px;
     }
 	.navbar-expand-md.navbar-hero .navbar-nav>li>.dropdown-menu {
 		background: transparent;

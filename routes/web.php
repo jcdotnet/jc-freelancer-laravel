@@ -26,7 +26,7 @@ Route::get('proyectos', [
 Route::get('contacto', [
 	'uses' => 'AppController@getContact'
 ]);
-Route::get('jc-freelancer-malaga', function () {
+Route::get('programador-freelance-malaga', function () {
 	return view('pages.about');
 });
 Route::get('libros' , function () {
@@ -48,6 +48,9 @@ Route::get('twitter', function () {
 });
 Route::get('youtube', function () {
     return redirect('https://www.youtube.com/channel/UC9wKRs6Mgf2wR2qfjYM0-uQ');
+});
+Route::get('jc-freelancer-malaga', function () {
+	return redirect('programador-freelance-malaga'); //->route('about', ['lang' => 'es', __('routes.about')]);
 });
 
 /* BLOG, front-end */
@@ -271,9 +274,10 @@ Route::group(['prefix' => '{lang?}'], function () {
 		'uses' => 'AppController@postContact'
 	]);
 
-	Route::get('/jc-freelancer-malaga', function () {
+	Route::get('{about}', function () {
 		return view('pages.about');
-	})->name('about');	
+	})->name('about')->where('about', '(programador-freelance-malaga|freelance-software-developer)');	
+	
 	
 	Route::get('{libros}' , function () {
 		return view('pages.books');

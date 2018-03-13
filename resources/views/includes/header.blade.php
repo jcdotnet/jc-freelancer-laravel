@@ -36,7 +36,7 @@
 						</ul>
 					</li>
 					<li class="nav-item {{Request::is('*'.__('routes.proyecto').'*') ? 'active':''}}"><a class="nav-link" href="{{ route('proyectos', [Config::get('app.locale') == 'es' ? NULL : Config::get('app.locale'), __("routes.proyectos")]) }}"> @lang('Proyectos') </a></li> 
-					<li class="nav-item {{Request::is('*jc-freelancer*') ? 'active':''}}"><a class="nav-link" href="{{ route('about', Config::get('app.locale') == 'es' ? '': Config::get('app.locale')) }}"> @lang('Sobre mí') </a></li> 
+					<li class="nav-item {{Request::is('*'.__('routes.about').'*') ? 'active':''}}"><a class="nav-link" href="{{ route('about', [ Config::get('app.locale') == 'es' ? '': Config::get('app.locale'), __("routes.about") ] ) }}"> @lang('Sobre mí') </a></li> 
 					<li class="nav-item {{Request::is('*'.__('routes.contacto').'*') ? 'active':''}}"><a class="nav-link" href="{{ route('contacto', [Config::get('app.locale') == 'es' ? '': Config::get('app.locale'), __("routes.contacto")]) }}"> @lang('Contacto')</a></li>                    
 				</ul>
 			</div>

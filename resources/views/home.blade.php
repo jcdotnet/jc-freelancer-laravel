@@ -91,7 +91,7 @@
 				<h1>Jose Carlos Román (JC) </h1>
 				<h3>@lang("Ingeniero informático, programador freelance")</h3>
 				<div>
-				<a href="{{ route('about', Config::get('app.locale') == 'es' ? '': Config::get('app.locale')) }}" class="btn-jc btn-hero"> @lang("Más información") </a>
+				<a href="{{ route('about', [ Config::get('app.locale') == 'es' ? '': Config::get('app.locale'), __("routes.about")] ) }}" class="btn-jc btn-hero"> @lang("Más información") </a>
 			</div>
 			</div>
 		</div>
