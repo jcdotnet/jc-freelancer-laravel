@@ -8493,6 +8493,8 @@ a.text-dark:focus, a.text-dark:hover {
   border-bottom: 2px solid #DDD;
   -webkit-box-shadow: 0 0 transparent, 0 0 transparent, 0 5px 5px -4px rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 transparent, 0 0 transparent, 0 5px 5px -4px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
   /* drop-down menu */
 }
 
@@ -8598,8 +8600,6 @@ a.text-dark:focus, a.text-dark:hover {
 .jc-toggler {
   right: 0px;
   background: transparent;
-  -webkit-transition: color .2s linear;
-  transition: color .2s linear;
 }
 
 .jc-toggler:link, .jc-toggler:focus {
@@ -8610,6 +8610,8 @@ a.text-dark:focus, a.text-dark:hover {
 .jc-toggler-icon {
   position: relative;
   margin-top: 1em;
+  -webkit-transition: all .2s;
+  transition: all .2s;
 }
 
 .jc-toggler-icon, .jc-toggler-icon::before, .jc-toggler-icon::after {
@@ -8624,8 +8626,6 @@ a.text-dark:focus, a.text-dark:hover {
   content: "";
   position: absolute;
   left: 0;
-  -webkit-transition: all .2s;
-  transition: all .2s;
 }
 
 .jc-toggler-icon::before {
@@ -8636,17 +8636,17 @@ a.text-dark:focus, a.text-dark:hover {
   top: 0.5rem;
 }
 
-.tapped .jc-toggler-icon {
+.jc-toggler:not(.collapsed) .jc-toggler-icon {
   background-color: transparent;
 }
 
-.tapped .jc-toggler-icon::before {
+.jc-toggler:not(.collapsed) .jc-toggler-icon::before {
   top: 0;
   -webkit-transform: rotate(135deg);
           transform: rotate(135deg);
 }
 
-.tapped .jc-toggler-icon::after {
+.jc-toggler:not(.collapsed) .jc-toggler-icon::after {
   top: 0;
   -webkit-transform: rotate(-135deg);
           transform: rotate(-135deg);

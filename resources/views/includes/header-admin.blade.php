@@ -2,7 +2,7 @@
 	<nav class="navbar navbar-expand-md fixed-top">
 		<div class="container">
 			<a  href="{{ route('admin') }}" class="navbar-brand" >ADMIN AREA</a>
-			<button class="navbar-toggler jc-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-items" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="navbar-toggler jc-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbar-items" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="jc-toggler-icon">&nbsp;</span>
 			</button>
 

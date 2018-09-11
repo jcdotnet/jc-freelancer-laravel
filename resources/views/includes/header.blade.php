@@ -20,7 +20,7 @@
 					<a href="{{url('en/changeLocale/en')}}" class="language" data-locale="en">EN</a>
 					<a href="{{url('es/changeLocale/es')}}" class="language" data-locale="es">ES</a>
 			</div>
-			<button class="navbar-toggler jc-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-items" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="navbar-toggler jc-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbar-items" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="jc-toggler-icon">&nbsp;</span>
 			</button>
 
