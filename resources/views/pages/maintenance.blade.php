@@ -1,7 +1,7 @@
 @extends('layouts.default')
 
 @section('head')
-<title> @lang("Mantenimiento Web | Jose Carlos Román Rubio") </title>
+<title> @lang("Mantenimiento Web | José Carlos Román Rubio") </title>
 <meta name="description" content=" {{ __("Mantenimiento Web. ¿En qué consiste y por qué debo contratar los servicios de un freelancer?, ¿Cuánto cuesta? Todas las respuestas en esta página.") }}">
 <link rel="stylesheet" href="{{ asset('css/bundle.css') }}"  />
 @endsection

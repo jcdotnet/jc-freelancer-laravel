@@ -1,7 +1,7 @@
 @extends ('layouts.default')
 
 @section('head')
-	<title>@lang("Mis libros | Jose Carlos Román Rubio")</title>
+	<title>@lang("Mis libros | José Carlos Román Rubio")</title>
 	<meta name="description" content="{{ __("Mi estantería. Libros universitarios y de programación / desarrollo de Software con tecnologías Java, .NET, etc. ") }}"/>
 	<link rel="stylesheet" href="{{ asset('css/bundle.css') }}"  />
 @endsection

@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 	<head>
-		<title>Admin area | Jose Carlos Román Rubio</title>
+		<title>Admin area | José Carlos Román Rubio</title>
 		<meta charset="UTF-8">		
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 			

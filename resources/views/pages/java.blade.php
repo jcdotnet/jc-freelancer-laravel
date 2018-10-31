@@ -1,7 +1,7 @@
 @extends ('layouts.default')
 
 @section('head')
-	<title>@lang("Java, Java EE & Spring | Jose Carlos Román Rubio")</title>
+	<title>@lang("Java, Java EE & Spring | José Carlos Román Rubio")</title>
 	<meta name="description" content="{{ __("Mi formación en Java, desde la Universidad de Málaga (Programación Orientada a Objetos, curso 1999-2000) hasta la actualidad.") }}"/>
 	<link rel="stylesheet" href="{{ asset('css/bundle.css') }}"  />
 @endsection

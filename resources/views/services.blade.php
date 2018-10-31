@@ -1,7 +1,7 @@
 @extends ('layouts.default')
 
 @section('head')
-	<title>@lang("Desarrollo de software | Jose Carlos Román Rubio")</title>
+	<title>@lang("Desarrollo de software | José Carlos Román Rubio")</title>
 	<link rel="stylesheet" href="{{ asset('css/bundle.css') }}"  />
 @endsection
 

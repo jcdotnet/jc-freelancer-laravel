@@ -29,11 +29,11 @@
 			   <p>En cumplimiento de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y Comercio Electrónico (LSSI CE), informamos a los usuarios de los datos de la empresa propietaria de esta web: </p>
                 <p><u>Responsable</u></p>
 				<ul>
-					<li><strong>Denominación Social:</strong> Jose Carlos Román Rubio</li>
+					<li><strong>Denominación Social:</strong> José Carlos Román Rubio</li>
 					<li><strong>NIF: </strong>77469228F</li>
-					<li><strong>Nombre Comercial:</strong> Jose Carlos Román Rubio</li>
+					<li><strong>Nombre Comercial:</strong> José Carlos Román Rubio</li>
 					<li><strong>Domicilio Social:</strong> C/ Jorge Guillén 41, 1D, 29003 Málaga</li>
-					<li><strong>Responsable de seguridad:</strong> [Jose Carlos Román Rubio] (info@josecarlosroman.com)</li>
+					<li><strong>Responsable de seguridad:</strong> [José Carlos Román Rubio] (info@josecarlosroman.com)</li>
 				</ul>
 				<p><u>Contacto</u></p>
 				<ul>
@@ -66,7 +66,7 @@
 				para el cumplimiento del Reglamento General de Protección de Datos (RGPD) (UE) 2016/679. 
 				De conformidad con estas normativas, informamos que la utilización de nuestra página web requiere que 
 				se nos faciliten ciertos datos personales a través de formularios de registro o contacto, o mediante el 
-				envío de emails, y que éstos serán objeto de tratamiento por "Jose Carlos Román Rubio". El envío de estos 
+				envío de emails, y que éstos serán objeto de tratamiento por "José Carlos Román Rubio". El envío de estos 
 				datos personales constituye el consentimiento expreso al tratamiento de los mismos, si bien este consentimiento 
 				es de carácter revocable. Más información en nuestra <a href="#politica-privacidad">Política de Privacidad</a></p>
 				
@@ -82,7 +82,7 @@
 					de cualquier posible controversia que pudiera suscitarse respecto a los mismos. En todo caso, JC cuenta con la autorización expresa y previa por parte de los mismos.</p>
 				<p>JC reconoce a favor de sus titulares los correspondientes derechos de propiedad industrial e intelectual, no implicando su sola mención o aparición en el sitio web la existencia 
 					de derechos o responsabilidad alguna del prestador sobre los mismos, como tampoco respaldo, patrocinio o recomendación por parte del mismo.</p>
-				<p>El usuario puede utilizar el material que aparezca en este sitio web para su uso personal y privado, quedando prohibido su uso con fines comerciales. "Jose Carlos Román Rubio" velará por el cumplimiento 
+				<p>El usuario puede utilizar el material que aparezca en este sitio web para su uso personal y privado, quedando prohibido su uso con fines comerciales. "José Carlos Román Rubio" velará por el cumplimiento 
 					de las anteriores condiciones, como por la debida utilización de los contenidos presentados en sus páginas web, ejercitando todas las acciones civiles y penales que le correspondan en el caso de infracción 
 					o incumplimiento de estos derechos por parte del usuario.</p>
 				

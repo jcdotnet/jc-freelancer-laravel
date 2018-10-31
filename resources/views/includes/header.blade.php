@@ -15,7 +15,7 @@
 	
 	<nav id="main-navbar" class="navbar navbar-expand-md fixed-top navbar-hero">
 		<div class="container">
-			<a href="{{ route('home', Config::get('app.locale') == 'es' ? '': Config::get('app.locale')) }}" class="navbar-brand" ><img src=" {{ asset("storage/images/jc_letters_80.png") }}"></a>
+			<a href="{{ route('home', Config::get('app.locale') == 'es' ? '': Config::get('app.locale')) }}" class="navbar-brand" ><img src=" {{ asset("storage/images/jc_letters_80.png") }}" alt="José Carlos Román Rubio"></a>
 			<div id="navbar-flags" class="pull-right">
 					<a href="{{url('en/changeLocale/en')}}" class="language" data-locale="en">EN</a>
 					<a href="{{url('es/changeLocale/es')}}" class="language" data-locale="es">ES</a>

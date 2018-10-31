@@ -1,13 +1,13 @@
 {   "Resumen":  "Overview",   
-	"Jose Carlos Román Rubio | Ingeniero Informático, programador freelance": "Jose Carlos Román Rubio | Software engineer, freelance developer",
-	"¡Hola a tod@s! Mi nombre es Jose Carlos aunque en el mundo profesional soy conocido como JC. Soy un apasionado de la informática desde pequeño y actualmente tengo el título de Ingeniero Técnico en Informática, obtenido en la Universidad de Málaga en el año 2014. Desde enero del 2016 estoy trabajando como profesional autónomo o 'freelancer' prestando servicios a particulares y empresas.":          
+	"José Carlos Román Rubio | Ingeniero Informático, programador freelance": "José Carlos Román Rubio | Software engineer, freelance developer",
+	"¡Hola a tod@s! Mi nombre es José Carlos aunque en el mundo profesional soy conocido como JC. Soy un apasionado de la informática desde pequeño y actualmente tengo el título de Ingeniero Técnico en Informática, obtenido en la Universidad de Málaga en el año 2014. Desde enero del 2016 estoy trabajando como profesional autónomo o 'freelancer' prestando servicios a particulares y empresas.":          
 	"Hello everyone! I'm a self-employed software engineer, born and raised in Málaga (Spain) and I'm offering my services all over the world since January 2016. You can contact me either if you need to develop an application (console, desktop, web, mobile...), or have great ideas and need someone to carry them out or just need a programmer for your project. I'm looking forward to hearing from you!" ,
     
     "Sobre mí":  "About me",   
     "Sobre mí, <span>conoce al freelance</span>": "Meet the <span>freelance developer</span>",
-	"Mi nombre es <strong>Jose Carlos Román Rubio</strong> y trabajo como programador freelance ayudando a particulares y a empresas a realizar sus proyectos. También colaboro con empresas y con otros profesionales con el objetivo de ofrecer mejores servicios.":
-	"My name is <strong>Jose Carlos Román Rubio</strong> and currently I'm working as a freelance software developer. In addition to my freelancer job I also take as many online courses as I can (I'm addicted to them), love <3 animals, music and much much more.",
-	"Programador freelance en Málaga | Jose Carlos Román Rubio" : "Freelance software developer | Jose Carlos Román Rubio",    
+	"Mi nombre es <strong>José Carlos Román Rubio</strong> y trabajo como programador freelance ayudando a particulares y a empresas a realizar sus proyectos. También colaboro con empresas y con otros profesionales con el objetivo de ofrecer mejores servicios.":
+	"My name is <strong>José Carlos Román Rubio</strong> and currently I'm working as a freelance software developer. In addition to my freelancer job I also take as many online courses as I can (I'm addicted to them), love <3 animals, music and much much more.",
+	"Programador freelance en Málaga | José Carlos Román Rubio" : "Freelance software developer | José Carlos Román Rubio",    
 	"Asunto" :  "Subject",  
     "Volver" :  "Back",  
     "Consulta" :  "General enquiry",  
@@ -15,7 +15,7 @@
               "Cliente:" :  "Client:",  
               "clientes" : "clients",
               "Contacto" : "Contact",   
-              "Formulario de contacto | Jose Carlos Román Rubio" :  "Contact form | Jose Carlos Román Rubio",  
+              "Formulario de contacto | José Carlos Román Rubio" :  "Contact form | José Carlos Román Rubio",  
               "Contacta conmigo" :  "Contact me",   
     "Este sitio usa cookies. Si continúa navegando consideramos que acepta su uso. " :  "This website uses cookies to ensure you get the best experience on our website. ",  
     "De acuerdo." : "Got it!",   
@@ -78,11 +78,11 @@
               "Otros":  "Other", 
    
               "Proyectos":  "Projects",   
-              "Proyectos | Jose Carlos Román Rubio":  "Projects | Jose Carlos Román Rubio",   
+              "Proyectos | José Carlos Román Rubio":  "Projects | José Carlos Román Rubio",   
             
               "Limpiar":  "Reset",   
 
-              "Aplicaciones Web" : "Web apps",
+              "Aplicaciones Web" : "Web development",
 		      "Rediseño de páginas Web" :  "Websites redesign",  
               "Páginas Web escaparate" :  "Showcase websites",  
               "Adaptación a dispositivos móviles" :  "Responsive websites", 
@@ -123,13 +123,12 @@
               "Servicios" :  "Services",  
 	          "servicios" : "services",
               "Todos mis servicios" :  "All services",  
-               "Aplicaciones de escritorio y de móvil" :  "Desktop and mobile development", 
-              "Aplicaciones Web" :  "Web development",  
+            	"Aplicaciones de escritorio y de móvil" :  "Desktop and mobile development", 
               "WordPress" :  "WordPress development",  
               "Programación" : "Programming",  
               "Solicita presupuesto" :  "Request a quote",  
             
-              "Desarrollo de software | Jose Carlos Román Rubio" :  "Desktop, Web & Mobile development | Jose Carlos Román Rubio",  
+              "Desarrollo de software | José Carlos Román Rubio" :  "Desktop, Web & Mobile development | José Carlos Román Rubio",  
               "Sugerencia" :  "Suggestion",  
               "Tecnologías:" :  "Skills:",  
               "Enviar" : "Submit",  
@@ -191,11 +190,10 @@
 	"Testimonios": "Testimonials",
 	"Privacidad" : "Privacy",
 	"Política de privacidad" : "Privacy policy",
-	"Programador freelance en Málaga | Jose Carlos Román Rubio" : "Freelance software developer | Jose Carlos Román Rubio" ,
-	"Me llamo Jose Carlos Román Rubio, soy Ingeniero Informático y trabajo como programador y desarrollador freelance ayudando a particulares y empresas." :
-	"My name is Jose Carlos Román Rubio. I have a Computer Engineering degree (UMA.es) and I am a freelance software developer (Web, desktop, etc).",
-	"Página Web de Jose Carlos Román Rubio. Ingeniero Técnico Informático (UMA). Freelancer. Programador y desarrollador para particulares y empresas.":
-	"Jose Carlos Román Rubio. Computer Engineer (UMA). Freelance software developer. I offer my services to particulars, freelancers and companies.",
+	"Me llamo José Carlos Román Rubio, soy Ingeniero Informático y trabajo como programador y desarrollador freelance ayudando a particulares y empresas." :
+	"My name is José Carlos Román Rubio. I have a Computer Engineering degree (UMA.es) and I am a freelance software developer (Web, desktop, etc).",
+	"Página Web de José Carlos Román Rubio. Ingeniero Técnico Informático (UMA). Freelancer. Programador y desarrollador para autónomos y empresas.":
+	"José Carlos Román Rubio. Computer Engineer (UMA). Freelance software developer. I offer my services to particulars, freelancers and companies.",
 	"Currículum" : "Curriculum",
 	"CV" : "Resume",
 	"Descargar" : "Download",
@@ -210,12 +208,11 @@
 	"Recursos disponibles:" : "Available resources:",
 	"Combinados con la documentación oficial es la mejor forma de aprender nuevas tecnologías. " : "Books are the best way of learning new technologies. Along with the official documentation, of course. ",
 	"Éstos son los que tengo en mi estantería." : "I have these ones in my bookshelf.",
-	"Mis libros | Jose Carlos Román Rubio" : "Books I own | Jose Carlos Román Rubio",
+	"Mis libros | José Carlos Román Rubio" : "Books I own | José Carlos Román Rubio",
 	"Artículos": "Articles",
 	"sobre ": "about ",
 	"Leer":"Read",
-	"Mantenimiento Web" : "Web maintenance",
-	"Mantenimiento Web | Jose Carlos Román Rubio" : "Web maintenance | Jose Carlos Román Rubio",
+	"Mantenimiento Web | José Carlos Román Rubio" : "Web maintenance | José Carlos Román Rubio",
 	"Mantenimiento Web. ¿En qué consiste y por qué debo contratar los servicios de un freelancer?, ¿Cuánto cuesta? Todas las respuestas en esta página.":
 	"Web maintenance. Why is so important? What does it cost? Why should you hire a professional? If you have a website, you will be interested in reading this article",
 	"El mantenimiento Web, ¿por qué es importante?" : "Web maintenance, why?",
@@ -268,8 +265,8 @@
 	"https://ctt.ec/SHQRL": "https://ctt.ec/L27DZ",
 	"Tecnologías": "Skills",
 	"Detalles": "Details",
-	"Me llamo Jose Carlos Román Rubio (profesionalmente soy conocido como JC) y soy de Málaga (España). Tengo más de 10 años de experiencia en programación y soy Ingeniero Ténico Informático por la Universidad de Málaga. En 2016 empecé mi carrera como freelancer. Concretamente soy programador y desarrollador freelance, desarrollando todo tipo de aplicaciones informáticas.":
-	"My name is Jose Carlos Román Rubio and I'm from Málaga, Spain. I have over 10 years experience in programming and I am currently working as a freelancer. Formerly, in March 2014, I graduated from University of Málaga with a computer engineering bachelor's degree.",
+	"Me llamo <strong>José Carlos Román Rubio</strong> (profesionalmente soy conocido como JC) y soy de Málaga (España). Tengo más de 10 años de experiencia en programación y soy Ingeniero Ténico Informático por la Universidad de Málaga. En 2016 empecé mi carrera como freelancer. Concretamente soy programador y desarrollador freelance, desarrollando todo tipo de aplicaciones informáticas.":
+	"My name is <strong>José Carlos Román Rubio</strong> and I'm from Málaga, Spain. I have over 10 years experience in programming and I am currently working as a freelancer. Formerly, in March 2014, I graduated from University of Málaga with a computer engineering bachelor's degree.",
 	"A continuación, voy a compartir mis números como trabajador freelance:":
 	"Next, I would like to share some figures about my freelancing career:",
 	"He trabajado con más de 20 clientes (particulares y sobre todo empresas). La mayoría de ellos son españoles y más de la mitad han vuelto a contratar mis servicios.":

@@ -22,7 +22,7 @@
 		
 		<div class="row">
 			<div class="col text-center">
-				<p>2016-{{date("Y")}} Jose Carlos Román Rubio</p>
+				<p>2016-{{date("Y")}} José Carlos Román Rubio</p>
 			</div>
 		</div>
 		</div>

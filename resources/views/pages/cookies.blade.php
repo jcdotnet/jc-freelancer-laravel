@@ -27,7 +27,7 @@
         <div class="row row-content mt-4">
 			<div class="col">
 				<p>En cumplimiento de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y Comercio Electrónico le informamos de la utilización de cookies en las webs 
-					y aplicaciones de "Jose Carlos Román Rubio" (JC en adelante), con el fin de facilitar y mejorar la navegación a los usuarios, 
+					y aplicaciones de "José Carlos Román Rubio" (JC en adelante), con el fin de facilitar y mejorar la navegación a los usuarios, 
 					recordando por donde navegó en el sitio web, las preferencias y configuraciones de visualización, y ofreciendo a cada usuario información que puede ser de su interés.</p>
 
 				<h3 class="text-center"> ¿Qué son las cookies? </h3>       

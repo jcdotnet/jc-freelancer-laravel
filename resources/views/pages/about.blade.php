@@ -1,8 +1,8 @@
 @extends('layouts.default')
 
 @section('head')
-	<title> @lang("Programador freelance en Málaga | Jose Carlos Román Rubio") </title>
-	<meta name="description" content=" {{ __("Me llamo Jose Carlos Román Rubio, soy Ingeniero Informático y trabajo como programador y desarrollador freelance ayudando a particulares y empresas.") }}">
+	<title> @lang("Programador freelance en Málaga | José Carlos Román Rubio") </title>
+	<meta name="description" content=" {{ __("Me llamo José Carlos Román Rubio, soy Ingeniero Informático y trabajo como programador y desarrollador freelance ayudando a particulares y empresas.") }}">
 	<link rel="stylesheet" href="{{ asset('css/lightslider.min.css') }}" />
 	<link rel="stylesheet" href="{{ asset('css/bundle.css') }}"  />
 	
@@ -28,9 +28,9 @@
 	<div class="container">
 		<div class="row">
 			<div class="col section-title">
-				<h2>@lang("Sobre mí, <span>conoce al freelance</span>")</h2>	
+				<h2>{!! __("Sobre mí, <span>conoce al freelance</span>") !!}</h2>	
 				<p> 		
-					@lang("Mi nombre es <strong>Jose Carlos Román Rubio</strong> y trabajo como programador freelance ayudando a particulares y a empresas a realizar sus proyectos. También colaboro con empresas y con otros profesionales con el objetivo de ofrecer mejores servicios.") 
+					{!! __("Mi nombre es <strong>José Carlos Román Rubio</strong> y trabajo como programador freelance ayudando a particulares y a empresas a realizar sus proyectos. También colaboro con empresas y con otros profesionales con el objetivo de ofrecer mejores servicios.") !!} 
 				<p>
 			</div>
 		</div>
@@ -43,7 +43,7 @@
 
 		<div class="row row-content">
 			<div class="col d-none d-md-block">
-				<img src="{{ asset('storage/images/programming.png') }}" class="img-fluid" alt="Jose Carlos Román, programador freelance">
+				<img src="{{ asset('storage/images/programming.png') }}" class="img-fluid" alt="José Carlos Román, programador freelance">
 			</div>
 
 			<div class="col">		
