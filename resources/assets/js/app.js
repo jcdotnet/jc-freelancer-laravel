@@ -1,5 +1,5 @@
 /**
- * CUSTOM JavaScript / jQuery
+ * CUSTOM JavaScript / jQuery (this code is not maintained anymore)
  */
 
 $(function() {
@@ -18,7 +18,7 @@ $(function() {
 		addNavbarHeroClass();
 	}
 	
-	$('.dropdown').hover(function() { 
+	$('.dropdown').hover(function() { // on mouseenter & mouseleave
 	    $(this).addClass('show'); 
 	    $(this).find('.dropdown-menu').addClass('show');
     }, 
@@ -27,15 +27,15 @@ $(function() {
     });
     
 	getRandomService();	
-    setInterval(setNavbar, 100);	
+    setInterval(setNavbar, 100); // to use the scroll event instead	
 	setInterval(getRandomService, 3000); 
 	
-	$('.language').click(function(){
+	$('.language').click(function(){ // on('click', function() {});
 		if (window.matchMedia('(max-width: 768px)').matches)
 			$('#navbar-flags').css("display", "none" );
 	});
 	
-	$(window).resize(function() {
+	$(window).resize(function() { // on('resize', function() {});
 		$('.hero').height($(window).height());
 		if (window.matchMedia('(max-width: 768px)').matches) 
 			$('#navbar-flags').css("display", $('#navbar-items').hasClass('show')? "inline-block": "none");
@@ -94,9 +94,9 @@ function setNavbar()
 {
 	if ( $(this).scrollTop() < $(".hero").height())
 	{
-		addNavbarHeroClass();
+		addNavbarHeroClass(); // $('.navbar-expand-md').addClass("navbar-hero")
 	}
-	else if ($('.navbar-expand-md').hasClass('navbar-hero'))
+	else if ($('.navbar-expand-md').hasClass('navbar-hero')) // else
 	{
 		$('.navbar-expand-md').removeClass("navbar-hero");
 	}
@@ -109,6 +109,6 @@ function setNavbar()
     } 
 }
 
-function addNavbarHeroClass() {
-	if (!$('.navbar-expand-md').hasClass('navbar-hero')) $('.navbar-expand-md').addClass("navbar-hero");
+function addNavbarHeroClass() { // not needed
+	if (!$('.navbar-expand-md').hasClass('navbar-hero')) $('.navbar-expand-md').addClass("navbar-hero"); // 
 }
